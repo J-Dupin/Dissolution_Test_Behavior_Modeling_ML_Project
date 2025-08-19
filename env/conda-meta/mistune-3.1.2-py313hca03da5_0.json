@@ -1,0 +1,666 @@
+{
+  "build": "py313hca03da5_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "python >=3.13,<3.14.0a0",
+    "python_abi 3.13.* *_cp313"
+  ],
+  "extracted_package_dir": "/opt/miniconda3/pkgs/mistune-3.1.2-py313hca03da5_0",
+  "files": [
+    "lib/python3.13/site-packages/mistune-3.1.2.dist-info/INSTALLER",
+    "lib/python3.13/site-packages/mistune-3.1.2.dist-info/LICENSE",
+    "lib/python3.13/site-packages/mistune-3.1.2.dist-info/METADATA",
+    "lib/python3.13/site-packages/mistune-3.1.2.dist-info/RECORD",
+    "lib/python3.13/site-packages/mistune-3.1.2.dist-info/REQUESTED",
+    "lib/python3.13/site-packages/mistune-3.1.2.dist-info/WHEEL",
+    "lib/python3.13/site-packages/mistune-3.1.2.dist-info/direct_url.json",
+    "lib/python3.13/site-packages/mistune-3.1.2.dist-info/top_level.txt",
+    "lib/python3.13/site-packages/mistune/__init__.py",
+    "lib/python3.13/site-packages/mistune/__main__.py",
+    "lib/python3.13/site-packages/mistune/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/mistune/__pycache__/__main__.cpython-313.pyc",
+    "lib/python3.13/site-packages/mistune/__pycache__/block_parser.cpython-313.pyc",
+    "lib/python3.13/site-packages/mistune/__pycache__/core.cpython-313.pyc",
+    "lib/python3.13/site-packages/mistune/__pycache__/helpers.cpython-313.pyc",
+    "lib/python3.13/site-packages/mistune/__pycache__/inline_parser.cpython-313.pyc",
+    "lib/python3.13/site-packages/mistune/__pycache__/list_parser.cpython-313.pyc",
+    "lib/python3.13/site-packages/mistune/__pycache__/markdown.cpython-313.pyc",
+    "lib/python3.13/site-packages/mistune/__pycache__/toc.cpython-313.pyc",
+    "lib/python3.13/site-packages/mistune/__pycache__/util.cpython-313.pyc",
+    "lib/python3.13/site-packages/mistune/block_parser.py",
+    "lib/python3.13/site-packages/mistune/core.py",
+    "lib/python3.13/site-packages/mistune/directives/__init__.py",
+    "lib/python3.13/site-packages/mistune/directives/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/mistune/directives/__pycache__/_base.cpython-313.pyc",
+    "lib/python3.13/site-packages/mistune/directives/__pycache__/_fenced.cpython-313.pyc",
+    "lib/python3.13/site-packages/mistune/directives/__pycache__/_rst.cpython-313.pyc",
+    "lib/python3.13/site-packages/mistune/directives/__pycache__/admonition.cpython-313.pyc",
+    "lib/python3.13/site-packages/mistune/directives/__pycache__/image.cpython-313.pyc",
+    "lib/python3.13/site-packages/mistune/directives/__pycache__/include.cpython-313.pyc",
+    "lib/python3.13/site-packages/mistune/directives/__pycache__/toc.cpython-313.pyc",
+    "lib/python3.13/site-packages/mistune/directives/_base.py",
+    "lib/python3.13/site-packages/mistune/directives/_fenced.py",
+    "lib/python3.13/site-packages/mistune/directives/_rst.py",
+    "lib/python3.13/site-packages/mistune/directives/admonition.py",
+    "lib/python3.13/site-packages/mistune/directives/image.py",
+    "lib/python3.13/site-packages/mistune/directives/include.py",
+    "lib/python3.13/site-packages/mistune/directives/toc.py",
+    "lib/python3.13/site-packages/mistune/helpers.py",
+    "lib/python3.13/site-packages/mistune/inline_parser.py",
+    "lib/python3.13/site-packages/mistune/list_parser.py",
+    "lib/python3.13/site-packages/mistune/markdown.py",
+    "lib/python3.13/site-packages/mistune/plugins/__init__.py",
+    "lib/python3.13/site-packages/mistune/plugins/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/mistune/plugins/__pycache__/abbr.cpython-313.pyc",
+    "lib/python3.13/site-packages/mistune/plugins/__pycache__/def_list.cpython-313.pyc",
+    "lib/python3.13/site-packages/mistune/plugins/__pycache__/footnotes.cpython-313.pyc",
+    "lib/python3.13/site-packages/mistune/plugins/__pycache__/formatting.cpython-313.pyc",
+    "lib/python3.13/site-packages/mistune/plugins/__pycache__/math.cpython-313.pyc",
+    "lib/python3.13/site-packages/mistune/plugins/__pycache__/ruby.cpython-313.pyc",
+    "lib/python3.13/site-packages/mistune/plugins/__pycache__/speedup.cpython-313.pyc",
+    "lib/python3.13/site-packages/mistune/plugins/__pycache__/spoiler.cpython-313.pyc",
+    "lib/python3.13/site-packages/mistune/plugins/__pycache__/table.cpython-313.pyc",
+    "lib/python3.13/site-packages/mistune/plugins/__pycache__/task_lists.cpython-313.pyc",
+    "lib/python3.13/site-packages/mistune/plugins/__pycache__/url.cpython-313.pyc",
+    "lib/python3.13/site-packages/mistune/plugins/abbr.py",
+    "lib/python3.13/site-packages/mistune/plugins/def_list.py",
+    "lib/python3.13/site-packages/mistune/plugins/footnotes.py",
+    "lib/python3.13/site-packages/mistune/plugins/formatting.py",
+    "lib/python3.13/site-packages/mistune/plugins/math.py",
+    "lib/python3.13/site-packages/mistune/plugins/ruby.py",
+    "lib/python3.13/site-packages/mistune/plugins/speedup.py",
+    "lib/python3.13/site-packages/mistune/plugins/spoiler.py",
+    "lib/python3.13/site-packages/mistune/plugins/table.py",
+    "lib/python3.13/site-packages/mistune/plugins/task_lists.py",
+    "lib/python3.13/site-packages/mistune/plugins/url.py",
+    "lib/python3.13/site-packages/mistune/py.typed",
+    "lib/python3.13/site-packages/mistune/renderers/__init__.py",
+    "lib/python3.13/site-packages/mistune/renderers/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/mistune/renderers/__pycache__/_list.cpython-313.pyc",
+    "lib/python3.13/site-packages/mistune/renderers/__pycache__/html.cpython-313.pyc",
+    "lib/python3.13/site-packages/mistune/renderers/__pycache__/markdown.cpython-313.pyc",
+    "lib/python3.13/site-packages/mistune/renderers/__pycache__/rst.cpython-313.pyc",
+    "lib/python3.13/site-packages/mistune/renderers/_list.py",
+    "lib/python3.13/site-packages/mistune/renderers/html.py",
+    "lib/python3.13/site-packages/mistune/renderers/markdown.py",
+    "lib/python3.13/site-packages/mistune/renderers/rst.py",
+    "lib/python3.13/site-packages/mistune/toc.py",
+    "lib/python3.13/site-packages/mistune/util.py"
+  ],
+  "fn": "mistune-3.1.2-py313hca03da5_0.conda",
+  "license": "BSD-3-Clause",
+  "link": {
+    "source": "/opt/miniconda3/pkgs/mistune-3.1.2-py313hca03da5_0",
+    "type": 1
+  },
+  "md5": "200119d46b1cb1957bf86ef72498789b",
+  "name": "mistune",
+  "package_tarball_full_path": "/opt/miniconda3/pkgs/mistune-3.1.2-py313hca03da5_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/python3.13/site-packages/mistune-3.1.2.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune-3.1.2.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "539013fd8e19f744f8bf0e27a532bbff54cd689ecef7a800f56ae5dc824be870",
+        "sha256_in_prefix": "539013fd8e19f744f8bf0e27a532bbff54cd689ecef7a800f56ae5dc824be870",
+        "size_in_bytes": 1475
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune-3.1.2.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "3048aee11de2e719a32f28e513cfb19636bedb2b4b30b8dcc175b1f7196ef587",
+        "sha256_in_prefix": "3048aee11de2e719a32f28e513cfb19636bedb2b4b30b8dcc175b1f7196ef587",
+        "size_in_bytes": 1683
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune-3.1.2.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "1e5041579b9976765100db0d9766b36138cbb6bad844ba5e2bfe6c5dbf8501c8",
+        "sha256_in_prefix": "1e5041579b9976765100db0d9766b36138cbb6bad844ba5e2bfe6c5dbf8501c8",
+        "size_in_bytes": 5483
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune-3.1.2.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune-3.1.2.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "227f454cdc5e3fad0a9d3906c3bc24ea624f61dfdd4128c46665dd05d30223ef",
+        "sha256_in_prefix": "227f454cdc5e3fad0a9d3906c3bc24ea624f61dfdd4128c46665dd05d30223ef",
+        "size_in_bytes": 91
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune-3.1.2.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "aa7e334ecc814223a6be71a3bb652f526d91a649e967054ff4916107b52b6927",
+        "sha256_in_prefix": "aa7e334ecc814223a6be71a3bb652f526d91a649e967054ff4916107b52b6927",
+        "size_in_bytes": 138
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune-3.1.2.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "b6325333ae6401dc0a009da603bebdb670c661895f47ca6a46ca1b2a35447dc8",
+        "sha256_in_prefix": "b6325333ae6401dc0a009da603bebdb670c661895f47ca6a46ca1b2a35447dc8",
+        "size_in_bytes": 8
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "592010f9d4654dbf770497140344f44e30a92a1227f8125bfe71d3712c522046",
+        "sha256_in_prefix": "592010f9d4654dbf770497140344f44e30a92a1227f8125bfe71d3712c522046",
+        "size_in_bytes": 2937
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/__main__.py",
+        "path_type": "hardlink",
+        "sha256": "95730122bb158322f61ee30550db11c995284bb981cb51dab44e7e4af20ef229",
+        "sha256_in_prefix": "95730122bb158322f61ee30550db11c995284bb981cb51dab44e7e4af20ef229",
+        "size_in_bytes": 3167
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "63463e3452ab5a95cea78fc1c67162fd2cbdebb201901162a81b3a55ecd5a4b4",
+        "sha256_in_prefix": "63463e3452ab5a95cea78fc1c67162fd2cbdebb201901162a81b3a55ecd5a4b4",
+        "size_in_bytes": 3207
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/__pycache__/__main__.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "47c140daca3f69a21907ba7aa9c71f6e62a2273fb9d46ac9f4c2dff29461af13",
+        "sha256_in_prefix": "47c140daca3f69a21907ba7aa9c71f6e62a2273fb9d46ac9f4c2dff29461af13",
+        "size_in_bytes": 4595
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/__pycache__/block_parser.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "9cea843625de06774f12f354ae7216d6d31edf04dcd0fc849360ae76423fc9cb",
+        "sha256_in_prefix": "9cea843625de06774f12f354ae7216d6d31edf04dcd0fc849360ae76423fc9cb",
+        "size_in_bytes": 19980
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/__pycache__/core.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "f64b084c432680db33af5177fce6b687f25d736f6692c492c27fbb140ed31d8e",
+        "sha256_in_prefix": "f64b084c432680db33af5177fce6b687f25d736f6692c492c27fbb140ed31d8e",
+        "size_in_bytes": 13577
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/__pycache__/helpers.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "383a515a73a0d4c0de36059b6e459594144d1581298e68903f0cdb401616d574",
+        "sha256_in_prefix": "383a515a73a0d4c0de36059b6e459594144d1581298e68903f0cdb401616d574",
+        "size_in_bytes": 5844
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/__pycache__/inline_parser.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "40e9ae4b2cfaa0e776414f95100a65121501da3434bf06841b4946d003e1ddf0",
+        "sha256_in_prefix": "40e9ae4b2cfaa0e776414f95100a65121501da3434bf06841b4946d003e1ddf0",
+        "size_in_bytes": 15707
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/__pycache__/list_parser.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "c2b35f0fbd5da0eb88e6b175c4260935e2825e0705e73d63cb29f1795b58f283",
+        "sha256_in_prefix": "c2b35f0fbd5da0eb88e6b175c4260935e2825e0705e73d63cb29f1795b58f283",
+        "size_in_bytes": 9494
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/__pycache__/markdown.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "6aea5a6ccd76cf40692a266b1c8a7bb59aee55fa814fd6b8ad009e182a55728d",
+        "sha256_in_prefix": "6aea5a6ccd76cf40692a266b1c8a7bb59aee55fa814fd6b8ad009e182a55728d",
+        "size_in_bytes": 5565
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/__pycache__/toc.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "3b51efa5714acefd62a68b061281b60cf499589c80868904f6331d5e0bd95570",
+        "sha256_in_prefix": "3b51efa5714acefd62a68b061281b60cf499589c80868904f6331d5e0bd95570",
+        "size_in_bytes": 4819
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/__pycache__/util.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "cba742a27a8ff118903ad4aa125aed53e715c4fec1b59627560dc6b2c205a004",
+        "sha256_in_prefix": "cba742a27a8ff118903ad4aa125aed53e715c4fec1b59627560dc6b2c205a004",
+        "size_in_bytes": 3793
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/block_parser.py",
+        "path_type": "hardlink",
+        "sha256": "f09ff6be06511163bfdb8db50e35b43e3f70e1b53de7f8deb34ea0eecc4af4da",
+        "sha256_in_prefix": "f09ff6be06511163bfdb8db50e35b43e3f70e1b53de7f8deb34ea0eecc4af4da",
+        "size_in_bytes": 16370
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/core.py",
+        "path_type": "hardlink",
+        "sha256": "baa7ebd65e7b91d75f53c3efaf47994ea4cb7433498f2d68013135faca8c636c",
+        "sha256_in_prefix": "baa7ebd65e7b91d75f53c3efaf47994ea4cb7433498f2d68013135faca8c636c",
+        "size_in_bytes": 7621
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/directives/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "448ea06505795c77ec889a85c10945b2f6e5be99ee7e653c21e9d2efbaf86614",
+        "sha256_in_prefix": "448ea06505795c77ec889a85c10945b2f6e5be99ee7e653c21e9d2efbaf86614",
+        "size_in_bytes": 862
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/directives/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "e2ffa90c6f9ae5744b07fae2f5eb02df0d7c1d5a361d8ad1dc6522c26e0e2622",
+        "sha256_in_prefix": "e2ffa90c6f9ae5744b07fae2f5eb02df0d7c1d5a361d8ad1dc6522c26e0e2622",
+        "size_in_bytes": 1406
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/directives/__pycache__/_base.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "01f9601006516ccd4a41b21e059b89f7edbb5d828bcb64fc77f44a4a7f117fd8",
+        "sha256_in_prefix": "01f9601006516ccd4a41b21e059b89f7edbb5d828bcb64fc77f44a4a7f117fd8",
+        "size_in_bytes": 8563
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/directives/__pycache__/_fenced.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "8aa8d90484ce58134cb08b0086235e43dee63616884aef54b7fea537b585064e",
+        "sha256_in_prefix": "8aa8d90484ce58134cb08b0086235e43dee63616884aef54b7fea537b585064e",
+        "size_in_bytes": 7412
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/directives/__pycache__/_rst.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "d91009cdb54f22d09fcac0059fb0220325f122b2bc628f0b72bd1abbbf2d6472",
+        "sha256_in_prefix": "d91009cdb54f22d09fcac0059fb0220325f122b2bc628f0b72bd1abbbf2d6472",
+        "size_in_bytes": 4168
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/directives/__pycache__/admonition.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "4373d3261cc693bd234d9ce1e89b6c04cdf2fd8da0994c088f8d9748d55b8886",
+        "sha256_in_prefix": "4373d3261cc693bd234d9ce1e89b6c04cdf2fd8da0994c088f8d9748d55b8886",
+        "size_in_bytes": 3404
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/directives/__pycache__/image.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "e8d62ffc465d56edbe1bb511b7692c8df3577c720249d05863fe77d512f504e4",
+        "sha256_in_prefix": "e8d62ffc465d56edbe1bb511b7692c8df3577c720249d05863fe77d512f504e4",
+        "size_in_bytes": 8098
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/directives/__pycache__/include.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "7126ffbfc9c83efb965b392e012aadf00dfda277fb86683c8dde1b8373d8828d",
+        "sha256_in_prefix": "7126ffbfc9c83efb965b392e012aadf00dfda277fb86683c8dde1b8373d8828d",
+        "size_in_bytes": 3733
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/directives/__pycache__/toc.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "8a299e80964e193372d528aaffb07af8284adfcc2ae17b18850cfa270b1972c4",
+        "sha256_in_prefix": "8a299e80964e193372d528aaffb07af8284adfcc2ae17b18850cfa270b1972c4",
+        "size_in_bytes": 5793
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/directives/_base.py",
+        "path_type": "hardlink",
+        "sha256": "3cc35401e396163951e34b2e597a3f7be652911b3560ff5ef701974b408dcabc",
+        "sha256_in_prefix": "3cc35401e396163951e34b2e597a3f7be652911b3560ff5ef701974b408dcabc",
+        "size_in_bytes": 4660
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/directives/_fenced.py",
+        "path_type": "hardlink",
+        "sha256": "bcb28f12773664b82451e366d03a2004cc72636b74535aa926bd5f9bb1524913",
+        "sha256_in_prefix": "bcb28f12773664b82451e366d03a2004cc72636b74535aa926bd5f9bb1524913",
+        "size_in_bytes": 4865
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/directives/_rst.py",
+        "path_type": "hardlink",
+        "sha256": "9e765b1f5990d9f818432f4c627ab9e3312fae6d0865a38fa0b5b54afde974de",
+        "sha256_in_prefix": "9e765b1f5990d9f818432f4c627ab9e3312fae6d0865a38fa0b5b54afde974de",
+        "size_in_bytes": 2294
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/directives/admonition.py",
+        "path_type": "hardlink",
+        "sha256": "7ba1d6725f76af6b01a2601fc2654552b9fffc505ce0ae5d517ebe7d54469d5b",
+        "sha256_in_prefix": "7ba1d6725f76af6b01a2601fc2654552b9fffc505ce0ae5d517ebe7d54469d5b",
+        "size_in_bytes": 2164
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/directives/image.py",
+        "path_type": "hardlink",
+        "sha256": "8ba531e6289e4203a59486f2ea46389103c39d4bb269dc289b1e4fdc438fbae8",
+        "sha256_in_prefix": "8ba531e6289e4203a59486f2ea46389103c39d4bb269dc289b1e4fdc438fbae8",
+        "size_in_bytes": 5410
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/directives/include.py",
+        "path_type": "hardlink",
+        "sha256": "5e467d3c50b6556e86c7ad92b92155fc105e70a803116fff95acc24ba2c4bdcd",
+        "sha256_in_prefix": "5e467d3c50b6556e86c7ad92b92155fc105e70a803116fff95acc24ba2c4bdcd",
+        "size_in_bytes": 2342
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/directives/toc.py",
+        "path_type": "hardlink",
+        "sha256": "422dbd69ba2560b7c06e48ed97c31f4d92730b6eb1b660427b9f3f2f0b12c7f7",
+        "sha256_in_prefix": "422dbd69ba2560b7c06e48ed97c31f4d92730b6eb1b660427b9f3f2f0b12c7f7",
+        "size_in_bytes": 3972
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/helpers.py",
+        "path_type": "hardlink",
+        "sha256": "6380fcf969494581220304d1802293210a9ee19a2eb7e443544fc2d4e8752fbe",
+        "sha256_in_prefix": "6380fcf969494581220304d1802293210a9ee19a2eb7e443544fc2d4e8752fbe",
+        "size_in_bytes": 4161
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/inline_parser.py",
+        "path_type": "hardlink",
+        "sha256": "b48427826cc9b2744a52824be775e0631d00326a325e19be15a44e54db5b9534",
+        "sha256_in_prefix": "b48427826cc9b2744a52824be775e0631d00326a325e19be15a44e54db5b9534",
+        "size_in_bytes": 12629
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/list_parser.py",
+        "path_type": "hardlink",
+        "sha256": "326315f57e9cc066025ef72d23cddd66af4364e64e06c07f716101c9f03a332a",
+        "sha256_in_prefix": "326315f57e9cc066025ef72d23cddd66af4364e64e06c07f716101c9f03a332a",
+        "size_in_bytes": 7687
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/markdown.py",
+        "path_type": "hardlink",
+        "sha256": "55947d0a68f08d96987bc600ae42dedc3b7da762076abd8c64d30fc81e1d87e8",
+        "sha256_in_prefix": "55947d0a68f08d96987bc600ae42dedc3b7da762076abd8c64d30fc81e1d87e8",
+        "size_in_bytes": 4047
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/plugins/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "56c3184a6be79b37d60d986c525f23de1f3abd390cea844979398504acb72b58",
+        "sha256_in_prefix": "56c3184a6be79b37d60d986c525f23de1f3abd390cea844979398504acb72b58",
+        "size_in_bytes": 1569
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/plugins/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "cbcf915d1543d3a54f002ff7f2c7b4f2b030e31cf57f1d6e4ed7d1b8d67ab555",
+        "sha256_in_prefix": "cbcf915d1543d3a54f002ff7f2c7b4f2b030e31cf57f1d6e4ed7d1b8d67ab555",
+        "size_in_bytes": 2279
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/plugins/__pycache__/abbr.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "976b3ed779529aa3af74e31d1dc6f4c0015214dc566ac473c7589b4a5c6d7519",
+        "sha256_in_prefix": "976b3ed779529aa3af74e31d1dc6f4c0015214dc566ac473c7589b4a5c6d7519",
+        "size_in_bytes": 5027
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/plugins/__pycache__/def_list.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "090a3e129b70ba274379198dfe644abcec0966db8b0cb9d336f4236fd86da0ff",
+        "sha256_in_prefix": "090a3e129b70ba274379198dfe644abcec0966db8b0cb9d336f4236fd86da0ff",
+        "size_in_bytes": 5831
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/plugins/__pycache__/footnotes.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "b83a6b8d7ea971da4498e7b4f8ed65e66955da0545aadb170475465a76e3b470",
+        "sha256_in_prefix": "b83a6b8d7ea971da4498e7b4f8ed65e66955da0545aadb170475465a76e3b470",
+        "size_in_bytes": 7609
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/plugins/__pycache__/formatting.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "720199a5b186c62b070a55eea83f248ea679c2848e801cd2331a0464199df08b",
+        "sha256_in_prefix": "720199a5b186c62b070a55eea83f248ea679c2848e801cd2331a0464199df08b",
+        "size_in_bytes": 8118
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/plugins/__pycache__/math.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "11d8dc46a5188b47e06a383d7b9956dc625862817d466b870bd3ea566fc9a246",
+        "sha256_in_prefix": "11d8dc46a5188b47e06a383d7b9956dc625862817d466b870bd3ea566fc9a246",
+        "size_in_bytes": 3567
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/plugins/__pycache__/ruby.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "14e231adf283740c7f3c4bb439c101d72228c7d22da735ee5315ba0d9d87e117",
+        "sha256_in_prefix": "14e231adf283740c7f3c4bb439c101d72228c7d22da735ee5315ba0d9d87e117",
+        "size_in_bytes": 4232
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/plugins/__pycache__/speedup.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "47169c8c636a2241068059135a69aadbdd7f1433334806a174583b979cbb0e20",
+        "sha256_in_prefix": "47169c8c636a2241068059135a69aadbdd7f1433334806a174583b979cbb0e20",
+        "size_in_bytes": 2375
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/plugins/__pycache__/spoiler.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "8efa66685f8fe7c491cbb030fa2fbe0d93eb4e40a0ad0905871c8620263e9a90",
+        "sha256_in_prefix": "8efa66685f8fe7c491cbb030fa2fbe0d93eb4e40a0ad0905871c8620263e9a90",
+        "size_in_bytes": 4241
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/plugins/__pycache__/table.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "0fcc3cbc85979a1eb70af5a81ff286c0dc93dda6af3acd0873f5ecfc8a99f31a",
+        "sha256_in_prefix": "0fcc3cbc85979a1eb70af5a81ff286c0dc93dda6af3acd0873f5ecfc8a99f31a",
+        "size_in_bytes": 8602
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/plugins/__pycache__/task_lists.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "c1499cdbc1ee67f9d216acf12fe5d53fff6c27b11e0cdc80143d65bd0a884cd3",
+        "sha256_in_prefix": "c1499cdbc1ee67f9d216acf12fe5d53fff6c27b11e0cdc80143d65bd0a884cd3",
+        "size_in_bytes": 3194
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/plugins/__pycache__/url.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "f65c81516c0778121ef377d70cd4215516127cfb0b1f45b11ff4f0f87c947aba",
+        "sha256_in_prefix": "f65c81516c0778121ef377d70cd4215516127cfb0b1f45b11ff4f0f87c947aba",
+        "size_in_bytes": 1409
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/plugins/abbr.py",
+        "path_type": "hardlink",
+        "sha256": "2628a608b806600043e49c827ec74687381a0a21a940f1b3743007e60538e98e",
+        "sha256_in_prefix": "2628a608b806600043e49c827ec74687381a0a21a940f1b3743007e60538e98e",
+        "size_in_bytes": 3323
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/plugins/def_list.py",
+        "path_type": "hardlink",
+        "sha256": "3bb8cfae57e51b58778362d95a33c03b3cfb8709da12436203e3aba9e90a01a1",
+        "sha256_in_prefix": "3bb8cfae57e51b58778362d95a33c03b3cfb8709da12436203e3aba9e90a01a1",
+        "size_in_bytes": 3956
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/plugins/footnotes.py",
+        "path_type": "hardlink",
+        "sha256": "9a9e73a6c73c3e4331c8044a559a240baa9ba2b112eaccf1b678def3db011ae8",
+        "sha256_in_prefix": "9a9e73a6c73c3e4331c8044a559a240baa9ba2b112eaccf1b678def3db011ae8",
+        "size_in_bytes": 5077
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/plugins/formatting.py",
+        "path_type": "hardlink",
+        "sha256": "c091b90c211a23062ae319f1db3ad48d87ac2e73f1956a20d0b69308ebf39afb",
+        "sha256_in_prefix": "c091b90c211a23062ae319f1db3ad48d87ac2e73f1956a20d0b69308ebf39afb",
+        "size_in_bytes": 5483
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/plugins/math.py",
+        "path_type": "hardlink",
+        "sha256": "cc42cec36900cb2ef6bb219ac4006098b914533e41ae128b254be4f25aa6322b",
+        "sha256_in_prefix": "cc42cec36900cb2ef6bb219ac4006098b914533e41ae128b254be4f25aa6322b",
+        "size_in_bytes": 2152
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/plugins/ruby.py",
+        "path_type": "hardlink",
+        "sha256": "06a75b22599b87003f92dcb35e3501687f231c899d1d6cdd68019c8ae5e44156",
+        "sha256_in_prefix": "06a75b22599b87003f92dcb35e3501687f231c899d1d6cdd68019c8ae5e44156",
+        "size_in_bytes": 3178
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/plugins/speedup.py",
+        "path_type": "hardlink",
+        "sha256": "7ab74dde05f41e4f0cb717005243874b74a057d05a87e32cca68cf36fbd2cf03",
+        "sha256_in_prefix": "7ab74dde05f41e4f0cb717005243874b74a057d05a87e32cca68cf36fbd2cf03",
+        "size_in_bytes": 1418
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/plugins/spoiler.py",
+        "path_type": "hardlink",
+        "sha256": "c613043a6f68e5efbbf4df318caaa2f062610477130370e48d9b8385fc781770",
+        "sha256_in_prefix": "c613043a6f68e5efbbf4df318caaa2f062610477130370e48d9b8385fc781770",
+        "size_in_bytes": 2835
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/plugins/table.py",
+        "path_type": "hardlink",
+        "sha256": "2880d1adfe738386c54b3107120e316fc1f1915703edbc63ced50dc7fd42b663",
+        "sha256_in_prefix": "2880d1adfe738386c54b3107120e316fc1f1915703edbc63ced50dc7fd42b663",
+        "size_in_bytes": 5824
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/plugins/task_lists.py",
+        "path_type": "hardlink",
+        "sha256": "30206d1ac9c7b5dd757ad1e122d187b253b1c61e5873b1dd660831e37984da18",
+        "sha256_in_prefix": "30206d1ac9c7b5dd757ad1e122d187b253b1c61e5873b1dd660831e37984da18",
+        "size_in_bytes": 2014
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/plugins/url.py",
+        "path_type": "hardlink",
+        "sha256": "43db6b89106f3524028d2c41fd4f31228fd074c52887dea75c6610f63e15631e",
+        "sha256_in_prefix": "43db6b89106f3524028d2c41fd4f31228fd074c52887dea75c6610f63e15631e",
+        "size_in_bytes": 770
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/py.typed",
+        "path_type": "hardlink",
+        "sha256": "76eadfdc791e9dfa7de4830b629bfe19c0a76ca965c51639d437264d926ab01f",
+        "sha256_in_prefix": "76eadfdc791e9dfa7de4830b629bfe19c0a76ca965c51639d437264d926ab01f",
+        "size_in_bytes": 181
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/renderers/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/renderers/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "d887b5065f4645f026712778abcfea382d2b00e08f057d8e8bce8ee5e9747885",
+        "sha256_in_prefix": "d887b5065f4645f026712778abcfea382d2b00e08f057d8e8bce8ee5e9747885",
+        "size_in_bytes": 155
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/renderers/__pycache__/_list.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "d08afe91896469bc0675c6cdc3de5d25c15a7f310af793d4ce1f6680992ffa46",
+        "sha256_in_prefix": "d08afe91896469bc0675c6cdc3de5d25c15a7f310af793d4ce1f6680992ffa46",
+        "size_in_bytes": 2947
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/renderers/__pycache__/html.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "121225a5675c29f2d1aa602b748b3d404dbda98ebe2bf6f9b69827b1e61507cf",
+        "sha256_in_prefix": "121225a5675c29f2d1aa602b748b3d404dbda98ebe2bf6f9b69827b1e61507cf",
+        "size_in_bytes": 8630
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/renderers/__pycache__/markdown.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "8658248470cb4a8b014286b179494e52db4c112284887d8582074572380baada",
+        "sha256_in_prefix": "8658248470cb4a8b014286b179494e52db4c112284887d8582074572380baada",
+        "size_in_bytes": 8872
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/renderers/__pycache__/rst.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "d6ead42828ead326fca497b60d5f812cd8867947a67cd658c06bcbd2b8a7f3f8",
+        "sha256_in_prefix": "d6ead42828ead326fca497b60d5f812cd8867947a67cd658c06bcbd2b8a7f3f8",
+        "size_in_bytes": 9272
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/renderers/_list.py",
+        "path_type": "hardlink",
+        "sha256": "4bd976af11627fc4be1fe1426db7dde0912fbacd342d93a6c6b2abe1702d1c35",
+        "sha256_in_prefix": "4bd976af11627fc4be1fe1426db7dde0912fbacd342d93a6c6b2abe1702d1c35",
+        "size_in_bytes": 2084
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/renderers/html.py",
+        "path_type": "hardlink",
+        "sha256": "f61dac132afcfbd68148e2b4a31fb82ba7a0b26ed208bb781bed2d3348315aa3",
+        "sha256_in_prefix": "f61dac132afcfbd68148e2b4a31fb82ba7a0b26ed208bb781bed2d3348315aa3",
+        "size_in_bytes": 4968
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/renderers/markdown.py",
+        "path_type": "hardlink",
+        "sha256": "f623171b84e22faad4451c6c38a9fab81e7842ea1bddce8d1f657bb2a30e8f8d",
+        "sha256_in_prefix": "f623171b84e22faad4451c6c38a9fab81e7842ea1bddce8d1f657bb2a30e8f8d",
+        "size_in_bytes": 4961
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/renderers/rst.py",
+        "path_type": "hardlink",
+        "sha256": "9d4a985fadce17e9aedeb9d2cd3badaeecb5a44efb0047376ae0cca73a6e52ac",
+        "sha256_in_prefix": "9d4a985fadce17e9aedeb9d2cd3badaeecb5a44efb0047376ae0cca73a6e52ac",
+        "size_in_bytes": 5524
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/toc.py",
+        "path_type": "hardlink",
+        "sha256": "d6154ea7ec3d252ecac1eed9601780087f9f9c0541682ddda91c6305bbc5f1e5",
+        "sha256_in_prefix": "d6154ea7ec3d252ecac1eed9601780087f9f9c0541682ddda91c6305bbc5f1e5",
+        "size_in_bytes": 3638
+      },
+      {
+        "_path": "lib/python3.13/site-packages/mistune/util.py",
+        "path_type": "hardlink",
+        "sha256": "ea57d4daa139a99e7af3bcb9ea0c610936990d1d1bc277d5d5ac3064b2d24214",
+        "sha256_in_prefix": "ea57d4daa139a99e7af3bcb9ea0c610936990d1d1bc277d5d5ac3064b2d24214",
+        "size_in_bytes": 2003
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "b39f389b099a495bf1f03756acf9e9b2c83fa66dbff963e974742cb33fdbbb88",
+  "size": 152118,
+  "subdir": "osx-arm64",
+  "timestamp": 1741124045000,
+  "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/mistune-3.1.2-py313hca03da5_0.conda",
+  "version": "3.1.2"
+}

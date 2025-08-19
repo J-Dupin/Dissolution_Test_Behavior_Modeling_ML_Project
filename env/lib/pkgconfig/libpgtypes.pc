@@ -1,0 +1,14 @@
+prefix=/Users/juliendupin/Desktop/PyScripts/dissolution_stability_ml_gmm_project/env
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libpgtypes
+Description: PostgreSQL libpgtypes library
+URL: https://www.postgresql.org/
+Version: 17.4
+Requires: 
+Requires.private: 
+Cflags: -I${includedir}
+Libs: -L${libdir} -lpgtypes
+Libs.private: -L/Users/juliendupin/Desktop/PyScripts/dissolution_stability_ml_gmm_project/env/lib -lpgcommon -lpgport -lm

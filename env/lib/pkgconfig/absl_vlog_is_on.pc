@@ -1,0 +1,12 @@
+prefix=/Users/juliendupin/Desktop/PyScripts/dissolution_stability_ml_gmm_project/env
+exec_prefix=${prefix}
+libdir=/Users/juliendupin/Desktop/PyScripts/dissolution_stability_ml_gmm_project/env/lib
+includedir=/Users/juliendupin/Desktop/PyScripts/dissolution_stability_ml_gmm_project/env/include
+
+Name: absl_vlog_is_on
+Description: Abseil vlog_is_on library
+URL: https://abseil.io/
+Version: 20250127
+Requires: absl_absl_vlog_is_on = 20250127
+Libs: -L${libdir}  
+Cflags: -I${includedir} -Wno-float-conversion -Wno-implicit-float-conversion -Wno-implicit-int-float-conversion -Wno-unknown-warning-option -DNOMINMAX

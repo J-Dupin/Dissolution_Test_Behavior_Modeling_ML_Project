@@ -1,0 +1,2945 @@
+{
+  "build": "py313hca03da5_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "jupyter_server >=2.4.0,<3",
+    "jupyterlab >=4.4.4,<4.5",
+    "jupyterlab_server >=2.27.1,<3",
+    "notebook-shim >=0.2,<0.3",
+    "python >=3.13,<3.14.0a0",
+    "python_abi 3.13.* *_cp313",
+    "tornado >=6.2.0"
+  ],
+  "extracted_package_dir": "/opt/miniconda3/pkgs/notebook-7.4.4-py313hca03da5_0",
+  "files": [
+    "bin/jupyter-notebook",
+    "bin/jupyter_mac.command",
+    "etc/jupyter/jupyter_server_config.d/notebook.json",
+    "lib/python3.13/site-packages/notebook-7.4.4.dist-info/INSTALLER",
+    "lib/python3.13/site-packages/notebook-7.4.4.dist-info/METADATA",
+    "lib/python3.13/site-packages/notebook-7.4.4.dist-info/RECORD",
+    "lib/python3.13/site-packages/notebook-7.4.4.dist-info/REQUESTED",
+    "lib/python3.13/site-packages/notebook-7.4.4.dist-info/WHEEL",
+    "lib/python3.13/site-packages/notebook-7.4.4.dist-info/direct_url.json",
+    "lib/python3.13/site-packages/notebook-7.4.4.dist-info/entry_points.txt",
+    "lib/python3.13/site-packages/notebook-7.4.4.dist-info/licenses/LICENSE",
+    "lib/python3.13/site-packages/notebook/__init__.py",
+    "lib/python3.13/site-packages/notebook/__main__.py",
+    "lib/python3.13/site-packages/notebook/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/notebook/__pycache__/__main__.cpython-313.pyc",
+    "lib/python3.13/site-packages/notebook/__pycache__/_version.cpython-313.pyc",
+    "lib/python3.13/site-packages/notebook/__pycache__/app.cpython-313.pyc",
+    "lib/python3.13/site-packages/notebook/_version.py",
+    "lib/python3.13/site-packages/notebook/app.py",
+    "lib/python3.13/site-packages/notebook/custom/custom.css",
+    "lib/python3.13/site-packages/notebook/labextension/package.json",
+    "lib/python3.13/site-packages/notebook/labextension/schemas/@jupyter-notebook/lab-extension/interface-switcher.json",
+    "lib/python3.13/site-packages/notebook/labextension/schemas/@jupyter-notebook/lab-extension/launch-tree.json",
+    "lib/python3.13/site-packages/notebook/labextension/schemas/@jupyter-notebook/lab-extension/package.json.orig",
+    "lib/python3.13/site-packages/notebook/labextension/static/557.2f882aef2c303890736d.js",
+    "lib/python3.13/site-packages/notebook/labextension/static/568.0143b064f4b09edb4d20.js",
+    "lib/python3.13/site-packages/notebook/labextension/static/928.7e52f03b261ea07bcb3d.js",
+    "lib/python3.13/site-packages/notebook/labextension/static/93.eae3497dd223d842d198.js",
+    "lib/python3.13/site-packages/notebook/labextension/static/remoteEntry.da0f2149411be83933cb.js",
+    "lib/python3.13/site-packages/notebook/labextension/static/style.js",
+    "lib/python3.13/site-packages/notebook/labextension/static/third-party-licenses.json",
+    "lib/python3.13/site-packages/notebook/schemas/@jupyter-notebook/application-extension/menus.json",
+    "lib/python3.13/site-packages/notebook/schemas/@jupyter-notebook/application-extension/package.json.orig",
+    "lib/python3.13/site-packages/notebook/schemas/@jupyter-notebook/application-extension/pages.json",
+    "lib/python3.13/site-packages/notebook/schemas/@jupyter-notebook/application-extension/shell.json",
+    "lib/python3.13/site-packages/notebook/schemas/@jupyter-notebook/application-extension/title.json",
+    "lib/python3.13/site-packages/notebook/schemas/@jupyter-notebook/application-extension/top.json",
+    "lib/python3.13/site-packages/notebook/schemas/@jupyter-notebook/application-extension/zen.json",
+    "lib/python3.13/site-packages/notebook/schemas/@jupyter-notebook/documentsearch-extension/package.json.orig",
+    "lib/python3.13/site-packages/notebook/schemas/@jupyter-notebook/help-extension/open.json",
+    "lib/python3.13/site-packages/notebook/schemas/@jupyter-notebook/help-extension/package.json.orig",
+    "lib/python3.13/site-packages/notebook/schemas/@jupyter-notebook/notebook-extension/checkpoints.json",
+    "lib/python3.13/site-packages/notebook/schemas/@jupyter-notebook/notebook-extension/edit-notebook-metadata.json",
+    "lib/python3.13/site-packages/notebook/schemas/@jupyter-notebook/notebook-extension/full-width-notebook.json",
+    "lib/python3.13/site-packages/notebook/schemas/@jupyter-notebook/notebook-extension/kernel-logo.json",
+    "lib/python3.13/site-packages/notebook/schemas/@jupyter-notebook/notebook-extension/package.json.orig",
+    "lib/python3.13/site-packages/notebook/schemas/@jupyter-notebook/notebook-extension/scroll-output.json",
+    "lib/python3.13/site-packages/notebook/schemas/@jupyter-notebook/tree-extension/file-actions.json",
+    "lib/python3.13/site-packages/notebook/schemas/@jupyter-notebook/tree-extension/package.json.orig",
+    "lib/python3.13/site-packages/notebook/schemas/@jupyter-notebook/tree-extension/widget.json",
+    "lib/python3.13/site-packages/notebook/static/100.cbc26eb447514f5af591.js",
+    "lib/python3.13/site-packages/notebook/static/1053.92d524d23b6ffd97d9de.js",
+    "lib/python3.13/site-packages/notebook/static/1088.47e247a20947f628f48f.js",
+    "lib/python3.13/site-packages/notebook/static/1091.f006368c55525d627dc3.js",
+    "lib/python3.13/site-packages/notebook/static/1122.16363dcd990a9685123e.js",
+    "lib/python3.13/site-packages/notebook/static/114.3735fbb3fc442d926d2b.js",
+    "lib/python3.13/site-packages/notebook/static/1169.f64c3773007d9d09487e.js",
+    "lib/python3.13/site-packages/notebook/static/131.729c28b8323daf822cbe.js",
+    "lib/python3.13/site-packages/notebook/static/132.9f8c8540fc63a49a9d74.js",
+    "lib/python3.13/site-packages/notebook/static/1418.5913bb08784c217a1f0b.js",
+    "lib/python3.13/site-packages/notebook/static/145.2fd139f1721cfaedfccf.js",
+    "lib/python3.13/site-packages/notebook/static/1542.8f0b79431f7af2f43f1e.js",
+    "lib/python3.13/site-packages/notebook/static/1558.d1ebe7cb088451b0d7de.js",
+    "lib/python3.13/site-packages/notebook/static/1584.fa41c8f3ce855db5cab4.js",
+    "lib/python3.13/site-packages/notebook/static/1601.4154c4f9ed460feae33b.js",
+    "lib/python3.13/site-packages/notebook/static/1618.da67fb30732c49b969ba.js",
+    "lib/python3.13/site-packages/notebook/static/1650.afa95e6a11189688bc0d.js",
+    "lib/python3.13/site-packages/notebook/static/1684.12280f8470722e2e1bdd.js",
+    "lib/python3.13/site-packages/notebook/static/1715.a61bcde14ed0fff41d06.js",
+    "lib/python3.13/site-packages/notebook/static/1837.6bbfd9967be58e1325f1.js",
+    "lib/python3.13/site-packages/notebook/static/1869.48ca2e23bddad3adfc1a.js",
+    "lib/python3.13/site-packages/notebook/static/1871.c375ee093b7e51966390.js",
+    "lib/python3.13/site-packages/notebook/static/1911.cfe3314fd3a9b879389c.js",
+    "lib/python3.13/site-packages/notebook/static/1939.e620a31e5ee7d4ccc1bc.js",
+    "lib/python3.13/site-packages/notebook/static/1941.b15cc60637b0a879bea6.js",
+    "lib/python3.13/site-packages/notebook/static/1950.a590659714a301a94f31.js",
+    "lib/python3.13/site-packages/notebook/static/1cb1c39ea642f26a4dfe.woff",
+    "lib/python3.13/site-packages/notebook/static/2019.a0afb11aac931fb43c5c.js",
+    "lib/python3.13/site-packages/notebook/static/2065.e9b5d8d0a8bec3304454.js",
+    "lib/python3.13/site-packages/notebook/static/2188.8a4dbc0baaccf031e5c4.js",
+    "lib/python3.13/site-packages/notebook/static/221.21b91ccc95eefd849fa5.js",
+    "lib/python3.13/site-packages/notebook/static/2228.5897a4ab53c9c224da5d.js",
+    "lib/python3.13/site-packages/notebook/static/2283.b2d8643ec28ab13849b3.js",
+    "lib/python3.13/site-packages/notebook/static/2343.81357d860d7aa9156d23.js",
+    "lib/python3.13/site-packages/notebook/static/2386.4a6f7defebb9a3696820.js",
+    "lib/python3.13/site-packages/notebook/static/2409.6091282e2ebffe2ab089.js",
+    "lib/python3.13/site-packages/notebook/static/2425.6472013fa9798ece0dc9.js",
+    "lib/python3.13/site-packages/notebook/static/2453.ebdb135eb902bf82e103.js",
+    "lib/python3.13/site-packages/notebook/static/2552.e56002ba65105afb9b18.js",
+    "lib/python3.13/site-packages/notebook/static/2581.f9bb29600b7e080b2b84.js",
+    "lib/python3.13/site-packages/notebook/static/2666.39e11f71d749eca59f8e.js",
+    "lib/python3.13/site-packages/notebook/static/26683bf201fb258a2237.woff",
+    "lib/python3.13/site-packages/notebook/static/2682.69beaaa72effdd61afbe.js",
+    "lib/python3.13/site-packages/notebook/static/270.dced80a7f5cbf1705712.js",
+    "lib/python3.13/site-packages/notebook/static/2702.bc49dbd258cca77aeea4.js",
+    "lib/python3.13/site-packages/notebook/static/28.b5145a84e3a511427e72.js",
+    "lib/python3.13/site-packages/notebook/static/2816.03541f3103bf4c09e591.js",
+    "lib/python3.13/site-packages/notebook/static/2871.46ec88c6997ef947f39f.js",
+    "lib/python3.13/site-packages/notebook/static/2913.ae7fccede5f85a45ab8f.js",
+    "lib/python3.13/site-packages/notebook/static/2955.d8fd055f03b878034fe4.js",
+    "lib/python3.13/site-packages/notebook/static/306.dd9ffcf982b0c863872b.js",
+    "lib/python3.13/site-packages/notebook/static/3076.433a08e00b3f195539d0.js",
+    "lib/python3.13/site-packages/notebook/static/3079.63bdfdb9a8c6c94b4c9a.js",
+    "lib/python3.13/site-packages/notebook/static/30e889b58cbc51adfbb0.woff",
+    "lib/python3.13/site-packages/notebook/static/310.857f702af7a4a486c75e.js",
+    "lib/python3.13/site-packages/notebook/static/311.d6a177e2f8f1b1690911.js",
+    "lib/python3.13/site-packages/notebook/static/3111.bdf4a0f672df2a6cdd74.js",
+    "lib/python3.13/site-packages/notebook/static/3146.8a7a657d9a66a9f5d3c4.js",
+    "lib/python3.13/site-packages/notebook/static/3197.679087d3d6e90032272a.js",
+    "lib/python3.13/site-packages/notebook/static/3207.10d3ef96eccf1096e1c3.js",
+    "lib/python3.13/site-packages/notebook/static/3211.2e93fd406e5c4e53774f.js",
+    "lib/python3.13/site-packages/notebook/static/3230.29b02fdb14e1bdf52d07.js",
+    "lib/python3.13/site-packages/notebook/static/32792104b5ef69eded90.woff",
+    "lib/python3.13/site-packages/notebook/static/3322.e8348cc2a800190d4f49.js",
+    "lib/python3.13/site-packages/notebook/static/3336.1430b8576b899f650fb9.js",
+    "lib/python3.13/site-packages/notebook/static/3370.aa66c4f8e4c91fc5628a.js",
+    "lib/python3.13/site-packages/notebook/static/339.ca73209c818e0defdea2.js",
+    "lib/python3.13/site-packages/notebook/static/3420.693f6432957cbf2699c5.js",
+    "lib/python3.13/site-packages/notebook/static/3449.53ec937d932f8f73a39b.js",
+    "lib/python3.13/site-packages/notebook/static/3462.0383dfd16602627036bd.js",
+    "lib/python3.13/site-packages/notebook/static/35.a486baf38b12aec5500f.js",
+    "lib/python3.13/site-packages/notebook/static/3501.c1c56527cb2f94c27dcf.js",
+    "lib/python3.13/site-packages/notebook/static/355254db9ca10a09a3b5.woff",
+    "lib/python3.13/site-packages/notebook/static/3562.3b759e4fdd798f9dca94.js",
+    "lib/python3.13/site-packages/notebook/static/3619.22c7d8abf7febc282c79.js",
+    "lib/python3.13/site-packages/notebook/static/36e0d72d8a7afc696a3e.woff",
+    "lib/python3.13/site-packages/notebook/static/3700.b937e669a5feb21ccb06.js",
+    "lib/python3.13/site-packages/notebook/static/373c04fd2418f5c77eea.eot",
+    "lib/python3.13/site-packages/notebook/static/3752.f222858bad091688a0c5.js",
+    "lib/python3.13/site-packages/notebook/static/3768.2ac0d5c2a3fec16d1571.js",
+    "lib/python3.13/site-packages/notebook/static/3782.b5169726474369258b8f.js",
+    "lib/python3.13/site-packages/notebook/static/3797.ad30e7a4bf8dc994e5be.js",
+    "lib/python3.13/site-packages/notebook/static/383.086fc5ebac8a08e85b7c.js",
+    "lib/python3.13/site-packages/notebook/static/3bc6ecaae7ecf6f8d7f8.woff",
+    "lib/python3.13/site-packages/notebook/static/3de784d07b9fa8f104c1.woff",
+    "lib/python3.13/site-packages/notebook/static/3f6d3488cf65374f6f67.woff",
+    "lib/python3.13/site-packages/notebook/static/4002.7d2089cf976c84095255.js",
+    "lib/python3.13/site-packages/notebook/static/403.270ca5cf44874182bd4d.js",
+    "lib/python3.13/site-packages/notebook/static/4030.5a53f3aacfd5bc109b79.js",
+    "lib/python3.13/site-packages/notebook/static/4038.edb04f3d9d68204491ba.js",
+    "lib/python3.13/site-packages/notebook/static/4039.dcbb5e4f3949b6eff7e9.js",
+    "lib/python3.13/site-packages/notebook/static/4105.5144c29f0bbce103fec4.js",
+    "lib/python3.13/site-packages/notebook/static/4148.410616c0288bc98e224f.js",
+    "lib/python3.13/site-packages/notebook/static/417.29f636ec8be265b7e480.js",
+    "lib/python3.13/site-packages/notebook/static/4276.aa39300c806a420e8c6e.js",
+    "lib/python3.13/site-packages/notebook/static/431.4a876e95bf0e93ffd46f.js",
+    "lib/python3.13/site-packages/notebook/static/4324.fa653693694bd924557b.js",
+    "lib/python3.13/site-packages/notebook/static/4382.b125e3c487c540303bd8.js",
+    "lib/python3.13/site-packages/notebook/static/4387.a7f58bf45dd9275aee44.js",
+    "lib/python3.13/site-packages/notebook/static/4406.c435ee1d9e07c37b46e4.js",
+    "lib/python3.13/site-packages/notebook/static/4430.1661db8ba0104d6baef2.js",
+    "lib/python3.13/site-packages/notebook/static/4498.4d8665e22c39c0b3f329.js",
+    "lib/python3.13/site-packages/notebook/static/4521.c728470feb41d3f877d1.js",
+    "lib/python3.13/site-packages/notebook/static/4588.7618f6b98796be928f8c.js",
+    "lib/python3.13/site-packages/notebook/static/4645.998914768dd63f7e3b6a.js",
+    "lib/python3.13/site-packages/notebook/static/4667.288ec271d366f6d03bf4.js",
+    "lib/python3.13/site-packages/notebook/static/4670.3fc6925b39a00569037e.js",
+    "lib/python3.13/site-packages/notebook/static/4708.ea8fa57a2460a633deb4.js",
+    "lib/python3.13/site-packages/notebook/static/4810.f422cb69c3eca42dd212.js",
+    "lib/python3.13/site-packages/notebook/static/481e39042508ae313a60.woff",
+    "lib/python3.13/site-packages/notebook/static/4825.d47a910536278ab25419.js",
+    "lib/python3.13/site-packages/notebook/static/4828.57b2977d0c98f8416cc4.js",
+    "lib/python3.13/site-packages/notebook/static/4837.a9ef53721ea86ce81edf.js",
+    "lib/python3.13/site-packages/notebook/static/4843.7eed3c5267c10f3eb786.js",
+    "lib/python3.13/site-packages/notebook/static/4886.6084c97eb0f7628908ee.js",
+    "lib/python3.13/site-packages/notebook/static/4926.07f857be253dfe2d9b64.js",
+    "lib/python3.13/site-packages/notebook/static/4965.591924d7805c15261494.js",
+    "lib/python3.13/site-packages/notebook/static/4971.e850b0a1dcb6d3fce7a4.js",
+    "lib/python3.13/site-packages/notebook/static/5019.48f595eb3007a3ca0f91.js",
+    "lib/python3.13/site-packages/notebook/static/5061.aede931a61d7ce87ee23.js",
+    "lib/python3.13/site-packages/notebook/static/5095.cacabf11fc06b3d7f4ad.js",
+    "lib/python3.13/site-packages/notebook/static/5115.722cf90a473016a17ba7.js",
+    "lib/python3.13/site-packages/notebook/static/5135.b7b086e4e6f05e7e005d.js",
+    "lib/python3.13/site-packages/notebook/static/5249.47203d8dad661b809e38.js",
+    "lib/python3.13/site-packages/notebook/static/5261.f12a52481f4cee8ba676.js",
+    "lib/python3.13/site-packages/notebook/static/5299.a014c52ba3f8492bad0f.js",
+    "lib/python3.13/site-packages/notebook/static/5425.2e42adccd47405a6a6a3.js",
+    "lib/python3.13/site-packages/notebook/static/5448.a9016133a2b9389ac102.js",
+    "lib/python3.13/site-packages/notebook/static/5494.391c359bd3d5f45fb30b.js",
+    "lib/python3.13/site-packages/notebook/static/5573.bb30245305dc034dfc1d.js",
+    "lib/python3.13/site-packages/notebook/static/5601.66a1a7b62201a024a7c3.js",
+    "lib/python3.13/site-packages/notebook/static/563.0a7566a6f2b684579011.js",
+    "lib/python3.13/site-packages/notebook/static/5698.3347ece7b9654a7783ce.js",
+    "lib/python3.13/site-packages/notebook/static/5748.5dca396b965fb74427ff.js",
+    "lib/python3.13/site-packages/notebook/static/5765.f588990a6e3cb69dcefe.js",
+    "lib/python3.13/site-packages/notebook/static/5777.c601d5372b8b7c9b6ff0.js",
+    "lib/python3.13/site-packages/notebook/static/5822.6dcbc72eeab5ed4295aa.js",
+    "lib/python3.13/site-packages/notebook/static/5828.66806b64a5e5ffda935f.js",
+    "lib/python3.13/site-packages/notebook/static/5834.aca2b773e8f9ffc9639e.js",
+    "lib/python3.13/site-packages/notebook/static/5850.65dd0d81b5948c463df4.js",
+    "lib/python3.13/site-packages/notebook/static/5872.9d35ff1e9109987247b6.js",
+    "lib/python3.13/site-packages/notebook/static/5972.456ddfa373f527f850fb.js",
+    "lib/python3.13/site-packages/notebook/static/5996.9dd601211e357e9bf641.js",
+    "lib/python3.13/site-packages/notebook/static/5cda41563a095bd70c78.woff",
+    "lib/python3.13/site-packages/notebook/static/6139.9b4118bd8223a51fa897.js",
+    "lib/python3.13/site-packages/notebook/static/6271.7ad87d1f14b9d74742ec.js",
+    "lib/python3.13/site-packages/notebook/static/6301.c02f41d998293ace8bac.js",
+    "lib/python3.13/site-packages/notebook/static/632.c59cde46a58f6dac3b70.js",
+    "lib/python3.13/site-packages/notebook/static/6345.d502d596db3228f46015.js",
+    "lib/python3.13/site-packages/notebook/static/6428.e4e53b40817c3dd248ca.js",
+    "lib/python3.13/site-packages/notebook/static/647.3a6deb0e090650f1c3e2.js",
+    "lib/python3.13/site-packages/notebook/static/6491.4ec5e8e76fbff7d9698a.js",
+    "lib/python3.13/site-packages/notebook/static/6521.95f93bd416d53955c700.js",
+    "lib/python3.13/site-packages/notebook/static/6561.ebddc37c2afcedcddd21.js",
+    "lib/python3.13/site-packages/notebook/static/661.bfd67818fb0b29d1fcb4.js",
+    "lib/python3.13/site-packages/notebook/static/67.9cbc679ecb920dd7951b.js",
+    "lib/python3.13/site-packages/notebook/static/6739.b86fe9f9325e098414af.js",
+    "lib/python3.13/site-packages/notebook/static/677.bedd668f19a13f2743c4.js",
+    "lib/python3.13/site-packages/notebook/static/6788.c9f5f85294a5ed5f86ec.js",
+    "lib/python3.13/site-packages/notebook/static/6800.35cead61fb9b37904873.js",
+    "lib/python3.13/site-packages/notebook/static/6873.d5b12730d4556b6f37bf.js",
+    "lib/python3.13/site-packages/notebook/static/69.aa2a725012bd95ceceba.js",
+    "lib/python3.13/site-packages/notebook/static/6942.073187fa00ada10fcd06.js",
+    "lib/python3.13/site-packages/notebook/static/6972.3bd59944fc1dc3e59150.js",
+    "lib/python3.13/site-packages/notebook/static/7005.9f299a4f2a4e116a7369.js",
+    "lib/python3.13/site-packages/notebook/static/7022.ada0a27a1f0d61d90ee8.js",
+    "lib/python3.13/site-packages/notebook/static/7054.093d48fae797c6c33872.js",
+    "lib/python3.13/site-packages/notebook/static/7061.ada76efa0840f101be5b.js",
+    "lib/python3.13/site-packages/notebook/static/7154.1ab03d07151bbd0aad06.js",
+    "lib/python3.13/site-packages/notebook/static/7159.41e52038b70d27a3b442.js",
+    "lib/python3.13/site-packages/notebook/static/7170.aef383eb04df84d63d6a.js",
+    "lib/python3.13/site-packages/notebook/static/7179.a27cb1e09e47e519cbfa.js",
+    "lib/python3.13/site-packages/notebook/static/721921bab0d001ebff02.woff",
+    "lib/python3.13/site-packages/notebook/static/7264.56c0f8b7752822724b0f.js",
+    "lib/python3.13/site-packages/notebook/static/72bc573386dd1d48c5bb.woff",
+    "lib/python3.13/site-packages/notebook/static/7302.d78f81cccff1a175f9e0.js",
+    "lib/python3.13/site-packages/notebook/static/7360.b3741cc7257cecd9efe9.js",
+    "lib/python3.13/site-packages/notebook/static/7369.a065dc2ed2f56a44cb0f.js",
+    "lib/python3.13/site-packages/notebook/static/7378.df12091e8f42a5da0429.js",
+    "lib/python3.13/site-packages/notebook/static/745.30bb604aa86c8167d1a4.js",
+    "lib/python3.13/site-packages/notebook/static/7450.c047a6b002d188bafd58.js",
+    "lib/python3.13/site-packages/notebook/static/7471.27c6037e2917dcd9958a.js",
+    "lib/python3.13/site-packages/notebook/static/7488.4d8124f72a0f10256f44.js",
+    "lib/python3.13/site-packages/notebook/static/7534.e6ec4e7bd41255482e3e.js",
+    "lib/python3.13/site-packages/notebook/static/755.3d6eb3b7f81d035f52f4.js",
+    "lib/python3.13/site-packages/notebook/static/7561.ab0621a9e054b91897f7.js",
+    "lib/python3.13/site-packages/notebook/static/757.86f80ac05f38c4f4be68.js",
+    "lib/python3.13/site-packages/notebook/static/7582.5611b71499b0becf7b6a.js",
+    "lib/python3.13/site-packages/notebook/static/7634.ad26bf6396390c53768a.js",
+    "lib/python3.13/site-packages/notebook/static/7674.80774120971faccbb256.js",
+    "lib/python3.13/site-packages/notebook/static/777.de863ae105caa5756453.js",
+    "lib/python3.13/site-packages/notebook/static/7803.0c44e7b8d148353eed87.js",
+    "lib/python3.13/site-packages/notebook/static/7811.fa11577c84ea92d4102c.js",
+    "lib/python3.13/site-packages/notebook/static/7817.74b742c39300a07a9efa.js",
+    "lib/python3.13/site-packages/notebook/static/7866.b49b1018f43def5a8f30.js",
+    "lib/python3.13/site-packages/notebook/static/7884.07a3d44e10261bae9b1f.js",
+    "lib/python3.13/site-packages/notebook/static/7906.487df198bc7b2617234f.js",
+    "lib/python3.13/site-packages/notebook/static/792.050c0efb8da8e633f900.js",
+    "lib/python3.13/site-packages/notebook/static/7957.d903973498b192f6210c.js",
+    "lib/python3.13/site-packages/notebook/static/7969.0080840fce265b81a360.js",
+    "lib/python3.13/site-packages/notebook/static/7995.45be6443b704da1daafc.js",
+    "lib/python3.13/site-packages/notebook/static/7997.1469ff294f8b64fd26ec.js",
+    "lib/python3.13/site-packages/notebook/static/79d088064beb3826054f.eot",
+    "lib/python3.13/site-packages/notebook/static/8010.0c4fde830729471df121.js",
+    "lib/python3.13/site-packages/notebook/static/8218.983a3a002f016180aaab.js",
+    "lib/python3.13/site-packages/notebook/static/8285.8bade38c361d9af60b43.js",
+    "lib/python3.13/site-packages/notebook/static/8378.c1a78f0d6f0124d37fa9.js",
+    "lib/python3.13/site-packages/notebook/static/8381.0291906ada65d4e5df4e.js",
+    "lib/python3.13/site-packages/notebook/static/841.e2a344f8bed0447367be.js",
+    "lib/python3.13/site-packages/notebook/static/8433.ed9247b868845dc191b2.js",
+    "lib/python3.13/site-packages/notebook/static/8446.66c7f866128c07ec4265.js",
+    "lib/python3.13/site-packages/notebook/static/8479.1807152edb3d746c4d0b.js",
+    "lib/python3.13/site-packages/notebook/static/85.f5f11db2bc819f9ae970.js",
+    "lib/python3.13/site-packages/notebook/static/850.4ff5be1ac6f4d6958c7a.js",
+    "lib/python3.13/site-packages/notebook/static/8579.d62567e04de2f4dfcdce.js",
+    "lib/python3.13/site-packages/notebook/static/866.8574f33a07edc3fc33b5.js",
+    "lib/python3.13/site-packages/notebook/static/8678.9d28c7fae2ee6c13d2eb.js",
+    "lib/python3.13/site-packages/notebook/static/8701.7be1d7a9c41099ea4b6f.js",
+    "lib/python3.13/site-packages/notebook/static/870673df72e70f87c91a.woff",
+    "lib/python3.13/site-packages/notebook/static/874.9e1bcef8ee789652f606.js",
+    "lib/python3.13/site-packages/notebook/static/8781.33cace3f177efaaab2ae.js",
+    "lib/python3.13/site-packages/notebook/static/883.df3c548d474bbe7fc62c.js",
+    "lib/python3.13/site-packages/notebook/static/8845.ac1c5acb78cea4acee08.js",
+    "lib/python3.13/site-packages/notebook/static/8875.af28a3c042114a6f93aa.js",
+    "lib/python3.13/site-packages/notebook/static/88b98cad3688915e50da.woff",
+    "lib/python3.13/site-packages/notebook/static/8929.f522b600b8907f9241c6.js",
+    "lib/python3.13/site-packages/notebook/static/8937.4892770eb5cc44a5f24d.js",
+    "lib/python3.13/site-packages/notebook/static/8979.cafa00ee6b2e82b39a17.js",
+    "lib/python3.13/site-packages/notebook/static/8983.56458cb92e3e2efe6d33.js",
+    "lib/python3.13/site-packages/notebook/static/899.5a5d6e7bd36baebe76af.js",
+    "lib/python3.13/site-packages/notebook/static/8ea8791754915a898a31.woff2",
+    "lib/python3.13/site-packages/notebook/static/8ea8dbb1b02e6f730f55.woff",
+    "lib/python3.13/site-packages/notebook/static/9022.16842ed509ced9c32e9c.js",
+    "lib/python3.13/site-packages/notebook/static/9037.663c64b842834ea1989d.js",
+    "lib/python3.13/site-packages/notebook/static/906.da3adda3c4b703a102d7.js",
+    "lib/python3.13/site-packages/notebook/static/9060.d564b58af7791af334db.js",
+    "lib/python3.13/site-packages/notebook/static/9068.53ce96460d0830da310f.js",
+    "lib/python3.13/site-packages/notebook/static/9116.3fe5c69fba4a31452403.js",
+    "lib/python3.13/site-packages/notebook/static/9233.916f96402862a0190f46.js",
+    "lib/python3.13/site-packages/notebook/static/9234.ec504d9c9a30598a995c.js",
+    "lib/python3.13/site-packages/notebook/static/9239.8802747dd58982052b99.js",
+    "lib/python3.13/site-packages/notebook/static/9250.a4dfe77db702bf7a316c.js",
+    "lib/python3.13/site-packages/notebook/static/9310.dce9f915c210d4c8802c.js",
+    "lib/python3.13/site-packages/notebook/static/9322.02659b877f7881740557.js",
+    "lib/python3.13/site-packages/notebook/static/9331.5850506ebb1d3f304481.js",
+    "lib/python3.13/site-packages/notebook/static/9380.392ac30e0b6842ae2b78.js",
+    "lib/python3.13/site-packages/notebook/static/9425.46a85c9a33b839e23d9f.js",
+    "lib/python3.13/site-packages/notebook/static/9442.e301e4179b7c69c125d7.js",
+    "lib/python3.13/site-packages/notebook/static/9531.0772cd1f4cfe0c65a5a7.js",
+    "lib/python3.13/site-packages/notebook/static/9558.255ac6fa674e07653e39.js",
+    "lib/python3.13/site-packages/notebook/static/9604.f29b5b0d3160e238fdf7.js",
+    "lib/python3.13/site-packages/notebook/static/9619.72d0af35a1e6e3c624d7.js",
+    "lib/python3.13/site-packages/notebook/static/9674eb1bd55047179038.svg",
+    "lib/python3.13/site-packages/notebook/static/9676.0476942dc748eb1854c5.js",
+    "lib/python3.13/site-packages/notebook/static/9799.3d54e01276f72cee9ada.js",
+    "lib/python3.13/site-packages/notebook/static/9834b82ad26e2a37583d.woff2",
+    "lib/python3.13/site-packages/notebook/static/a009bea404f7a500ded4.woff",
+    "lib/python3.13/site-packages/notebook/static/a3b9817780214caf01e8.svg",
+    "lib/python3.13/site-packages/notebook/static/af04542b29eaac04550a.woff",
+    "lib/python3.13/site-packages/notebook/static/af6397503fcefbd61397.ttf",
+    "lib/python3.13/site-packages/notebook/static/af96f67d7accf5fd2a4a.woff",
+    "lib/python3.13/site-packages/notebook/static/b418136e3b384baaadec.woff",
+    "lib/python3.13/site-packages/notebook/static/be0a084962d8066884f7.svg",
+    "lib/python3.13/site-packages/notebook/static/c49810b53ecc0d87d802.woff",
+    "lib/python3.13/site-packages/notebook/static/c56da8d69f1a0208b8e0.woff",
+    "lib/python3.13/site-packages/notebook/static/cb9e9e693192413cde2b.woff",
+    "lib/python3.13/site-packages/notebook/static/cda59d6efffa685830fd.ttf",
+    "lib/python3.13/site-packages/notebook/static/e4299464e7b012968eed.eot",
+    "lib/python3.13/site-packages/notebook/static/e42a88444448ac3d6054.woff2",
+    "lib/python3.13/site-packages/notebook/static/e8711bbb871afd8e9dea.ttf",
+    "lib/python3.13/site-packages/notebook/static/f9217f66874b0c01cd8c.woff",
+    "lib/python3.13/site-packages/notebook/static/fc6ddf5df402b263cfb1.woff",
+    "lib/python3.13/site-packages/notebook/static/main.58cb79c84cf80ba7b6ed.js",
+    "lib/python3.13/site-packages/notebook/static/notebook_core.5321b49dd3857d00ab82.js",
+    "lib/python3.13/site-packages/notebook/static/third-party-licenses.json",
+    "lib/python3.13/site-packages/notebook/templates/consoles.html",
+    "lib/python3.13/site-packages/notebook/templates/edit.html",
+    "lib/python3.13/site-packages/notebook/templates/error.html",
+    "lib/python3.13/site-packages/notebook/templates/notebooks.html",
+    "lib/python3.13/site-packages/notebook/templates/terminals.html",
+    "lib/python3.13/site-packages/notebook/templates/tree.html",
+    "share/applications/jupyter-notebook.desktop",
+    "share/icons/hicolor/scalable/apps/notebook.svg",
+    "share/jupyter/lab/schemas/@jupyter-notebook/application-extension/menus.json",
+    "share/jupyter/lab/schemas/@jupyter-notebook/application-extension/package.json.orig",
+    "share/jupyter/lab/schemas/@jupyter-notebook/application-extension/pages.json",
+    "share/jupyter/lab/schemas/@jupyter-notebook/application-extension/shell.json",
+    "share/jupyter/lab/schemas/@jupyter-notebook/application-extension/title.json",
+    "share/jupyter/lab/schemas/@jupyter-notebook/application-extension/top.json",
+    "share/jupyter/lab/schemas/@jupyter-notebook/application-extension/zen.json",
+    "share/jupyter/lab/schemas/@jupyter-notebook/documentsearch-extension/package.json.orig",
+    "share/jupyter/lab/schemas/@jupyter-notebook/help-extension/open.json",
+    "share/jupyter/lab/schemas/@jupyter-notebook/help-extension/package.json.orig",
+    "share/jupyter/lab/schemas/@jupyter-notebook/notebook-extension/checkpoints.json",
+    "share/jupyter/lab/schemas/@jupyter-notebook/notebook-extension/edit-notebook-metadata.json",
+    "share/jupyter/lab/schemas/@jupyter-notebook/notebook-extension/full-width-notebook.json",
+    "share/jupyter/lab/schemas/@jupyter-notebook/notebook-extension/kernel-logo.json",
+    "share/jupyter/lab/schemas/@jupyter-notebook/notebook-extension/package.json.orig",
+    "share/jupyter/lab/schemas/@jupyter-notebook/notebook-extension/scroll-output.json",
+    "share/jupyter/lab/schemas/@jupyter-notebook/tree-extension/file-actions.json",
+    "share/jupyter/lab/schemas/@jupyter-notebook/tree-extension/package.json.orig",
+    "share/jupyter/lab/schemas/@jupyter-notebook/tree-extension/widget.json",
+    "share/jupyter/labextensions/@jupyter-notebook/lab-extension/package.json",
+    "share/jupyter/labextensions/@jupyter-notebook/lab-extension/schemas/@jupyter-notebook/lab-extension/interface-switcher.json",
+    "share/jupyter/labextensions/@jupyter-notebook/lab-extension/schemas/@jupyter-notebook/lab-extension/launch-tree.json",
+    "share/jupyter/labextensions/@jupyter-notebook/lab-extension/schemas/@jupyter-notebook/lab-extension/package.json.orig",
+    "share/jupyter/labextensions/@jupyter-notebook/lab-extension/static/557.2f882aef2c303890736d.js",
+    "share/jupyter/labextensions/@jupyter-notebook/lab-extension/static/568.0143b064f4b09edb4d20.js",
+    "share/jupyter/labextensions/@jupyter-notebook/lab-extension/static/928.7e52f03b261ea07bcb3d.js",
+    "share/jupyter/labextensions/@jupyter-notebook/lab-extension/static/93.eae3497dd223d842d198.js",
+    "share/jupyter/labextensions/@jupyter-notebook/lab-extension/static/remoteEntry.da0f2149411be83933cb.js",
+    "share/jupyter/labextensions/@jupyter-notebook/lab-extension/static/style.js",
+    "share/jupyter/labextensions/@jupyter-notebook/lab-extension/static/third-party-licenses.json"
+  ],
+  "fn": "notebook-7.4.4-py313hca03da5_0.conda",
+  "license": "BSD-3-Clause",
+  "link": {
+    "source": "/opt/miniconda3/pkgs/notebook-7.4.4-py313hca03da5_0",
+    "type": 1
+  },
+  "md5": "893c0679c3f8f908c1393716a086e76a",
+  "name": "notebook",
+  "package_tarball_full_path": "/opt/miniconda3/pkgs/notebook-7.4.4-py313hca03da5_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/jupyter-notebook",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_755gtu5nsl/croot/notebook_1752060902822/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place",
+        "sha256": "6f80057b88db75976a7f5c4edd21de6f318c74e01b19d87e82641fc05b3b1ad2",
+        "sha256_in_prefix": "2e34ba57d7fcad35f7e49057b9196de5aa2a70d745354228617871120fcd8c7a",
+        "size_in_bytes": 465
+      },
+      {
+        "_path": "bin/jupyter_mac.command",
+        "path_type": "hardlink",
+        "sha256": "81032ba5540b84b0d446f63e4c3ffc44cefaeba7eb70d8ebe1a180e0bb00a16d",
+        "sha256_in_prefix": "81032ba5540b84b0d446f63e4c3ffc44cefaeba7eb70d8ebe1a180e0bb00a16d",
+        "size_in_bytes": 54
+      },
+      {
+        "_path": "etc/jupyter/jupyter_server_config.d/notebook.json",
+        "path_type": "hardlink",
+        "sha256": "a68415689607ded2eafece8b7304ee562fea099ff4190e574a48191792cb5ae1",
+        "sha256_in_prefix": "a68415689607ded2eafece8b7304ee562fea099ff4190e574a48191792cb5ae1",
+        "size_in_bytes": 83
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook-7.4.4.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook-7.4.4.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "10e27ab87b2d5e239ef3cee7ba1827c4cb0a9cf46f4c2517e33c9478e52ef9df",
+        "sha256_in_prefix": "10e27ab87b2d5e239ef3cee7ba1827c4cb0a9cf46f4c2517e33c9478e52ef9df",
+        "size_in_bytes": 10210
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook-7.4.4.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "5cf25bd5031a119b941ae40450e4b11c1978d39606decde9de5e188410ac22cc",
+        "sha256_in_prefix": "5cf25bd5031a119b941ae40450e4b11c1978d39606decde9de5e188410ac22cc",
+        "size_in_bytes": 63730
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook-7.4.4.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook-7.4.4.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "aad0b0a12256807936d52d4a6f88a1773236ae527564a688bab4e3fe780e8724",
+        "sha256_in_prefix": "aad0b0a12256807936d52d4a6f88a1773236ae527564a688bab4e3fe780e8724",
+        "size_in_bytes": 87
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook-7.4.4.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "2b13975b8b8b527bb22c360c6b8b992590d3b390dde187ffcdb67f81080f0caf",
+        "sha256_in_prefix": "2b13975b8b8b527bb22c360c6b8b992590d3b390dde187ffcdb67f81080f0caf",
+        "size_in_bytes": 139
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook-7.4.4.dist-info/entry_points.txt",
+        "path_type": "hardlink",
+        "sha256": "4e28422d55a1426bee7b159e90d4515d57454f12c757bb79c0c726c313dbaf59",
+        "sha256_in_prefix": "4e28422d55a1426bee7b159e90d4515d57454f12c757bb79c0c726c313dbaf59",
+        "size_in_bytes": 55
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook-7.4.4.dist-info/licenses/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "5ca74e4d2eeb9330b0d129c25f874d3544a13413bc62ae8d367819100d095072",
+        "sha256_in_prefix": "5ca74e4d2eeb9330b0d129c25f874d3544a13413bc62ae8d367819100d095072",
+        "size_in_bytes": 1588
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "95bc2c8ae75d0a3d973d48d23528a9a6fdb03a2315d76fd6814f63f5a0201aa2",
+        "sha256_in_prefix": "95bc2c8ae75d0a3d973d48d23528a9a6fdb03a2315d76fd6814f63f5a0201aa2",
+        "size_in_bytes": 534
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/__main__.py",
+        "path_type": "hardlink",
+        "sha256": "b3d49d256b934f4a45202e9c95a4c49a53d6a299dc62e2acdbb4a4678f064b18",
+        "sha256_in_prefix": "b3d49d256b934f4a45202e9c95a4c49a53d6a299dc62e2acdbb4a4678f064b18",
+        "size_in_bytes": 129
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "ae6b45f903c0c6bdfafa76a1030d8adf10860abfbfcf1b40f139291e7ea6251e",
+        "sha256_in_prefix": "ae6b45f903c0c6bdfafa76a1030d8adf10860abfbfcf1b40f139291e7ea6251e",
+        "size_in_bytes": 960
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/__pycache__/__main__.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "9df175fc6cf459899b58cfb6e07bc95c5837fe401626dc21b00fe7e58007a69f",
+        "sha256_in_prefix": "9df175fc6cf459899b58cfb6e07bc95c5837fe401626dc21b00fe7e58007a69f",
+        "size_in_bytes": 319
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/__pycache__/_version.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "52db7410c099b2f8cf076512cd510eeb4aff110b6bdcfa7a60d8a3995cf4ec4e",
+        "sha256_in_prefix": "52db7410c099b2f8cf076512cd510eeb4aff110b6bdcfa7a60d8a3995cf4ec4e",
+        "size_in_bytes": 1095
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/__pycache__/app.cpython-313.pyc",
+        "path_type": "hardlink",
+        "sha256": "29388882d1c9212bf222f912609a64c713f5b39e309d516e7cfd32e300c156e7",
+        "sha256_in_prefix": "29388882d1c9212bf222f912609a64c713f5b39e309d516e7cfd32e300c156e7",
+        "size_in_bytes": 19565
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/_version.py",
+        "path_type": "hardlink",
+        "sha256": "38a0bab184a6d472fdcf8abd65c174ae241e62f73b775e197b8d3297f4f6ebea",
+        "sha256_in_prefix": "38a0bab184a6d472fdcf8abd65c174ae241e62f73b775e197b8d3297f4f6ebea",
+        "size_in_bytes": 986
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/app.py",
+        "path_type": "hardlink",
+        "sha256": "be15a1017e529e8e9113938d70423ab911dfc5681f74061041e752d930d498b5",
+        "sha256_in_prefix": "be15a1017e529e8e9113938d70423ab911dfc5681f74061041e752d930d498b5",
+        "size_in_bytes": 13757
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/custom/custom.css",
+        "path_type": "hardlink",
+        "sha256": "1552fcd2f30c1304be2a7e2d2bbf9216d64c6e8c01ba3b590f899c95b7dec519",
+        "sha256_in_prefix": "1552fcd2f30c1304be2a7e2d2bbf9216d64c6e8c01ba3b590f899c95b7dec519",
+        "size_in_bytes": 134
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/labextension/package.json",
+        "path_type": "hardlink",
+        "sha256": "1f5b56c9f9f873331070aa1562128627e4078e9e1785b801fdbdd20ab5a84e20",
+        "sha256_in_prefix": "1f5b56c9f9f873331070aa1562128627e4078e9e1785b801fdbdd20ab5a84e20",
+        "size_in_bytes": 2892
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/labextension/schemas/@jupyter-notebook/lab-extension/interface-switcher.json",
+        "path_type": "hardlink",
+        "sha256": "d5a92abc92b265a0f8e5ca06bff6271a747e353ef6713fe68871d3f09fe7c099",
+        "sha256_in_prefix": "d5a92abc92b265a0f8e5ca06bff6271a747e353ef6713fe68871d3f09fe7c099",
+        "size_in_bytes": 891
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/labextension/schemas/@jupyter-notebook/lab-extension/launch-tree.json",
+        "path_type": "hardlink",
+        "sha256": "ce5c101994bc636fbec3e524171e0715043da4e5ffdffaae752d53b528dcc09e",
+        "sha256_in_prefix": "ce5c101994bc636fbec3e524171e0715043da4e5ffdffaae752d53b528dcc09e",
+        "size_in_bytes": 375
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/labextension/schemas/@jupyter-notebook/lab-extension/package.json.orig",
+        "path_type": "hardlink",
+        "sha256": "669585e9f8cbc250e1fa935dcf1db4b288c9e8571defa5448b925a2fef17a677",
+        "sha256_in_prefix": "669585e9f8cbc250e1fa935dcf1db4b288c9e8571defa5448b925a2fef17a677",
+        "size_in_bytes": 2750
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/labextension/static/557.2f882aef2c303890736d.js",
+        "path_type": "hardlink",
+        "sha256": "2f882aef2c303890736d2c9d587fb45b865892f6432034de1633672fe189a3fd",
+        "sha256_in_prefix": "2f882aef2c303890736d2c9d587fb45b865892f6432034de1633672fe189a3fd",
+        "size_in_bytes": 13038
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/labextension/static/568.0143b064f4b09edb4d20.js",
+        "path_type": "hardlink",
+        "sha256": "0143b064f4b09edb4d203454a7fe0c0469640a406864bd9092f7cd58b3af7e0c",
+        "sha256_in_prefix": "0143b064f4b09edb4d203454a7fe0c0469640a406864bd9092f7cd58b3af7e0c",
+        "size_in_bytes": 2945
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/labextension/static/928.7e52f03b261ea07bcb3d.js",
+        "path_type": "hardlink",
+        "sha256": "7e52f03b261ea07bcb3d781ab3a125966c95053f5b0f81127120fda04749c4d8",
+        "sha256_in_prefix": "7e52f03b261ea07bcb3d781ab3a125966c95053f5b0f81127120fda04749c4d8",
+        "size_in_bytes": 4514
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/labextension/static/93.eae3497dd223d842d198.js",
+        "path_type": "hardlink",
+        "sha256": "eae3497dd223d842d1980d696386f4e6eb457facc9fbb019bb260e31184f2e1d",
+        "sha256_in_prefix": "eae3497dd223d842d1980d696386f4e6eb457facc9fbb019bb260e31184f2e1d",
+        "size_in_bytes": 4583
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/labextension/static/remoteEntry.da0f2149411be83933cb.js",
+        "path_type": "hardlink",
+        "sha256": "da0f2149411be83933cb889b612583fc023558e2450306195c128a7e1ec009a6",
+        "sha256_in_prefix": "da0f2149411be83933cb889b612583fc023558e2450306195c128a7e1ec009a6",
+        "size_in_bytes": 8409
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/labextension/static/style.js",
+        "path_type": "hardlink",
+        "sha256": "f30812f96b4a8302bea0c89a8d7bd7ef0b90725ceaa77a5825a3b3de040247b0",
+        "sha256_in_prefix": "f30812f96b4a8302bea0c89a8d7bd7ef0b90725ceaa77a5825a3b3de040247b0",
+        "size_in_bytes": 174
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/labextension/static/third-party-licenses.json",
+        "path_type": "hardlink",
+        "sha256": "e9fed2a0044a2071ba2d41492a724f09e59a1287685105b33b71ac6049c76bbb",
+        "sha256_in_prefix": "e9fed2a0044a2071ba2d41492a724f09e59a1287685105b33b71ac6049c76bbb",
+        "size_in_bytes": 2748
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/schemas/@jupyter-notebook/application-extension/menus.json",
+        "path_type": "hardlink",
+        "sha256": "ba4640cdddbae937e86406f99155c01304a9306d6bf567d05a08a06d5968264e",
+        "sha256_in_prefix": "ba4640cdddbae937e86406f99155c01304a9306d6bf567d05a08a06d5968264e",
+        "size_in_bytes": 1902
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/schemas/@jupyter-notebook/application-extension/package.json.orig",
+        "path_type": "hardlink",
+        "sha256": "7440488c6c035bb543f42596d575d2fe296f3682a82190e6ff1dac77dfc0d4f5",
+        "sha256_in_prefix": "7440488c6c035bb543f42596d575d2fe296f3682a82190e6ff1dac77dfc0d4f5",
+        "size_in_bytes": 1835
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/schemas/@jupyter-notebook/application-extension/pages.json",
+        "path_type": "hardlink",
+        "sha256": "32b1993ed96d83ad9c9f099e37fa4e0e6de12cbac5816f2952c11bbb48962a24",
+        "sha256_in_prefix": "32b1993ed96d83ad9c9f099e37fa4e0e6de12cbac5816f2952c11bbb48962a24",
+        "size_in_bytes": 473
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/schemas/@jupyter-notebook/application-extension/shell.json",
+        "path_type": "hardlink",
+        "sha256": "3ac106314e4a80236c7efb7dccd7311c68245cdc53b48df43d7398caa49210d0",
+        "sha256_in_prefix": "3ac106314e4a80236c7efb7dccd7311c68245cdc53b48df43d7398caa49210d0",
+        "size_in_bytes": 864
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/schemas/@jupyter-notebook/application-extension/title.json",
+        "path_type": "hardlink",
+        "sha256": "3a17c69f3c806f47c55b47df4bf82dde0daed97f9a7a16ed65eaf5789348ca00",
+        "sha256_in_prefix": "3a17c69f3c806f47c55b47df4bf82dde0daed97f9a7a16ed65eaf5789348ca00",
+        "size_in_bytes": 223
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/schemas/@jupyter-notebook/application-extension/top.json",
+        "path_type": "hardlink",
+        "sha256": "d1d7dedc8ab52cf0439167cf40864edc48089dc08714443f11a0eb43f68113dc",
+        "sha256_in_prefix": "d1d7dedc8ab52cf0439167cf40864edc48089dc08714443f11a0eb43f68113dc",
+        "size_in_bytes": 832
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/schemas/@jupyter-notebook/application-extension/zen.json",
+        "path_type": "hardlink",
+        "sha256": "8afbe38fe2b3e932b54081fe6ad48655b2922be5fb0eee7f998da313e74fbe0c",
+        "sha256_in_prefix": "8afbe38fe2b3e932b54081fe6ad48655b2922be5fb0eee7f998da313e74fbe0c",
+        "size_in_bytes": 386
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/schemas/@jupyter-notebook/documentsearch-extension/package.json.orig",
+        "path_type": "hardlink",
+        "sha256": "383cfa000129084f8daac34e8aa6a921da542a179d96ad0965b2638bf85ef6e6",
+        "sha256_in_prefix": "383cfa000129084f8daac34e8aa6a921da542a179d96ad0965b2638bf85ef6e6",
+        "size_in_bytes": 1367
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/schemas/@jupyter-notebook/help-extension/open.json",
+        "path_type": "hardlink",
+        "sha256": "7152b7a837612ad239f3a4aab5bb0d59772a32a12970ad45a25e3134646df203",
+        "sha256_in_prefix": "7152b7a837612ad239f3a4aab5bb0d59772a32a12970ad45a25e3134646df203",
+        "size_in_bytes": 472
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/schemas/@jupyter-notebook/help-extension/package.json.orig",
+        "path_type": "hardlink",
+        "sha256": "d667248bf9ad5fe9cd0f43169dfdb333dfd949af125b1564f56f972626aaa797",
+        "sha256_in_prefix": "d667248bf9ad5fe9cd0f43169dfdb333dfd949af125b1564f56f972626aaa797",
+        "size_in_bytes": 1440
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/schemas/@jupyter-notebook/notebook-extension/checkpoints.json",
+        "path_type": "hardlink",
+        "sha256": "cc32afe063c00a929e221c75870f69bbab96e37e059d44ad6e09a550196c7632",
+        "sha256_in_prefix": "cc32afe063c00a929e221c75870f69bbab96e37e059d44ad6e09a550196c7632",
+        "size_in_bytes": 256
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/schemas/@jupyter-notebook/notebook-extension/edit-notebook-metadata.json",
+        "path_type": "hardlink",
+        "sha256": "7b052f38d31b648b5388608b56308fc4fa631283cea5a5e56abd1d3e40f48fdf",
+        "sha256_in_prefix": "7b052f38d31b648b5388608b56308fc4fa631283cea5a5e56abd1d3e40f48fdf",
+        "size_in_bytes": 735
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/schemas/@jupyter-notebook/notebook-extension/full-width-notebook.json",
+        "path_type": "hardlink",
+        "sha256": "5835d050bb6d942d479630b3b67aa7211ed7f7f4138eb47e0238e802bebe855c",
+        "sha256_in_prefix": "5835d050bb6d942d479630b3b67aa7211ed7f7f4138eb47e0238e802bebe855c",
+        "size_in_bytes": 634
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/schemas/@jupyter-notebook/notebook-extension/kernel-logo.json",
+        "path_type": "hardlink",
+        "sha256": "dcbb083fca06b10f0d29bbea85bcfc3e64909b4f6c67d4c44109a1b447be8da3",
+        "sha256_in_prefix": "dcbb083fca06b10f0d29bbea85bcfc3e64909b4f6c67d4c44109a1b447be8da3",
+        "size_in_bytes": 237
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/schemas/@jupyter-notebook/notebook-extension/package.json.orig",
+        "path_type": "hardlink",
+        "sha256": "e6cce10baf88a7ab23025e0b3311b909806a054ea40fc0c4f9321f18ac2ddacd",
+        "sha256_in_prefix": "e6cce10baf88a7ab23025e0b3311b909806a054ea40fc0c4f9321f18ac2ddacd",
+        "size_in_bytes": 1632
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/schemas/@jupyter-notebook/notebook-extension/scroll-output.json",
+        "path_type": "hardlink",
+        "sha256": "818d1c2059c260749fc61a0853596850b0e77ef7f5ff07747076134dfc90eca4",
+        "sha256_in_prefix": "818d1c2059c260749fc61a0853596850b0e77ef7f5ff07747076134dfc90eca4",
+        "size_in_bytes": 517
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/schemas/@jupyter-notebook/tree-extension/file-actions.json",
+        "path_type": "hardlink",
+        "sha256": "82da2806e76ac994d06dbf312012a3a4490ec9bc249efd7db05c221bc8b54221",
+        "sha256_in_prefix": "82da2806e76ac994d06dbf312012a3a4490ec9bc249efd7db05c221bc8b54221",
+        "size_in_bytes": 557
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/schemas/@jupyter-notebook/tree-extension/package.json.orig",
+        "path_type": "hardlink",
+        "sha256": "de2e6197ff8da97aa40722baca875e5e3cff3bdfd0c1eeda71983dc90597a935",
+        "sha256_in_prefix": "de2e6197ff8da97aa40722baca875e5e3cff3bdfd0c1eeda71983dc90597a935",
+        "size_in_bytes": 1854
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/schemas/@jupyter-notebook/tree-extension/widget.json",
+        "path_type": "hardlink",
+        "sha256": "10a696901efc957c70d3095a728b8c54f7aef231ffc8052cd22ebb875c4f2cba",
+        "sha256_in_prefix": "10a696901efc957c70d3095a728b8c54f7aef231ffc8052cd22ebb875c4f2cba",
+        "size_in_bytes": 2324
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/100.cbc26eb447514f5af591.js",
+        "path_type": "hardlink",
+        "sha256": "6eea6040b9a3aa266e722c3f1bed8a005874d06504ecdedb92f3fb8dabee2184",
+        "sha256_in_prefix": "6eea6040b9a3aa266e722c3f1bed8a005874d06504ecdedb92f3fb8dabee2184",
+        "size_in_bytes": 609989
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/1053.92d524d23b6ffd97d9de.js",
+        "path_type": "hardlink",
+        "sha256": "16815e15987ce63f6cf1b22031298a90b5aa9c0733e54fd5c14940f123ac0f3c",
+        "sha256_in_prefix": "16815e15987ce63f6cf1b22031298a90b5aa9c0733e54fd5c14940f123ac0f3c",
+        "size_in_bytes": 43003
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/1088.47e247a20947f628f48f.js",
+        "path_type": "hardlink",
+        "sha256": "4eb427c512c8a1148e60b42d2c0656b656113dd5021452271b8468d38d882c95",
+        "sha256_in_prefix": "4eb427c512c8a1148e60b42d2c0656b656113dd5021452271b8468d38d882c95",
+        "size_in_bytes": 6312
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/1091.f006368c55525d627dc3.js",
+        "path_type": "hardlink",
+        "sha256": "27ba5c735c4ddb854aa91e032819fca3e7b85aae139902ec9d7f53235471fd32",
+        "sha256_in_prefix": "27ba5c735c4ddb854aa91e032819fca3e7b85aae139902ec9d7f53235471fd32",
+        "size_in_bytes": 12709
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/1122.16363dcd990a9685123e.js",
+        "path_type": "hardlink",
+        "sha256": "75811b91f9d7c568483f86a08f6167f9724c220ddd4e239194045872f1c1e2a8",
+        "sha256_in_prefix": "75811b91f9d7c568483f86a08f6167f9724c220ddd4e239194045872f1c1e2a8",
+        "size_in_bytes": 9126
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/114.3735fbb3fc442d926d2b.js",
+        "path_type": "hardlink",
+        "sha256": "daf53c681b1a088ec6b9ca67bd674f2698d30f67f94f33fea9ae87ac9fe116f8",
+        "sha256_in_prefix": "daf53c681b1a088ec6b9ca67bd674f2698d30f67f94f33fea9ae87ac9fe116f8",
+        "size_in_bytes": 2030
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/1169.f64c3773007d9d09487e.js",
+        "path_type": "hardlink",
+        "sha256": "f64c3773007d9d09487ebe58981cece882d045a3e74f1815e4ed828a9f43fbd0",
+        "sha256_in_prefix": "f64c3773007d9d09487ebe58981cece882d045a3e74f1815e4ed828a9f43fbd0",
+        "size_in_bytes": 4135
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/131.729c28b8323daf822cbe.js",
+        "path_type": "hardlink",
+        "sha256": "7a3b501ac325ebc0445d6501237bdbc35476e7bbdda113ba357020dfa5bab23b",
+        "sha256_in_prefix": "7a3b501ac325ebc0445d6501237bdbc35476e7bbdda113ba357020dfa5bab23b",
+        "size_in_bytes": 273855
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/132.9f8c8540fc63a49a9d74.js",
+        "path_type": "hardlink",
+        "sha256": "9eb29783768d20760f7ef649bc437537d2386525b52554569b2e26d0a81ddae7",
+        "sha256_in_prefix": "9eb29783768d20760f7ef649bc437537d2386525b52554569b2e26d0a81ddae7",
+        "size_in_bytes": 2218337
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/1418.5913bb08784c217a1f0b.js",
+        "path_type": "hardlink",
+        "sha256": "375b448e773728d0fbd9584911efcf6ef3ac21304b255306b7d52fb9d4a30ea4",
+        "sha256_in_prefix": "375b448e773728d0fbd9584911efcf6ef3ac21304b255306b7d52fb9d4a30ea4",
+        "size_in_bytes": 5206
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/145.2fd139f1721cfaedfccf.js",
+        "path_type": "hardlink",
+        "sha256": "bc2df4d6e09b78d4767114bd81cd74ec76efc23ba326874a09223e0fbde17a16",
+        "sha256_in_prefix": "bc2df4d6e09b78d4767114bd81cd74ec76efc23ba326874a09223e0fbde17a16",
+        "size_in_bytes": 133135
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/1542.8f0b79431f7af2f43f1e.js",
+        "path_type": "hardlink",
+        "sha256": "67f700da25fe76a35208dbb67c5de0cd2df6f8a98d163c49cce87e97aee39a43",
+        "sha256_in_prefix": "67f700da25fe76a35208dbb67c5de0cd2df6f8a98d163c49cce87e97aee39a43",
+        "size_in_bytes": 137352
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/1558.d1ebe7cb088451b0d7de.js",
+        "path_type": "hardlink",
+        "sha256": "f96ca624617a4a13c712b4cf43d26b47adfc0463b7d2f8ccde9abe1c010d057a",
+        "sha256_in_prefix": "f96ca624617a4a13c712b4cf43d26b47adfc0463b7d2f8ccde9abe1c010d057a",
+        "size_in_bytes": 4818
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/1584.fa41c8f3ce855db5cab4.js",
+        "path_type": "hardlink",
+        "sha256": "c81857b9bffe7137a74f1974a4d729fa9a2f66acf15bdebe8788bc3852510243",
+        "sha256_in_prefix": "c81857b9bffe7137a74f1974a4d729fa9a2f66acf15bdebe8788bc3852510243",
+        "size_in_bytes": 119620
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/1601.4154c4f9ed460feae33b.js",
+        "path_type": "hardlink",
+        "sha256": "92aeada35e9480329e8e6ad8ca78b1591dc69506d8cf8675c2da111f208c29da",
+        "sha256_in_prefix": "92aeada35e9480329e8e6ad8ca78b1591dc69506d8cf8675c2da111f208c29da",
+        "size_in_bytes": 50653
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/1618.da67fb30732c49b969ba.js",
+        "path_type": "hardlink",
+        "sha256": "7e99c46adabf08b5fd8e720ccb587915e21bcc7131a9f55dddd9ffa83c3b233a",
+        "sha256_in_prefix": "7e99c46adabf08b5fd8e720ccb587915e21bcc7131a9f55dddd9ffa83c3b233a",
+        "size_in_bytes": 7045
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/1650.afa95e6a11189688bc0d.js",
+        "path_type": "hardlink",
+        "sha256": "e45f7b005f36436ed9b17ff6352682bd600f76741aef3bd5c884faf85c3568ce",
+        "sha256_in_prefix": "e45f7b005f36436ed9b17ff6352682bd600f76741aef3bd5c884faf85c3568ce",
+        "size_in_bytes": 5926
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/1684.12280f8470722e2e1bdd.js",
+        "path_type": "hardlink",
+        "sha256": "837d62aee756fef8d2048ddc43e5d93f65935cfcf636724c3612aaf04796628c",
+        "sha256_in_prefix": "837d62aee756fef8d2048ddc43e5d93f65935cfcf636724c3612aaf04796628c",
+        "size_in_bytes": 4862
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/1715.a61bcde14ed0fff41d06.js",
+        "path_type": "hardlink",
+        "sha256": "ae96d8eb2e4e3e62666216fa2af3bb4106f5965173b58065c9328986f8f55f36",
+        "sha256_in_prefix": "ae96d8eb2e4e3e62666216fa2af3bb4106f5965173b58065c9328986f8f55f36",
+        "size_in_bytes": 198951
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/1837.6bbfd9967be58e1325f1.js",
+        "path_type": "hardlink",
+        "sha256": "e51b4aba9738db799b13208466cf9a4b06181b8bb4db4ad4a9d471beb34b1b69",
+        "sha256_in_prefix": "e51b4aba9738db799b13208466cf9a4b06181b8bb4db4ad4a9d471beb34b1b69",
+        "size_in_bytes": 10607
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/1869.48ca2e23bddad3adfc1a.js",
+        "path_type": "hardlink",
+        "sha256": "a51109aff0e37f616f024554868dfa0fb588c0d6bc5a9f1a9eac6d6c325ab2f2",
+        "sha256_in_prefix": "a51109aff0e37f616f024554868dfa0fb588c0d6bc5a9f1a9eac6d6c325ab2f2",
+        "size_in_bytes": 1387
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/1871.c375ee093b7e51966390.js",
+        "path_type": "hardlink",
+        "sha256": "feff6ec6d74f86a691f2cb900f68fcf02c1142775c1cb0e75a8d699658077e9d",
+        "sha256_in_prefix": "feff6ec6d74f86a691f2cb900f68fcf02c1142775c1cb0e75a8d699658077e9d",
+        "size_in_bytes": 207191
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/1911.cfe3314fd3a9b879389c.js",
+        "path_type": "hardlink",
+        "sha256": "a3589b9744177af4338923e1b0b866468d1fd56ae1d381135cfe77ee57904198",
+        "sha256_in_prefix": "a3589b9744177af4338923e1b0b866468d1fd56ae1d381135cfe77ee57904198",
+        "size_in_bytes": 287800
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/1939.e620a31e5ee7d4ccc1bc.js",
+        "path_type": "hardlink",
+        "sha256": "0aea5f666b2531c9c700e3c8feb88dfaa4ee5ff307a3be6a4e45fa25112abd0d",
+        "sha256_in_prefix": "0aea5f666b2531c9c700e3c8feb88dfaa4ee5ff307a3be6a4e45fa25112abd0d",
+        "size_in_bytes": 54542
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/1941.b15cc60637b0a879bea6.js",
+        "path_type": "hardlink",
+        "sha256": "2c900237a090a62263b011de0874c5a3eeddd7f513870aa403cc7879cbbefa9b",
+        "sha256_in_prefix": "2c900237a090a62263b011de0874c5a3eeddd7f513870aa403cc7879cbbefa9b",
+        "size_in_bytes": 2474
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/1950.a590659714a301a94f31.js",
+        "path_type": "hardlink",
+        "sha256": "03063addee06e3767528afea014bad7ffdfe0441c9379a0380b4c0be17b73f63",
+        "sha256_in_prefix": "03063addee06e3767528afea014bad7ffdfe0441c9379a0380b4c0be17b73f63",
+        "size_in_bytes": 171970
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/1cb1c39ea642f26a4dfe.woff",
+        "path_type": "hardlink",
+        "sha256": "1cb1c39ea642f26a4dfed230b4aea1c3c218689421f6e9c0a7c1811693c4fa07",
+        "sha256_in_prefix": "1cb1c39ea642f26a4dfed230b4aea1c3c218689421f6e9c0a7c1811693c4fa07",
+        "size_in_bytes": 34160
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/2019.a0afb11aac931fb43c5c.js",
+        "path_type": "hardlink",
+        "sha256": "1ce24a1be37f3d51f5552f05c96d79eefe04711744cabb4f933d11779545192b",
+        "sha256_in_prefix": "1ce24a1be37f3d51f5552f05c96d79eefe04711744cabb4f933d11779545192b",
+        "size_in_bytes": 59473
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/2065.e9b5d8d0a8bec3304454.js",
+        "path_type": "hardlink",
+        "sha256": "d054e89259bf597fac87334edf2e52058c0d9be00dedf7d4499818039b95ecb5",
+        "sha256_in_prefix": "d054e89259bf597fac87334edf2e52058c0d9be00dedf7d4499818039b95ecb5",
+        "size_in_bytes": 196105
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/2188.8a4dbc0baaccf031e5c4.js",
+        "path_type": "hardlink",
+        "sha256": "2d289ddb20bcd785d20224f062c899e935dcabdf6770d4079501f9d6776a082a",
+        "sha256_in_prefix": "2d289ddb20bcd785d20224f062c899e935dcabdf6770d4079501f9d6776a082a",
+        "size_in_bytes": 6343
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/221.21b91ccc95eefd849fa5.js",
+        "path_type": "hardlink",
+        "sha256": "3b92d79cbc2c73249f97e791443fa0267440bfd747914477e890e042f9c0acc9",
+        "sha256_in_prefix": "3b92d79cbc2c73249f97e791443fa0267440bfd747914477e890e042f9c0acc9",
+        "size_in_bytes": 4375
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/2228.5897a4ab53c9c224da5d.js",
+        "path_type": "hardlink",
+        "sha256": "98c6eba1c2e5406e3ec5cb44a78a516e940452535513f059636972050510fbea",
+        "sha256_in_prefix": "98c6eba1c2e5406e3ec5cb44a78a516e940452535513f059636972050510fbea",
+        "size_in_bytes": 100930
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/2283.b2d8643ec28ab13849b3.js",
+        "path_type": "hardlink",
+        "sha256": "41f3adc458c57daf603d80fb7150d0a0c67257e3a200d73b77b8eee51527588c",
+        "sha256_in_prefix": "41f3adc458c57daf603d80fb7150d0a0c67257e3a200d73b77b8eee51527588c",
+        "size_in_bytes": 6347
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/2343.81357d860d7aa9156d23.js",
+        "path_type": "hardlink",
+        "sha256": "96552257e5a5409479963c47f83e4958bbc15679706e8f9b9c3f954db1d728a8",
+        "sha256_in_prefix": "96552257e5a5409479963c47f83e4958bbc15679706e8f9b9c3f954db1d728a8",
+        "size_in_bytes": 9017
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/2386.4a6f7defebb9a3696820.js",
+        "path_type": "hardlink",
+        "sha256": "95d58c8ada96635fdb07646d1c2fed2938f87900c9df738d2d3360bc4925d8a6",
+        "sha256_in_prefix": "95d58c8ada96635fdb07646d1c2fed2938f87900c9df738d2d3360bc4925d8a6",
+        "size_in_bytes": 4090
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/2409.6091282e2ebffe2ab089.js",
+        "path_type": "hardlink",
+        "sha256": "8c7bae66e59153b16c71ae885da00adc0a2e8df845c5d432c32ce0cacf84c18f",
+        "sha256_in_prefix": "8c7bae66e59153b16c71ae885da00adc0a2e8df845c5d432c32ce0cacf84c18f",
+        "size_in_bytes": 113663
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/2425.6472013fa9798ece0dc9.js",
+        "path_type": "hardlink",
+        "sha256": "5e24f55d15123b8e06b785afde240c6acb82b5176625eabe3e55ab39e5bfca70",
+        "sha256_in_prefix": "5e24f55d15123b8e06b785afde240c6acb82b5176625eabe3e55ab39e5bfca70",
+        "size_in_bytes": 377939
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/2453.ebdb135eb902bf82e103.js",
+        "path_type": "hardlink",
+        "sha256": "a688f047a75cbe9de01c62b78df5f524cc41ad3a8e4b71642b98e4313d29242e",
+        "sha256_in_prefix": "a688f047a75cbe9de01c62b78df5f524cc41ad3a8e4b71642b98e4313d29242e",
+        "size_in_bytes": 175550
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/2552.e56002ba65105afb9b18.js",
+        "path_type": "hardlink",
+        "sha256": "b625082c96e465d89ebc28664a70f1ba1a11b47212f221810a5f06f5b046a4f4",
+        "sha256_in_prefix": "b625082c96e465d89ebc28664a70f1ba1a11b47212f221810a5f06f5b046a4f4",
+        "size_in_bytes": 67887
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/2581.f9bb29600b7e080b2b84.js",
+        "path_type": "hardlink",
+        "sha256": "f36e5df666d35bd655c9ce4c62511638819adc9c5c03d0adaa797e299d00d6d9",
+        "sha256_in_prefix": "f36e5df666d35bd655c9ce4c62511638819adc9c5c03d0adaa797e299d00d6d9",
+        "size_in_bytes": 9673
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/2666.39e11f71d749eca59f8e.js",
+        "path_type": "hardlink",
+        "sha256": "76026c8723f11c2bd78f5f1d7a20a3c67c069936c3caccb0448d18c98daedd3a",
+        "sha256_in_prefix": "76026c8723f11c2bd78f5f1d7a20a3c67c069936c3caccb0448d18c98daedd3a",
+        "size_in_bytes": 23924
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/26683bf201fb258a2237.woff",
+        "path_type": "hardlink",
+        "sha256": "26683bf201fb258a2237d9754616de9d4ecf4cc1cd39dd1902476df7d75f1d16",
+        "sha256_in_prefix": "26683bf201fb258a2237d9754616de9d4ecf4cc1cd39dd1902476df7d75f1d16",
+        "size_in_bytes": 9600
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/2682.69beaaa72effdd61afbe.js",
+        "path_type": "hardlink",
+        "sha256": "4768c11d38c3d32e19e296570847d7e771796ca65cab0c16e9134f7319bf165e",
+        "sha256_in_prefix": "4768c11d38c3d32e19e296570847d7e771796ca65cab0c16e9134f7319bf165e",
+        "size_in_bytes": 2782
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/270.dced80a7f5cbf1705712.js",
+        "path_type": "hardlink",
+        "sha256": "762dc1375f3688603a3b7d29f4e61a8bf07c7c27679346c9e0f0fddf3e5999b3",
+        "sha256_in_prefix": "762dc1375f3688603a3b7d29f4e61a8bf07c7c27679346c9e0f0fddf3e5999b3",
+        "size_in_bytes": 14880
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/2702.bc49dbd258cca77aeea4.js",
+        "path_type": "hardlink",
+        "sha256": "97d3f05e8095bf18bfd096fda0894af5ec06741f3f1e820318923ff3733e6c1b",
+        "sha256_in_prefix": "97d3f05e8095bf18bfd096fda0894af5ec06741f3f1e820318923ff3733e6c1b",
+        "size_in_bytes": 1891
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/28.b5145a84e3a511427e72.js",
+        "path_type": "hardlink",
+        "sha256": "c7078548c949cb706027037a6bda0ae78801aec618f0c62efb1f117534dd72e7",
+        "sha256_in_prefix": "c7078548c949cb706027037a6bda0ae78801aec618f0c62efb1f117534dd72e7",
+        "size_in_bytes": 102359
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/2816.03541f3103bf4c09e591.js",
+        "path_type": "hardlink",
+        "sha256": "3cb2dbaba235b075fb094d48f21d12de240f52ae95d330d0e107e9a3b74bc98d",
+        "sha256_in_prefix": "3cb2dbaba235b075fb094d48f21d12de240f52ae95d330d0e107e9a3b74bc98d",
+        "size_in_bytes": 71746
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/2871.46ec88c6997ef947f39f.js",
+        "path_type": "hardlink",
+        "sha256": "421b91ecabe5d56e7230368cf90b15af78f94137e12d35c7861a632503021590",
+        "sha256_in_prefix": "421b91ecabe5d56e7230368cf90b15af78f94137e12d35c7861a632503021590",
+        "size_in_bytes": 14416
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/2913.ae7fccede5f85a45ab8f.js",
+        "path_type": "hardlink",
+        "sha256": "a09dda47ac4502a79f599bd40a376b87f78298d60a9bea2845e0eaa712b67273",
+        "sha256_in_prefix": "a09dda47ac4502a79f599bd40a376b87f78298d60a9bea2845e0eaa712b67273",
+        "size_in_bytes": 275466
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/2955.d8fd055f03b878034fe4.js",
+        "path_type": "hardlink",
+        "sha256": "93867d0ceb555cb6fb038d9bd8a9a5610667265111ec407996f2f18549519f6a",
+        "sha256_in_prefix": "93867d0ceb555cb6fb038d9bd8a9a5610667265111ec407996f2f18549519f6a",
+        "size_in_bytes": 474689
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/306.dd9ffcf982b0c863872b.js",
+        "path_type": "hardlink",
+        "sha256": "331851fefdbfc2e72eadde138721472b6b800420bfbdabbd68c4f5f7c5a1b027",
+        "sha256_in_prefix": "331851fefdbfc2e72eadde138721472b6b800420bfbdabbd68c4f5f7c5a1b027",
+        "size_in_bytes": 170202
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/3076.433a08e00b3f195539d0.js",
+        "path_type": "hardlink",
+        "sha256": "5c4f596087de1025fb84b1d70131bb205a9e6b09aaaa43dd01f7f1d3339c6008",
+        "sha256_in_prefix": "5c4f596087de1025fb84b1d70131bb205a9e6b09aaaa43dd01f7f1d3339c6008",
+        "size_in_bytes": 740
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/3079.63bdfdb9a8c6c94b4c9a.js",
+        "path_type": "hardlink",
+        "sha256": "352df3b41ff037993fb496bd174cd50b7ebc22cf6533dfd49cbe9647819b2246",
+        "sha256_in_prefix": "352df3b41ff037993fb496bd174cd50b7ebc22cf6533dfd49cbe9647819b2246",
+        "size_in_bytes": 98088
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/30e889b58cbc51adfbb0.woff",
+        "path_type": "hardlink",
+        "sha256": "30e889b58cbc51adfbb038ab1a96dc4025aa3542a3cff7712fc55ece510675e2",
+        "sha256_in_prefix": "30e889b58cbc51adfbb038ab1a96dc4025aa3542a3cff7712fc55ece510675e2",
+        "size_in_bytes": 5464
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/310.857f702af7a4a486c75e.js",
+        "path_type": "hardlink",
+        "sha256": "3e1055748b05170f8b5316b25c2db6eb9e29ca47f6b5b39657f6f371aad45b32",
+        "sha256_in_prefix": "3e1055748b05170f8b5316b25c2db6eb9e29ca47f6b5b39657f6f371aad45b32",
+        "size_in_bytes": 232205
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/311.d6a177e2f8f1b1690911.js",
+        "path_type": "hardlink",
+        "sha256": "763eb3a65983b4008d2ff44d14d602fbae7d9efce9c63b915d338c24ada67b71",
+        "sha256_in_prefix": "763eb3a65983b4008d2ff44d14d602fbae7d9efce9c63b915d338c24ada67b71",
+        "size_in_bytes": 7353
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/3111.bdf4a0f672df2a6cdd74.js",
+        "path_type": "hardlink",
+        "sha256": "42a229c978b6ede1c3911669a1245ea1bd20e7adff5f9a94515103222b42c0c0",
+        "sha256_in_prefix": "42a229c978b6ede1c3911669a1245ea1bd20e7adff5f9a94515103222b42c0c0",
+        "size_in_bytes": 7451
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/3146.8a7a657d9a66a9f5d3c4.js",
+        "path_type": "hardlink",
+        "sha256": "2e4b5989ff27d6790751ee893db4490ff6441b950d4cc5d41fb4db0f7c208fd0",
+        "sha256_in_prefix": "2e4b5989ff27d6790751ee893db4490ff6441b950d4cc5d41fb4db0f7c208fd0",
+        "size_in_bytes": 1867
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/3197.679087d3d6e90032272a.js",
+        "path_type": "hardlink",
+        "sha256": "863c2466dea9759c27059b95711ee9a027a4ae748799c0c076dc858f528cb08a",
+        "sha256_in_prefix": "863c2466dea9759c27059b95711ee9a027a4ae748799c0c076dc858f528cb08a",
+        "size_in_bytes": 966346
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/3207.10d3ef96eccf1096e1c3.js",
+        "path_type": "hardlink",
+        "sha256": "6cdddc8f003b2ca91e358bf4218a5f0cf466d63a6bf62528eb15b2011e3ca378",
+        "sha256_in_prefix": "6cdddc8f003b2ca91e358bf4218a5f0cf466d63a6bf62528eb15b2011e3ca378",
+        "size_in_bytes": 1064208
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/3211.2e93fd406e5c4e53774f.js",
+        "path_type": "hardlink",
+        "sha256": "56ac2eed69ab24d9139f24de72b162462c8830cf8279f87cc2ad5678d1dbe63b",
+        "sha256_in_prefix": "56ac2eed69ab24d9139f24de72b162462c8830cf8279f87cc2ad5678d1dbe63b",
+        "size_in_bytes": 6839
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/3230.29b02fdb14e1bdf52d07.js",
+        "path_type": "hardlink",
+        "sha256": "eaae23f7a2964bcdc54ee22390f90d735b6c58874d5d21bca93564776040d9bc",
+        "sha256_in_prefix": "eaae23f7a2964bcdc54ee22390f90d735b6c58874d5d21bca93564776040d9bc",
+        "size_in_bytes": 15134
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/32792104b5ef69eded90.woff",
+        "path_type": "hardlink",
+        "sha256": "32792104b5ef69eded905b6d1598ed05d8087684d38e7a94d52e3c38ba16f47e",
+        "sha256_in_prefix": "32792104b5ef69eded905b6d1598ed05d8087684d38e7a94d52e3c38ba16f47e",
+        "size_in_bytes": 15944
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/3322.e8348cc2a800190d4f49.js",
+        "path_type": "hardlink",
+        "sha256": "a53f8698ba462fbd627ba8eb99c052595bd225092fb1eedeff7998f1a59cbaf6",
+        "sha256_in_prefix": "a53f8698ba462fbd627ba8eb99c052595bd225092fb1eedeff7998f1a59cbaf6",
+        "size_in_bytes": 29457
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/3336.1430b8576b899f650fb9.js",
+        "path_type": "hardlink",
+        "sha256": "3c7a7d52bee7d9723702bf14a920118f33e3e7367aa8353976221978b8f63a02",
+        "sha256_in_prefix": "3c7a7d52bee7d9723702bf14a920118f33e3e7367aa8353976221978b8f63a02",
+        "size_in_bytes": 4314
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/3370.aa66c4f8e4c91fc5628a.js",
+        "path_type": "hardlink",
+        "sha256": "fa38861c82c28ec387a832ce257d563540dcb79fe44b8513619e9f213f89122e",
+        "sha256_in_prefix": "fa38861c82c28ec387a832ce257d563540dcb79fe44b8513619e9f213f89122e",
+        "size_in_bytes": 4381
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/339.ca73209c818e0defdea2.js",
+        "path_type": "hardlink",
+        "sha256": "97a5fded20a02117c66d7b25d0ffac5103b8e968b0f55bf44581293378aaaa53",
+        "sha256_in_prefix": "97a5fded20a02117c66d7b25d0ffac5103b8e968b0f55bf44581293378aaaa53",
+        "size_in_bytes": 739
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/3420.693f6432957cbf2699c5.js",
+        "path_type": "hardlink",
+        "sha256": "a68061f581706570cc88f7979322b85b2b2acad57e437e6e7f5fd14511725c90",
+        "sha256_in_prefix": "a68061f581706570cc88f7979322b85b2b2acad57e437e6e7f5fd14511725c90",
+        "size_in_bytes": 11427
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/3449.53ec937d932f8f73a39b.js",
+        "path_type": "hardlink",
+        "sha256": "7aac92d5c405d3d2c728736edaf13e2412f769d78e85bec9c5fd18f9c8954f91",
+        "sha256_in_prefix": "7aac92d5c405d3d2c728736edaf13e2412f769d78e85bec9c5fd18f9c8954f91",
+        "size_in_bytes": 9001
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/3462.0383dfd16602627036bd.js",
+        "path_type": "hardlink",
+        "sha256": "b6fe23736ac1388ef42b574f00e273e132087c5f73cde71022ee415c3074dadb",
+        "sha256_in_prefix": "b6fe23736ac1388ef42b574f00e273e132087c5f73cde71022ee415c3074dadb",
+        "size_in_bytes": 100275
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/35.a486baf38b12aec5500f.js",
+        "path_type": "hardlink",
+        "sha256": "5c899c5ed4df8e34230dc9533a6946699d6321626c16165779b095306ebb8b6f",
+        "sha256_in_prefix": "5c899c5ed4df8e34230dc9533a6946699d6321626c16165779b095306ebb8b6f",
+        "size_in_bytes": 89427
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/3501.c1c56527cb2f94c27dcf.js",
+        "path_type": "hardlink",
+        "sha256": "5dcfba5191c35b6e96e973996293b4548fce414d5c24d1b5dcb6e18746da2347",
+        "sha256_in_prefix": "5dcfba5191c35b6e96e973996293b4548fce414d5c24d1b5dcb6e18746da2347",
+        "size_in_bytes": 7156
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/355254db9ca10a09a3b5.woff",
+        "path_type": "hardlink",
+        "sha256": "355254db9ca10a09a3b5f0929d74eb4670f44fbe864c07526a06213e0a0caf6c",
+        "sha256_in_prefix": "355254db9ca10a09a3b5f0929d74eb4670f44fbe864c07526a06213e0a0caf6c",
+        "size_in_bytes": 20832
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/3562.3b759e4fdd798f9dca94.js",
+        "path_type": "hardlink",
+        "sha256": "7afd2adbb5a002d1bee6cab089a2e71c9f88219834affcd507c2ae73b4f7125a",
+        "sha256_in_prefix": "7afd2adbb5a002d1bee6cab089a2e71c9f88219834affcd507c2ae73b4f7125a",
+        "size_in_bytes": 7895
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/3619.22c7d8abf7febc282c79.js",
+        "path_type": "hardlink",
+        "sha256": "c24be55a1633cbcc26facecccbdb079842f86ced9913137ed69ebe9748d402c3",
+        "sha256_in_prefix": "c24be55a1633cbcc26facecccbdb079842f86ced9913137ed69ebe9748d402c3",
+        "size_in_bytes": 121936
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/36e0d72d8a7afc696a3e.woff",
+        "path_type": "hardlink",
+        "sha256": "36e0d72d8a7afc696a3e7a5c7369807634640de9b02257bca447bdf126221a27",
+        "sha256_in_prefix": "36e0d72d8a7afc696a3e7a5c7369807634640de9b02257bca447bdf126221a27",
+        "size_in_bytes": 1116
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/3700.b937e669a5feb21ccb06.js",
+        "path_type": "hardlink",
+        "sha256": "2429133c57fb9076935b5b6c3602a7533cf64346ceacaa9780ff69a250c99bba",
+        "sha256_in_prefix": "2429133c57fb9076935b5b6c3602a7533cf64346ceacaa9780ff69a250c99bba",
+        "size_in_bytes": 3506
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/373c04fd2418f5c77eea.eot",
+        "path_type": "hardlink",
+        "sha256": "373c04fd2418f5c77eea49d514731058f1907a94ff3b4e5d7c3e5767e8b53d8b",
+        "sha256_in_prefix": "373c04fd2418f5c77eea49d514731058f1907a94ff3b4e5d7c3e5767e8b53d8b",
+        "size_in_bytes": 203030
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/3752.f222858bad091688a0c5.js",
+        "path_type": "hardlink",
+        "sha256": "985ed5f110f38df1a5eceb60373f2fed5998e7dac923b39fef5b6e6eea9c9751",
+        "sha256_in_prefix": "985ed5f110f38df1a5eceb60373f2fed5998e7dac923b39fef5b6e6eea9c9751",
+        "size_in_bytes": 479
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/3768.2ac0d5c2a3fec16d1571.js",
+        "path_type": "hardlink",
+        "sha256": "170d0ded1d4268fdf8f657c0b02bad0dd4aeaf0a20a4fafba0c90b49fa75c0dc",
+        "sha256_in_prefix": "170d0ded1d4268fdf8f657c0b02bad0dd4aeaf0a20a4fafba0c90b49fa75c0dc",
+        "size_in_bytes": 19636
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/3782.b5169726474369258b8f.js",
+        "path_type": "hardlink",
+        "sha256": "ae4dde68b8baaafbe9a2d3bdb8d3bddf47abd7af71e87b2d52670c5c2760138d",
+        "sha256_in_prefix": "ae4dde68b8baaafbe9a2d3bdb8d3bddf47abd7af71e87b2d52670c5c2760138d",
+        "size_in_bytes": 14812
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/3797.ad30e7a4bf8dc994e5be.js",
+        "path_type": "hardlink",
+        "sha256": "2a1941d64a237f56f4003b719f155ee71da00e6deb5b2c9d368a5f1bccde30dd",
+        "sha256_in_prefix": "2a1941d64a237f56f4003b719f155ee71da00e6deb5b2c9d368a5f1bccde30dd",
+        "size_in_bytes": 30048
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/383.086fc5ebac8a08e85b7c.js",
+        "path_type": "hardlink",
+        "sha256": "734bddd9a18f5125816521ce643e4ed2e15158b17516756e12cf6570c14958b8",
+        "sha256_in_prefix": "734bddd9a18f5125816521ce643e4ed2e15158b17516756e12cf6570c14958b8",
+        "size_in_bytes": 48430
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/3bc6ecaae7ecf6f8d7f8.woff",
+        "path_type": "hardlink",
+        "sha256": "3bc6ecaae7ecf6f8d7f8ea07bddbaca8601e2cb6e89d6aef58e78d9f6d8a398f",
+        "sha256_in_prefix": "3bc6ecaae7ecf6f8d7f8ea07bddbaca8601e2cb6e89d6aef58e78d9f6d8a398f",
+        "size_in_bytes": 5148
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/3de784d07b9fa8f104c1.woff",
+        "path_type": "hardlink",
+        "sha256": "3de784d07b9fa8f104c10928a878ee879cf3305cae5195cba663c9c2bb0195eb",
+        "sha256_in_prefix": "3de784d07b9fa8f104c10928a878ee879cf3305cae5195cba663c9c2bb0195eb",
+        "size_in_bytes": 40808
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/3f6d3488cf65374f6f67.woff",
+        "path_type": "hardlink",
+        "sha256": "3f6d3488cf65374f6f676c315340b0ac2be832bd55240c809448e36ef9b96326",
+        "sha256_in_prefix": "3f6d3488cf65374f6f676c315340b0ac2be832bd55240c809448e36ef9b96326",
+        "size_in_bytes": 101648
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/4002.7d2089cf976c84095255.js",
+        "path_type": "hardlink",
+        "sha256": "da3ec6f55a9c933a0266ef458f4e2bca5c157635d6911016a356c29aecf85d46",
+        "sha256_in_prefix": "da3ec6f55a9c933a0266ef458f4e2bca5c157635d6911016a356c29aecf85d46",
+        "size_in_bytes": 16583
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/403.270ca5cf44874182bd4d.js",
+        "path_type": "hardlink",
+        "sha256": "2d8327fcfb7438cc3d5981ee656dcae3b2c5b1fe06d520c2289e7a04802cd999",
+        "sha256_in_prefix": "2d8327fcfb7438cc3d5981ee656dcae3b2c5b1fe06d520c2289e7a04802cd999",
+        "size_in_bytes": 6949
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/4030.5a53f3aacfd5bc109b79.js",
+        "path_type": "hardlink",
+        "sha256": "f7d5fc97df809079a48cfb47b89878f512cf60e0c1ff2a9132e805061205a31b",
+        "sha256_in_prefix": "f7d5fc97df809079a48cfb47b89878f512cf60e0c1ff2a9132e805061205a31b",
+        "size_in_bytes": 12594
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/4038.edb04f3d9d68204491ba.js",
+        "path_type": "hardlink",
+        "sha256": "2be88c2ad31a083a2e4c06345efd1364187af0a37c1631481dbf7790b47f810e",
+        "sha256_in_prefix": "2be88c2ad31a083a2e4c06345efd1364187af0a37c1631481dbf7790b47f810e",
+        "size_in_bytes": 4987
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/4039.dcbb5e4f3949b6eff7e9.js",
+        "path_type": "hardlink",
+        "sha256": "96254351f82806d59b3744f54d7c0a7eb02e760bf0fa26d1ba32462769353eb6",
+        "sha256_in_prefix": "96254351f82806d59b3744f54d7c0a7eb02e760bf0fa26d1ba32462769353eb6",
+        "size_in_bytes": 16382
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/4105.5144c29f0bbce103fec4.js",
+        "path_type": "hardlink",
+        "sha256": "8f535b0da3735535933c4228223a5d772c9780503034cc2d3ac3bb7411070d0c",
+        "sha256_in_prefix": "8f535b0da3735535933c4228223a5d772c9780503034cc2d3ac3bb7411070d0c",
+        "size_in_bytes": 23911
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/4148.410616c0288bc98e224f.js",
+        "path_type": "hardlink",
+        "sha256": "cd627c0eaf63a4ea9c261f7c2e77ab66189842b58f13c6d456f14ae3fa70e02c",
+        "sha256_in_prefix": "cd627c0eaf63a4ea9c261f7c2e77ab66189842b58f13c6d456f14ae3fa70e02c",
+        "size_in_bytes": 5684
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/417.29f636ec8be265b7e480.js",
+        "path_type": "hardlink",
+        "sha256": "6e98b753af101c43a0a1447c752e91887b33597db31f3105cc3b2fbc091674c4",
+        "sha256_in_prefix": "6e98b753af101c43a0a1447c752e91887b33597db31f3105cc3b2fbc091674c4",
+        "size_in_bytes": 1180029
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/4276.aa39300c806a420e8c6e.js",
+        "path_type": "hardlink",
+        "sha256": "5ac609506cf1ca8b0cd06dc42a0e4b600dbd2b5b4d3041b1255890d095385f6e",
+        "sha256_in_prefix": "5ac609506cf1ca8b0cd06dc42a0e4b600dbd2b5b4d3041b1255890d095385f6e",
+        "size_in_bytes": 158811
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/431.4a876e95bf0e93ffd46f.js",
+        "path_type": "hardlink",
+        "sha256": "e64e5120c38b47a3a4a3ec74bc0208014a00328a55ab8f541a028b9dcec72f6e",
+        "sha256_in_prefix": "e64e5120c38b47a3a4a3ec74bc0208014a00328a55ab8f541a028b9dcec72f6e",
+        "size_in_bytes": 5791
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/4324.fa653693694bd924557b.js",
+        "path_type": "hardlink",
+        "sha256": "9c0746bcc56529e5dae60dfcc471cbfdfd34c1a1ee0c19aad84a84408a6de118",
+        "sha256_in_prefix": "9c0746bcc56529e5dae60dfcc471cbfdfd34c1a1ee0c19aad84a84408a6de118",
+        "size_in_bytes": 189587
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/4382.b125e3c487c540303bd8.js",
+        "path_type": "hardlink",
+        "sha256": "8fd076cd54c4b8a9c0b62a6fad44265d3acb10ba35bafa10cb3a4c2340108188",
+        "sha256_in_prefix": "8fd076cd54c4b8a9c0b62a6fad44265d3acb10ba35bafa10cb3a4c2340108188",
+        "size_in_bytes": 2953
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/4387.a7f58bf45dd9275aee44.js",
+        "path_type": "hardlink",
+        "sha256": "0641727646c0a10922a300103efc1f49cff7c25e57c18db63c54241ad5c8c044",
+        "sha256_in_prefix": "0641727646c0a10922a300103efc1f49cff7c25e57c18db63c54241ad5c8c044",
+        "size_in_bytes": 6020
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/4406.c435ee1d9e07c37b46e4.js",
+        "path_type": "hardlink",
+        "sha256": "49dd3a91f2e42cf939172d745500dd9818fadfc5e2e80b83e259cb7afd04880e",
+        "sha256_in_prefix": "49dd3a91f2e42cf939172d745500dd9818fadfc5e2e80b83e259cb7afd04880e",
+        "size_in_bytes": 863774
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/4430.1661db8ba0104d6baef2.js",
+        "path_type": "hardlink",
+        "sha256": "231d48dcb3376e2a0aaffd43d5f33ef9db0cdb6a34348e50799d73d08ded7564",
+        "sha256_in_prefix": "231d48dcb3376e2a0aaffd43d5f33ef9db0cdb6a34348e50799d73d08ded7564",
+        "size_in_bytes": 1585
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/4498.4d8665e22c39c0b3f329.js",
+        "path_type": "hardlink",
+        "sha256": "4e4aa9a5b62e94e438d9d9c1e1fa072cff34461729323eee0011b289877dbc29",
+        "sha256_in_prefix": "4e4aa9a5b62e94e438d9d9c1e1fa072cff34461729323eee0011b289877dbc29",
+        "size_in_bytes": 9246
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/4521.c728470feb41d3f877d1.js",
+        "path_type": "hardlink",
+        "sha256": "311539b416d668bea2147c6bbc2baa8d6430eb71016cf7ba9978832a3f14cd68",
+        "sha256_in_prefix": "311539b416d668bea2147c6bbc2baa8d6430eb71016cf7ba9978832a3f14cd68",
+        "size_in_bytes": 4259
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/4588.7618f6b98796be928f8c.js",
+        "path_type": "hardlink",
+        "sha256": "af322399d3a3e8a344008dbaababef65900a186060a9c4999845fa4666b57c6c",
+        "sha256_in_prefix": "af322399d3a3e8a344008dbaababef65900a186060a9c4999845fa4666b57c6c",
+        "size_in_bytes": 24727
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/4645.998914768dd63f7e3b6a.js",
+        "path_type": "hardlink",
+        "sha256": "186b70326f63c82c3f44999e1d43105bf21297f5b5389c4f11a2f5eac48c7ffa",
+        "sha256_in_prefix": "186b70326f63c82c3f44999e1d43105bf21297f5b5389c4f11a2f5eac48c7ffa",
+        "size_in_bytes": 4699
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/4667.288ec271d366f6d03bf4.js",
+        "path_type": "hardlink",
+        "sha256": "78a94f29dbd253f18881dd86fbab9700cdb7fb5db57c7cec513c2fef21563b0a",
+        "sha256_in_prefix": "78a94f29dbd253f18881dd86fbab9700cdb7fb5db57c7cec513c2fef21563b0a",
+        "size_in_bytes": 53068
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/4670.3fc6925b39a00569037e.js",
+        "path_type": "hardlink",
+        "sha256": "c69e578251fb6baf65496f62ea6fbf411230b147683c7aa5668b6efd23c104d6",
+        "sha256_in_prefix": "c69e578251fb6baf65496f62ea6fbf411230b147683c7aa5668b6efd23c104d6",
+        "size_in_bytes": 4948
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/4708.ea8fa57a2460a633deb4.js",
+        "path_type": "hardlink",
+        "sha256": "1f981a5be187cfac5dc724506b3579e061fb20011f86d233b0afe3a5d5cc10d0",
+        "sha256_in_prefix": "1f981a5be187cfac5dc724506b3579e061fb20011f86d233b0afe3a5d5cc10d0",
+        "size_in_bytes": 295108
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/4810.f422cb69c3eca42dd212.js",
+        "path_type": "hardlink",
+        "sha256": "43d676e456266b7ccc5b064b596f6a2ad4aea34a5745a7ffb54d9b8189eb2029",
+        "sha256_in_prefix": "43d676e456266b7ccc5b064b596f6a2ad4aea34a5745a7ffb54d9b8189eb2029",
+        "size_in_bytes": 5327
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/481e39042508ae313a60.woff",
+        "path_type": "hardlink",
+        "sha256": "481e39042508ae313a60618af1e37146ab93e9324c98e4c78b8f17fe55d41e0b",
+        "sha256_in_prefix": "481e39042508ae313a60618af1e37146ab93e9324c98e4c78b8f17fe55d41e0b",
+        "size_in_bytes": 1368
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/4825.d47a910536278ab25419.js",
+        "path_type": "hardlink",
+        "sha256": "633dc514bd78efe181c40652a6f8bd1b3652a68fde8e657cc3e74f002be3f532",
+        "sha256_in_prefix": "633dc514bd78efe181c40652a6f8bd1b3652a68fde8e657cc3e74f002be3f532",
+        "size_in_bytes": 13973
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/4828.57b2977d0c98f8416cc4.js",
+        "path_type": "hardlink",
+        "sha256": "5db9914da8b3721a5b732612b917a4c5498ea644040a14b7ae8197a1a9b29996",
+        "sha256_in_prefix": "5db9914da8b3721a5b732612b917a4c5498ea644040a14b7ae8197a1a9b29996",
+        "size_in_bytes": 739
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/4837.a9ef53721ea86ce81edf.js",
+        "path_type": "hardlink",
+        "sha256": "a8e1f46260f40657eaf59fc5ac88c6870159e1a0f0e31c381ddd5ddd684577a7",
+        "sha256_in_prefix": "a8e1f46260f40657eaf59fc5ac88c6870159e1a0f0e31c381ddd5ddd684577a7",
+        "size_in_bytes": 1867
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/4843.7eed3c5267c10f3eb786.js",
+        "path_type": "hardlink",
+        "sha256": "6cce2bc32c4ccb3ce69374d677efefa6be9892fbb1ce6696d11c3c5c7f3e017c",
+        "sha256_in_prefix": "6cce2bc32c4ccb3ce69374d677efefa6be9892fbb1ce6696d11c3c5c7f3e017c",
+        "size_in_bytes": 6146
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/4886.6084c97eb0f7628908ee.js",
+        "path_type": "hardlink",
+        "sha256": "250b745a2ea54d95d5cc05d142b1b27cc926904315bcbd0c5ae55c26e948f4cb",
+        "sha256_in_prefix": "250b745a2ea54d95d5cc05d142b1b27cc926904315bcbd0c5ae55c26e948f4cb",
+        "size_in_bytes": 87811
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/4926.07f857be253dfe2d9b64.js",
+        "path_type": "hardlink",
+        "sha256": "f56d4b51e356aba28175df50a5af9fc8deb8127ef662942a1eb9f9390feeeafd",
+        "sha256_in_prefix": "f56d4b51e356aba28175df50a5af9fc8deb8127ef662942a1eb9f9390feeeafd",
+        "size_in_bytes": 404729
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/4965.591924d7805c15261494.js",
+        "path_type": "hardlink",
+        "sha256": "06b8cf5bc39764cfe7a1bb1aadd4833918d9dd0552294088e226e2cb0d4dbc93",
+        "sha256_in_prefix": "06b8cf5bc39764cfe7a1bb1aadd4833918d9dd0552294088e226e2cb0d4dbc93",
+        "size_in_bytes": 3569
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/4971.e850b0a1dcb6d3fce7a4.js",
+        "path_type": "hardlink",
+        "sha256": "7add78c464bf625ba441d7907d779619d50fb6f5b0b6fac8191935e176307487",
+        "sha256_in_prefix": "7add78c464bf625ba441d7907d779619d50fb6f5b0b6fac8191935e176307487",
+        "size_in_bytes": 6449
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/5019.48f595eb3007a3ca0f91.js",
+        "path_type": "hardlink",
+        "sha256": "e87725d807111da2f39266be89b7da823733eb9916c1bee53e0b6dca8fd1fc5d",
+        "sha256_in_prefix": "e87725d807111da2f39266be89b7da823733eb9916c1bee53e0b6dca8fd1fc5d",
+        "size_in_bytes": 39910
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/5061.aede931a61d7ce87ee23.js",
+        "path_type": "hardlink",
+        "sha256": "9d97ad288703828081ddb7890db517cf9f8f6509044d7ed7c4e689a3662edf5e",
+        "sha256_in_prefix": "9d97ad288703828081ddb7890db517cf9f8f6509044d7ed7c4e689a3662edf5e",
+        "size_in_bytes": 8312
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/5095.cacabf11fc06b3d7f4ad.js",
+        "path_type": "hardlink",
+        "sha256": "5275a96c6fc0b5b4848f718428a714de1b1d8d0757cffe9a6cc800234cfc59ca",
+        "sha256_in_prefix": "5275a96c6fc0b5b4848f718428a714de1b1d8d0757cffe9a6cc800234cfc59ca",
+        "size_in_bytes": 1668
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/5115.722cf90a473016a17ba7.js",
+        "path_type": "hardlink",
+        "sha256": "e285607ea64e28b90d9e45435c47112e73fba5560af2c52dc994fbeac927500d",
+        "sha256_in_prefix": "e285607ea64e28b90d9e45435c47112e73fba5560af2c52dc994fbeac927500d",
+        "size_in_bytes": 112974
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/5135.b7b086e4e6f05e7e005d.js",
+        "path_type": "hardlink",
+        "sha256": "645d6ab87ed556ae57080c5e9ed8f291c9f0a2da6592da0bf7ad5db2aa4f56e8",
+        "sha256_in_prefix": "645d6ab87ed556ae57080c5e9ed8f291c9f0a2da6592da0bf7ad5db2aa4f56e8",
+        "size_in_bytes": 36062
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/5249.47203d8dad661b809e38.js",
+        "path_type": "hardlink",
+        "sha256": "3f9c348c237f344497b7394ea56e2e8c33a97f82e30c5fc12070f6d39bb89fa2",
+        "sha256_in_prefix": "3f9c348c237f344497b7394ea56e2e8c33a97f82e30c5fc12070f6d39bb89fa2",
+        "size_in_bytes": 6557
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/5261.f12a52481f4cee8ba676.js",
+        "path_type": "hardlink",
+        "sha256": "4f86b459030945f9c656f20150fa72d6f900ce5edb4631afb22509063092750d",
+        "sha256_in_prefix": "4f86b459030945f9c656f20150fa72d6f900ce5edb4631afb22509063092750d",
+        "size_in_bytes": 52389
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/5299.a014c52ba3f8492bad0f.js",
+        "path_type": "hardlink",
+        "sha256": "d4b70f1ab726aad364ac625d45fbbb8606f5bc4a9265227370745094f3f4fca8",
+        "sha256_in_prefix": "d4b70f1ab726aad364ac625d45fbbb8606f5bc4a9265227370745094f3f4fca8",
+        "size_in_bytes": 10174
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/5425.2e42adccd47405a6a6a3.js",
+        "path_type": "hardlink",
+        "sha256": "cdee9d114ff6fca166ab2456e9040bb7f33e0da9f5e4a91fe582d9a4adb505d0",
+        "sha256_in_prefix": "cdee9d114ff6fca166ab2456e9040bb7f33e0da9f5e4a91fe582d9a4adb505d0",
+        "size_in_bytes": 8039
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/5448.a9016133a2b9389ac102.js",
+        "path_type": "hardlink",
+        "sha256": "0320102e00243562040ce121c94662640c4bcc03e52f15b3326ad56fad1b02ad",
+        "sha256_in_prefix": "0320102e00243562040ce121c94662640c4bcc03e52f15b3326ad56fad1b02ad",
+        "size_in_bytes": 24439
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/5494.391c359bd3d5f45fb30b.js",
+        "path_type": "hardlink",
+        "sha256": "5510001dc2e8885efbb6c4121eac878128c938e518ccaa3dcd392426bef6523b",
+        "sha256_in_prefix": "5510001dc2e8885efbb6c4121eac878128c938e518ccaa3dcd392426bef6523b",
+        "size_in_bytes": 5391
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/5573.bb30245305dc034dfc1d.js",
+        "path_type": "hardlink",
+        "sha256": "392e9000a628f4ddfad14ed86a3683ade3abc48206e33cac15a8862a6e1bd501",
+        "sha256_in_prefix": "392e9000a628f4ddfad14ed86a3683ade3abc48206e33cac15a8862a6e1bd501",
+        "size_in_bytes": 27371
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/5601.66a1a7b62201a024a7c3.js",
+        "path_type": "hardlink",
+        "sha256": "0b60c4eebb7ccb5c746dd8d480a79c1cc7dc1d073080a56d492430d16ea83383",
+        "sha256_in_prefix": "0b60c4eebb7ccb5c746dd8d480a79c1cc7dc1d073080a56d492430d16ea83383",
+        "size_in_bytes": 4862
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/563.0a7566a6f2b684579011.js",
+        "path_type": "hardlink",
+        "sha256": "1894c96d2d0f4b652034562c2555a991a7bc7bbf1a1d037da1138057eea9b769",
+        "sha256_in_prefix": "1894c96d2d0f4b652034562c2555a991a7bc7bbf1a1d037da1138057eea9b769",
+        "size_in_bytes": 4057
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/5698.3347ece7b9654a7783ce.js",
+        "path_type": "hardlink",
+        "sha256": "2a514fe417abe3842463d4c874373785b29c33cb90b99af56685b88ffdc39bf8",
+        "sha256_in_prefix": "2a514fe417abe3842463d4c874373785b29c33cb90b99af56685b88ffdc39bf8",
+        "size_in_bytes": 3586
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/5748.5dca396b965fb74427ff.js",
+        "path_type": "hardlink",
+        "sha256": "94dc24993631e9a60c11e6f835c9008d2b0cd3016ea5bc28a85febcaedf1900a",
+        "sha256_in_prefix": "94dc24993631e9a60c11e6f835c9008d2b0cd3016ea5bc28a85febcaedf1900a",
+        "size_in_bytes": 71700
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/5765.f588990a6e3cb69dcefe.js",
+        "path_type": "hardlink",
+        "sha256": "03a76b475cbbbd3b9aeeb744587fa0ce89dce52b6b9bd975d4ae8336afe55bc9",
+        "sha256_in_prefix": "03a76b475cbbbd3b9aeeb744587fa0ce89dce52b6b9bd975d4ae8336afe55bc9",
+        "size_in_bytes": 18044
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/5777.c601d5372b8b7c9b6ff0.js",
+        "path_type": "hardlink",
+        "sha256": "13add5b677f636aeaa67b13f21662508671b8cba13ca645b2acb386f24f300f3",
+        "sha256_in_prefix": "13add5b677f636aeaa67b13f21662508671b8cba13ca645b2acb386f24f300f3",
+        "size_in_bytes": 18044
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/5822.6dcbc72eeab5ed4295aa.js",
+        "path_type": "hardlink",
+        "sha256": "221ee11b9627fea839926f7b00073a9e70baf9bfaa93a13cab5650b1a13df883",
+        "sha256_in_prefix": "221ee11b9627fea839926f7b00073a9e70baf9bfaa93a13cab5650b1a13df883",
+        "size_in_bytes": 22040
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/5828.66806b64a5e5ffda935f.js",
+        "path_type": "hardlink",
+        "sha256": "3a8939cbd50a8a770557e9c14cedd41c5c008ded9632ccaac08c29e2771ebd69",
+        "sha256_in_prefix": "3a8939cbd50a8a770557e9c14cedd41c5c008ded9632ccaac08c29e2771ebd69",
+        "size_in_bytes": 46473
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/5834.aca2b773e8f9ffc9639e.js",
+        "path_type": "hardlink",
+        "sha256": "ff29f3149d7a3fac6095b7aa9000b6fa17df2854e599f8af0cd90ec20782e04d",
+        "sha256_in_prefix": "ff29f3149d7a3fac6095b7aa9000b6fa17df2854e599f8af0cd90ec20782e04d",
+        "size_in_bytes": 8195
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/5850.65dd0d81b5948c463df4.js",
+        "path_type": "hardlink",
+        "sha256": "ac2a7617791b279ce65aedcf186a4bebde0ab207d91352e4ca46869b986342a7",
+        "sha256_in_prefix": "ac2a7617791b279ce65aedcf186a4bebde0ab207d91352e4ca46869b986342a7",
+        "size_in_bytes": 94982
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/5872.9d35ff1e9109987247b6.js",
+        "path_type": "hardlink",
+        "sha256": "ff874f8a79ff76e125ee5ff7f6cc16cd1b92e5fc6be5314c27fc3940201a7d1a",
+        "sha256_in_prefix": "ff874f8a79ff76e125ee5ff7f6cc16cd1b92e5fc6be5314c27fc3940201a7d1a",
+        "size_in_bytes": 2354
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/5972.456ddfa373f527f850fb.js",
+        "path_type": "hardlink",
+        "sha256": "58cd424851c4a223fb07b5a7e1a02fb299415f86eb39814a10e70390576feb7c",
+        "sha256_in_prefix": "58cd424851c4a223fb07b5a7e1a02fb299415f86eb39814a10e70390576feb7c",
+        "size_in_bytes": 9396
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/5996.9dd601211e357e9bf641.js",
+        "path_type": "hardlink",
+        "sha256": "eb0a77697e36f6d504ae041c747708dd94457ddd4714a5ffcef66f9a7571d9a2",
+        "sha256_in_prefix": "eb0a77697e36f6d504ae041c747708dd94457ddd4714a5ffcef66f9a7571d9a2",
+        "size_in_bytes": 13477
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/5cda41563a095bd70c78.woff",
+        "path_type": "hardlink",
+        "sha256": "5cda41563a095bd70c78e2dda13d0f8cb922c71c90fffd0a0044c65173a66e83",
+        "sha256_in_prefix": "5cda41563a095bd70c78e2dda13d0f8cb922c71c90fffd0a0044c65173a66e83",
+        "size_in_bytes": 3244
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/6139.9b4118bd8223a51fa897.js",
+        "path_type": "hardlink",
+        "sha256": "0c8266045591646534c8b21ff9744a605579403a429669ac968536ccee1a777e",
+        "sha256_in_prefix": "0c8266045591646534c8b21ff9744a605579403a429669ac968536ccee1a777e",
+        "size_in_bytes": 4825
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/6271.7ad87d1f14b9d74742ec.js",
+        "path_type": "hardlink",
+        "sha256": "9a8172e3f045253ea2b28ce0aacb8dd527b11759555b184c130281f11851ab5d",
+        "sha256_in_prefix": "9a8172e3f045253ea2b28ce0aacb8dd527b11759555b184c130281f11851ab5d",
+        "size_in_bytes": 106741
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/6301.c02f41d998293ace8bac.js",
+        "path_type": "hardlink",
+        "sha256": "6536e05de67ace278e499e25c5a0a7faee59e3a15b733836ce9f800223388bc4",
+        "sha256_in_prefix": "6536e05de67ace278e499e25c5a0a7faee59e3a15b733836ce9f800223388bc4",
+        "size_in_bytes": 30123
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/632.c59cde46a58f6dac3b70.js",
+        "path_type": "hardlink",
+        "sha256": "4d11bf1dc037c1199e2cd2b05e3086d2fb5c72912fb5ce4b3bba7a7b20143ed4",
+        "sha256_in_prefix": "4d11bf1dc037c1199e2cd2b05e3086d2fb5c72912fb5ce4b3bba7a7b20143ed4",
+        "size_in_bytes": 6287
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/6345.d502d596db3228f46015.js",
+        "path_type": "hardlink",
+        "sha256": "9022cc2069ad2fd6ea32fe278215b04e08a6097b67d8f07166a377ddaf653b52",
+        "sha256_in_prefix": "9022cc2069ad2fd6ea32fe278215b04e08a6097b67d8f07166a377ddaf653b52",
+        "size_in_bytes": 4699
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/6428.e4e53b40817c3dd248ca.js",
+        "path_type": "hardlink",
+        "sha256": "b2c054edbae0cdd2148edde5b5fc1f50c3b2298ccad9b8735029309655f45067",
+        "sha256_in_prefix": "b2c054edbae0cdd2148edde5b5fc1f50c3b2298ccad9b8735029309655f45067",
+        "size_in_bytes": 44740
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/647.3a6deb0e090650f1c3e2.js",
+        "path_type": "hardlink",
+        "sha256": "9d4e46b07d32a0aee95aaf86a928152bf08d4b177c7eb366221cf1b08b7ed6e9",
+        "sha256_in_prefix": "9d4e46b07d32a0aee95aaf86a928152bf08d4b177c7eb366221cf1b08b7ed6e9",
+        "size_in_bytes": 4573
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/6491.4ec5e8e76fbff7d9698a.js",
+        "path_type": "hardlink",
+        "sha256": "0d89d4e144d59cde49a02ba37decc1d001af9f7e3ff58605335fe06d2dde12dc",
+        "sha256_in_prefix": "0d89d4e144d59cde49a02ba37decc1d001af9f7e3ff58605335fe06d2dde12dc",
+        "size_in_bytes": 77013
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/6521.95f93bd416d53955c700.js",
+        "path_type": "hardlink",
+        "sha256": "ffbdbd703b379161488b902a5494fc48e67d79157a0d6120523726581d90b876",
+        "sha256_in_prefix": "ffbdbd703b379161488b902a5494fc48e67d79157a0d6120523726581d90b876",
+        "size_in_bytes": 3168
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/6561.ebddc37c2afcedcddd21.js",
+        "path_type": "hardlink",
+        "sha256": "a9c0b64d45ee6a1a58b86da4427c223fbdf00eff2f0151aea94f34a11876f2bc",
+        "sha256_in_prefix": "a9c0b64d45ee6a1a58b86da4427c223fbdf00eff2f0151aea94f34a11876f2bc",
+        "size_in_bytes": 738
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/661.bfd67818fb0b29d1fcb4.js",
+        "path_type": "hardlink",
+        "sha256": "5cf5984fd248dae115b8d41da7171f3cbfeb558ccc048ffa4df0be127192b3e1",
+        "sha256_in_prefix": "5cf5984fd248dae115b8d41da7171f3cbfeb558ccc048ffa4df0be127192b3e1",
+        "size_in_bytes": 37972
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/67.9cbc679ecb920dd7951b.js",
+        "path_type": "hardlink",
+        "sha256": "17fef23f8ea2fe273580d2595f3f35778ce553f912539dd30682bf3b19002dc2",
+        "sha256_in_prefix": "17fef23f8ea2fe273580d2595f3f35778ce553f912539dd30682bf3b19002dc2",
+        "size_in_bytes": 9839
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/6739.b86fe9f9325e098414af.js",
+        "path_type": "hardlink",
+        "sha256": "79ed95ed0d8080982caa0e708c7c44632901a7f95efbc911d5d10788dfe43514",
+        "sha256_in_prefix": "79ed95ed0d8080982caa0e708c7c44632901a7f95efbc911d5d10788dfe43514",
+        "size_in_bytes": 39297
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/677.bedd668f19a13f2743c4.js",
+        "path_type": "hardlink",
+        "sha256": "a821384f913524848c50d1c1cf6d36612bd705ed592d1468d03685a0f9938133",
+        "sha256_in_prefix": "a821384f913524848c50d1c1cf6d36612bd705ed592d1468d03685a0f9938133",
+        "size_in_bytes": 6354
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/6788.c9f5f85294a5ed5f86ec.js",
+        "path_type": "hardlink",
+        "sha256": "e4111d3f17761c82db2715f603fc195328ee30ca7d350a4951b1dfc49bfa00d9",
+        "sha256_in_prefix": "e4111d3f17761c82db2715f603fc195328ee30ca7d350a4951b1dfc49bfa00d9",
+        "size_in_bytes": 5496
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/6800.35cead61fb9b37904873.js",
+        "path_type": "hardlink",
+        "sha256": "81d2838edd16b8d350676316df35ed85458c10ab401ba531529c214ace387685",
+        "sha256_in_prefix": "81d2838edd16b8d350676316df35ed85458c10ab401ba531529c214ace387685",
+        "size_in_bytes": 747
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/6873.d5b12730d4556b6f37bf.js",
+        "path_type": "hardlink",
+        "sha256": "b66fdf0bf14aaca41b84aea9a64d52b14b7ced3ff1e7d422b22be8a7dffe43ef",
+        "sha256_in_prefix": "b66fdf0bf14aaca41b84aea9a64d52b14b7ced3ff1e7d422b22be8a7dffe43ef",
+        "size_in_bytes": 87304
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/69.aa2a725012bd95ceceba.js",
+        "path_type": "hardlink",
+        "sha256": "df7931093fb955c821fafc298b642063c29e55eb0d80d8b94e60f09eeaa9bf9f",
+        "sha256_in_prefix": "df7931093fb955c821fafc298b642063c29e55eb0d80d8b94e60f09eeaa9bf9f",
+        "size_in_bytes": 2760
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/6942.073187fa00ada10fcd06.js",
+        "path_type": "hardlink",
+        "sha256": "121a1ee0f13b9eb86e1d07c33845e620450d8abe8d0816e2529cd09ec5892c40",
+        "sha256_in_prefix": "121a1ee0f13b9eb86e1d07c33845e620450d8abe8d0816e2529cd09ec5892c40",
+        "size_in_bytes": 8371
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/6972.3bd59944fc1dc3e59150.js",
+        "path_type": "hardlink",
+        "sha256": "5a652d48e3bfa1b9b09ec72a031acb7008b82676debcdacd66db136dd4c09920",
+        "sha256_in_prefix": "5a652d48e3bfa1b9b09ec72a031acb7008b82676debcdacd66db136dd4c09920",
+        "size_in_bytes": 75258
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/7005.9f299a4f2a4e116a7369.js",
+        "path_type": "hardlink",
+        "sha256": "409772fa942eb98592ab173830f8c305206c65d20f5c8b4886dcca2d8e949939",
+        "sha256_in_prefix": "409772fa942eb98592ab173830f8c305206c65d20f5c8b4886dcca2d8e949939",
+        "size_in_bytes": 7211
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/7022.ada0a27a1f0d61d90ee8.js",
+        "path_type": "hardlink",
+        "sha256": "1e0770fa50c94a70a77fb5cdd2fc45bc067e382c1e5cd40e601a0cec186775e5",
+        "sha256_in_prefix": "1e0770fa50c94a70a77fb5cdd2fc45bc067e382c1e5cd40e601a0cec186775e5",
+        "size_in_bytes": 8817
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/7054.093d48fae797c6c33872.js",
+        "path_type": "hardlink",
+        "sha256": "d00f13834a3bf868a9b4c539d6aed86e7848a3511f7225319643091f945b8b72",
+        "sha256_in_prefix": "d00f13834a3bf868a9b4c539d6aed86e7848a3511f7225319643091f945b8b72",
+        "size_in_bytes": 7402
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/7061.ada76efa0840f101be5b.js",
+        "path_type": "hardlink",
+        "sha256": "758031f64d2773e36e7ab466d4b0b2782101348ac615534b11a5e51c1e137877",
+        "sha256_in_prefix": "758031f64d2773e36e7ab466d4b0b2782101348ac615534b11a5e51c1e137877",
+        "size_in_bytes": 5660
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/7154.1ab03d07151bbd0aad06.js",
+        "path_type": "hardlink",
+        "sha256": "800e7fca2c9b30a9112c8d492a0ffc0b701b24107381123439cb0da874519cbf",
+        "sha256_in_prefix": "800e7fca2c9b30a9112c8d492a0ffc0b701b24107381123439cb0da874519cbf",
+        "size_in_bytes": 141417
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/7159.41e52038b70d27a3b442.js",
+        "path_type": "hardlink",
+        "sha256": "b808a95eacfd64f3df4266a28a9231262038430c5f8a3b3455c51afd5e7f4bf9",
+        "sha256_in_prefix": "b808a95eacfd64f3df4266a28a9231262038430c5f8a3b3455c51afd5e7f4bf9",
+        "size_in_bytes": 68725
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/7170.aef383eb04df84d63d6a.js",
+        "path_type": "hardlink",
+        "sha256": "7bc8a64f14bdcfa5960bb66c0daf741a25906d457bb502d9ae7911343d2d5379",
+        "sha256_in_prefix": "7bc8a64f14bdcfa5960bb66c0daf741a25906d457bb502d9ae7911343d2d5379",
+        "size_in_bytes": 5071
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/7179.a27cb1e09e47e519cbfa.js",
+        "path_type": "hardlink",
+        "sha256": "4b66488773d0d0bb165592ff85ba8aa6d38ad5325706ebb98dd2f307637cff30",
+        "sha256_in_prefix": "4b66488773d0d0bb165592ff85ba8aa6d38ad5325706ebb98dd2f307637cff30",
+        "size_in_bytes": 12474
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/721921bab0d001ebff02.woff",
+        "path_type": "hardlink",
+        "sha256": "721921bab0d001ebff0206c24cb5de6ca136467bf1843a7aa32030ba061d1e92",
+        "sha256_in_prefix": "721921bab0d001ebff0206c24cb5de6ca136467bf1843a7aa32030ba061d1e92",
+        "size_in_bytes": 22340
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/7264.56c0f8b7752822724b0f.js",
+        "path_type": "hardlink",
+        "sha256": "7657491091184fe87ca829ec10c5fa1109d97cc699f028c935a86fbb10671d71",
+        "sha256_in_prefix": "7657491091184fe87ca829ec10c5fa1109d97cc699f028c935a86fbb10671d71",
+        "size_in_bytes": 3491
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/72bc573386dd1d48c5bb.woff",
+        "path_type": "hardlink",
+        "sha256": "72bc573386dd1d48c5bbd286302ca9e3400c5eb0f298e7cfbf945b9d08fc688f",
+        "sha256_in_prefix": "72bc573386dd1d48c5bbd286302ca9e3400c5eb0f298e7cfbf945b9d08fc688f",
+        "size_in_bytes": 1136
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/7302.d78f81cccff1a175f9e0.js",
+        "path_type": "hardlink",
+        "sha256": "657a2ae3feb7f7cb959645ba53f8d106b47843b44b054ef38e662d556e902dfc",
+        "sha256_in_prefix": "657a2ae3feb7f7cb959645ba53f8d106b47843b44b054ef38e662d556e902dfc",
+        "size_in_bytes": 19636
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/7360.b3741cc7257cecd9efe9.js",
+        "path_type": "hardlink",
+        "sha256": "124c6717ae61ee081321e7f5d4e7ea4ee4899ae01b51b165529beed0238e99f6",
+        "sha256_in_prefix": "124c6717ae61ee081321e7f5d4e7ea4ee4899ae01b51b165529beed0238e99f6",
+        "size_in_bytes": 7998
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/7369.a065dc2ed2f56a44cb0f.js",
+        "path_type": "hardlink",
+        "sha256": "657ed2bf58f7bbde9f181d366facae8ded578565109eb91f05c1ad8466d534a0",
+        "sha256_in_prefix": "657ed2bf58f7bbde9f181d366facae8ded578565109eb91f05c1ad8466d534a0",
+        "size_in_bytes": 410974
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/7378.df12091e8f42a5da0429.js",
+        "path_type": "hardlink",
+        "sha256": "23fd15a85bc5954cb48541ca1d79fb79226e529e31d761d9e48848c002e2763f",
+        "sha256_in_prefix": "23fd15a85bc5954cb48541ca1d79fb79226e529e31d761d9e48848c002e2763f",
+        "size_in_bytes": 7348
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/745.30bb604aa86c8167d1a4.js",
+        "path_type": "hardlink",
+        "sha256": "54c8bd23899624d6932a800e60d42ff81d1879ed05e1ff0abd427be26244f108",
+        "sha256_in_prefix": "54c8bd23899624d6932a800e60d42ff81d1879ed05e1ff0abd427be26244f108",
+        "size_in_bytes": 3962
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/7450.c047a6b002d188bafd58.js",
+        "path_type": "hardlink",
+        "sha256": "1987eca556e49beee131c7823aa85705e952c51515a568c23d09bb66bde89bd6",
+        "sha256_in_prefix": "1987eca556e49beee131c7823aa85705e952c51515a568c23d09bb66bde89bd6",
+        "size_in_bytes": 93546
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/7471.27c6037e2917dcd9958a.js",
+        "path_type": "hardlink",
+        "sha256": "9b3e2a797efdff5527450933175d9ed42bc5657904f19797b938738279dfff09",
+        "sha256_in_prefix": "9b3e2a797efdff5527450933175d9ed42bc5657904f19797b938738279dfff09",
+        "size_in_bytes": 79786
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/7488.4d8124f72a0f10256f44.js",
+        "path_type": "hardlink",
+        "sha256": "0d395e70cd7fe00a2e95b1286b6acb118fd43a9c8446e0ce16fef0b7ed0e0949",
+        "sha256_in_prefix": "0d395e70cd7fe00a2e95b1286b6acb118fd43a9c8446e0ce16fef0b7ed0e0949",
+        "size_in_bytes": 55698
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/7534.e6ec4e7bd41255482e3e.js",
+        "path_type": "hardlink",
+        "sha256": "196af1422a2e8c271a8ae4272caf859f237e1f5bf619ec0f8304d025fa5ac817",
+        "sha256_in_prefix": "196af1422a2e8c271a8ae4272caf859f237e1f5bf619ec0f8304d025fa5ac817",
+        "size_in_bytes": 7879
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/755.3d6eb3b7f81d035f52f4.js",
+        "path_type": "hardlink",
+        "sha256": "5145ec2aa0033aedb98deead6fd7a765660c3de254a73561ba562d69c47e713f",
+        "sha256_in_prefix": "5145ec2aa0033aedb98deead6fd7a765660c3de254a73561ba562d69c47e713f",
+        "size_in_bytes": 63341
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/7561.ab0621a9e054b91897f7.js",
+        "path_type": "hardlink",
+        "sha256": "6f515e67a449fe2ab33e5d866e9f17ef746de74a0d8cad8b73cc74cb47a6934a",
+        "sha256_in_prefix": "6f515e67a449fe2ab33e5d866e9f17ef746de74a0d8cad8b73cc74cb47a6934a",
+        "size_in_bytes": 29244
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/757.86f80ac05f38c4f4be68.js",
+        "path_type": "hardlink",
+        "sha256": "ea4fc612ed542a71c7aaa7f6792830c43f532f80df1ae851a983c05887647433",
+        "sha256_in_prefix": "ea4fc612ed542a71c7aaa7f6792830c43f532f80df1ae851a983c05887647433",
+        "size_in_bytes": 86210
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/7582.5611b71499b0becf7b6a.js",
+        "path_type": "hardlink",
+        "sha256": "3779ad7baf637043b623619d3c69ed44611af0a42f0481e37430ae28b7fe6a27",
+        "sha256_in_prefix": "3779ad7baf637043b623619d3c69ed44611af0a42f0481e37430ae28b7fe6a27",
+        "size_in_bytes": 32096
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/7634.ad26bf6396390c53768a.js",
+        "path_type": "hardlink",
+        "sha256": "0c4e1dcd9d473a3aa2cab9372955e1d4791e5942c693e8f96022ba315be428f6",
+        "sha256_in_prefix": "0c4e1dcd9d473a3aa2cab9372955e1d4791e5942c693e8f96022ba315be428f6",
+        "size_in_bytes": 485
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/7674.80774120971faccbb256.js",
+        "path_type": "hardlink",
+        "sha256": "b9eaac9a727734e23f6d53de00a25bb277e0bef8f469c10bdc3f659a1b5b36a4",
+        "sha256_in_prefix": "b9eaac9a727734e23f6d53de00a25bb277e0bef8f469c10bdc3f659a1b5b36a4",
+        "size_in_bytes": 106176
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/777.de863ae105caa5756453.js",
+        "path_type": "hardlink",
+        "sha256": "f5fe3e5282159257687b8f11246dc061aa2f1eca2582ed9b690a1df9e954aca8",
+        "sha256_in_prefix": "f5fe3e5282159257687b8f11246dc061aa2f1eca2582ed9b690a1df9e954aca8",
+        "size_in_bytes": 2295
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/7803.0c44e7b8d148353eed87.js",
+        "path_type": "hardlink",
+        "sha256": "9af3dc0a996c0ae2270c4a8c5a32afb3ed773c9717576bb24a46393f27221e26",
+        "sha256_in_prefix": "9af3dc0a996c0ae2270c4a8c5a32afb3ed773c9717576bb24a46393f27221e26",
+        "size_in_bytes": 2002
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/7811.fa11577c84ea92d4102c.js",
+        "path_type": "hardlink",
+        "sha256": "df513bc1f1ef47b7475624125b30a4b2512283c306f7a9c18a2c49698672c288",
+        "sha256_in_prefix": "df513bc1f1ef47b7475624125b30a4b2512283c306f7a9c18a2c49698672c288",
+        "size_in_bytes": 54068
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/7817.74b742c39300a07a9efa.js",
+        "path_type": "hardlink",
+        "sha256": "8f52c7e4fcd77442f4379c8b77fc7182d1ef0cfa3c42378396c9e3e7473273ee",
+        "sha256_in_prefix": "8f52c7e4fcd77442f4379c8b77fc7182d1ef0cfa3c42378396c9e3e7473273ee",
+        "size_in_bytes": 4656
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/7866.b49b1018f43def5a8f30.js",
+        "path_type": "hardlink",
+        "sha256": "7794d323c850d811b2149a1a3cccf6627c04b0f594a96462aec9f9c88e1aba2c",
+        "sha256_in_prefix": "7794d323c850d811b2149a1a3cccf6627c04b0f594a96462aec9f9c88e1aba2c",
+        "size_in_bytes": 49380
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/7884.07a3d44e10261bae9b1f.js",
+        "path_type": "hardlink",
+        "sha256": "a824b2406cb75599ba57c48510c0acd0d1bc7d3c105d211169ac670fa730af64",
+        "sha256_in_prefix": "a824b2406cb75599ba57c48510c0acd0d1bc7d3c105d211169ac670fa730af64",
+        "size_in_bytes": 106526
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/7906.487df198bc7b2617234f.js",
+        "path_type": "hardlink",
+        "sha256": "9dc6784c6985f5021b977649d02ea2dc8de165d891a498f4ef1371a2c6c9019a",
+        "sha256_in_prefix": "9dc6784c6985f5021b977649d02ea2dc8de165d891a498f4ef1371a2c6c9019a",
+        "size_in_bytes": 2953
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/792.050c0efb8da8e633f900.js",
+        "path_type": "hardlink",
+        "sha256": "19ee0625647ea9b6fb2aa836a62cd112764a6f6dacdf02471fd98f49310a1ed2",
+        "sha256_in_prefix": "19ee0625647ea9b6fb2aa836a62cd112764a6f6dacdf02471fd98f49310a1ed2",
+        "size_in_bytes": 29808
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/7957.d903973498b192f6210c.js",
+        "path_type": "hardlink",
+        "sha256": "929792fc2e238e6fec20142c6b0d6b5147620ac14f4236c67de2d7c1701d9935",
+        "sha256_in_prefix": "929792fc2e238e6fec20142c6b0d6b5147620ac14f4236c67de2d7c1701d9935",
+        "size_in_bytes": 404596
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/7969.0080840fce265b81a360.js",
+        "path_type": "hardlink",
+        "sha256": "21068ed6d5396c71d5c0d1cf9ed5a4a27b4ca102ba4a0e461940e2e735bd822e",
+        "sha256_in_prefix": "21068ed6d5396c71d5c0d1cf9ed5a4a27b4ca102ba4a0e461940e2e735bd822e",
+        "size_in_bytes": 121391
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/7995.45be6443b704da1daafc.js",
+        "path_type": "hardlink",
+        "sha256": "facb6a43d4bea97e38fb246f2068b6568b54632be8005f72b9242734b79077f3",
+        "sha256_in_prefix": "facb6a43d4bea97e38fb246f2068b6568b54632be8005f72b9242734b79077f3",
+        "size_in_bytes": 330612
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/7997.1469ff294f8b64fd26ec.js",
+        "path_type": "hardlink",
+        "sha256": "6907450259ea5b93d6eab83ddb5119eb7869137e442752c1f972a89b1915376e",
+        "sha256_in_prefix": "6907450259ea5b93d6eab83ddb5119eb7869137e442752c1f972a89b1915376e",
+        "size_in_bytes": 82133
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/79d088064beb3826054f.eot",
+        "path_type": "hardlink",
+        "sha256": "79d088064beb3826054fb88165416235897a856ca952fca1498b1c59b16aaa48",
+        "sha256_in_prefix": "79d088064beb3826054fb88165416235897a856ca952fca1498b1c59b16aaa48",
+        "size_in_bytes": 34034
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/8010.0c4fde830729471df121.js",
+        "path_type": "hardlink",
+        "sha256": "23cbf06aa2d3949180763d65d8159078fc1c745672ee9c6cce71d99ad6cb0f62",
+        "sha256_in_prefix": "23cbf06aa2d3949180763d65d8159078fc1c745672ee9c6cce71d99ad6cb0f62",
+        "size_in_bytes": 103023
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/8218.983a3a002f016180aaab.js",
+        "path_type": "hardlink",
+        "sha256": "27f222e05ef3cd8fc9f93255c9f4b2f073e2e7123fc64a1f8277741186855a02",
+        "sha256_in_prefix": "27f222e05ef3cd8fc9f93255c9f4b2f073e2e7123fc64a1f8277741186855a02",
+        "size_in_bytes": 79503
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/8285.8bade38c361d9af60b43.js",
+        "path_type": "hardlink",
+        "sha256": "39e548dc1a8a125b7ee799ebed44f129079cfc33a2410f9ee5023aa244aaeebd",
+        "sha256_in_prefix": "39e548dc1a8a125b7ee799ebed44f129079cfc33a2410f9ee5023aa244aaeebd",
+        "size_in_bytes": 30089
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/8378.c1a78f0d6f0124d37fa9.js",
+        "path_type": "hardlink",
+        "sha256": "75103d20ee8665ba4c02a78220b4c002f4b4eddeee87ae2efcb78a1d47eb7ca9",
+        "sha256_in_prefix": "75103d20ee8665ba4c02a78220b4c002f4b4eddeee87ae2efcb78a1d47eb7ca9",
+        "size_in_bytes": 12197
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/8381.0291906ada65d4e5df4e.js",
+        "path_type": "hardlink",
+        "sha256": "f5b1965d964a8dca4b4c849f1e6a7c32e187f457b8b11abf03c5fa857daa63ad",
+        "sha256_in_prefix": "f5b1965d964a8dca4b4c849f1e6a7c32e187f457b8b11abf03c5fa857daa63ad",
+        "size_in_bytes": 5064
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/841.e2a344f8bed0447367be.js",
+        "path_type": "hardlink",
+        "sha256": "00d13e746c1387854bd779bd9dd1e610e5ab30d9bc033affcf22dc01a8d3d06d",
+        "sha256_in_prefix": "00d13e746c1387854bd779bd9dd1e610e5ab30d9bc033affcf22dc01a8d3d06d",
+        "size_in_bytes": 2299
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/8433.ed9247b868845dc191b2.js",
+        "path_type": "hardlink",
+        "sha256": "9ba3ac8e9058a15240a6a90cc679ccb326cc0a3e9d6b4eac5b921b27a46c9202",
+        "sha256_in_prefix": "9ba3ac8e9058a15240a6a90cc679ccb326cc0a3e9d6b4eac5b921b27a46c9202",
+        "size_in_bytes": 2190
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/8446.66c7f866128c07ec4265.js",
+        "path_type": "hardlink",
+        "sha256": "e0cff21952444a01c5ad2ce4eb99d6695c58bb72a3974ee9c775a44b1f765a95",
+        "sha256_in_prefix": "e0cff21952444a01c5ad2ce4eb99d6695c58bb72a3974ee9c775a44b1f765a95",
+        "size_in_bytes": 4694
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/8479.1807152edb3d746c4d0b.js",
+        "path_type": "hardlink",
+        "sha256": "095f3b601978c4d0203c5f5497ef72910988818e2fd6ce372cddefb68bce2a20",
+        "sha256_in_prefix": "095f3b601978c4d0203c5f5497ef72910988818e2fd6ce372cddefb68bce2a20",
+        "size_in_bytes": 47942
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/85.f5f11db2bc819f9ae970.js",
+        "path_type": "hardlink",
+        "sha256": "f452920659732ea57f4450fb1820159ce903b09bb357e2ed26a62bda08c83918",
+        "sha256_in_prefix": "f452920659732ea57f4450fb1820159ce903b09bb357e2ed26a62bda08c83918",
+        "size_in_bytes": 2293
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/850.4ff5be1ac6f4d6958c7a.js",
+        "path_type": "hardlink",
+        "sha256": "a85fe50a0831ff77409739c4816783f817225d74566edd13c9813cfdbc96a202",
+        "sha256_in_prefix": "a85fe50a0831ff77409739c4816783f817225d74566edd13c9813cfdbc96a202",
+        "size_in_bytes": 58721
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/8579.d62567e04de2f4dfcdce.js",
+        "path_type": "hardlink",
+        "sha256": "3f45f14ca710fd9f0bf37706e75f555c3bd104a0fa087499c30d71073d1018eb",
+        "sha256_in_prefix": "3f45f14ca710fd9f0bf37706e75f555c3bd104a0fa087499c30d71073d1018eb",
+        "size_in_bytes": 45907
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/866.8574f33a07edc3fc33b5.js",
+        "path_type": "hardlink",
+        "sha256": "a44d71c30a623303bf858403a65b309cb3890345aba0128f89f42cf10c8cdf11",
+        "sha256_in_prefix": "a44d71c30a623303bf858403a65b309cb3890345aba0128f89f42cf10c8cdf11",
+        "size_in_bytes": 150390
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/8678.9d28c7fae2ee6c13d2eb.js",
+        "path_type": "hardlink",
+        "sha256": "53423d6c87ce35e157bfbb084f083511d3ae7a205c663ca0b41c5319562f5dd0",
+        "sha256_in_prefix": "53423d6c87ce35e157bfbb084f083511d3ae7a205c663ca0b41c5319562f5dd0",
+        "size_in_bytes": 2299
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/8701.7be1d7a9c41099ea4b6f.js",
+        "path_type": "hardlink",
+        "sha256": "5d0e52969621b4aa577db3e6321cc1f25cba5169b7346fb31bb6fd56a1424ee2",
+        "sha256_in_prefix": "5d0e52969621b4aa577db3e6321cc1f25cba5169b7346fb31bb6fd56a1424ee2",
+        "size_in_bytes": 485
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/870673df72e70f87c91a.woff",
+        "path_type": "hardlink",
+        "sha256": "870673df72e70f87c91a5a317d558c2c3b54392264ad79bbadc6d424ae8765fe",
+        "sha256_in_prefix": "870673df72e70f87c91a5a317d558c2c3b54392264ad79bbadc6d424ae8765fe",
+        "size_in_bytes": 21480
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/874.9e1bcef8ee789652f606.js",
+        "path_type": "hardlink",
+        "sha256": "fed7985395498e9e802ee984c3fc82f89843488b0f2d9c3e5628056481ab4cb4",
+        "sha256_in_prefix": "fed7985395498e9e802ee984c3fc82f89843488b0f2d9c3e5628056481ab4cb4",
+        "size_in_bytes": 10403
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/8781.33cace3f177efaaab2ae.js",
+        "path_type": "hardlink",
+        "sha256": "47e4aa9fe732466b7a8580386e11f0ceaf6073dfa7d276786e5006e5ef368b23",
+        "sha256_in_prefix": "47e4aa9fe732466b7a8580386e11f0ceaf6073dfa7d276786e5006e5ef368b23",
+        "size_in_bytes": 102723
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/883.df3c548d474bbe7fc62c.js",
+        "path_type": "hardlink",
+        "sha256": "d774461dd01a3b9ebb07c2bb9f078f2210a6b347182e3c5b965a6c40e6606827",
+        "sha256_in_prefix": "d774461dd01a3b9ebb07c2bb9f078f2210a6b347182e3c5b965a6c40e6606827",
+        "size_in_bytes": 17190
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/8845.ac1c5acb78cea4acee08.js",
+        "path_type": "hardlink",
+        "sha256": "8f18c77515b7034e42846d59f1ad83b642d1fc2e5278deb927037fd177675486",
+        "sha256_in_prefix": "8f18c77515b7034e42846d59f1ad83b642d1fc2e5278deb927037fd177675486",
+        "size_in_bytes": 380480
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/8875.af28a3c042114a6f93aa.js",
+        "path_type": "hardlink",
+        "sha256": "00380b06caa0724ccad3de931660764a52a4b1fa4f8e516cc8bb5e38a2f3ce25",
+        "sha256_in_prefix": "00380b06caa0724ccad3de931660764a52a4b1fa4f8e516cc8bb5e38a2f3ce25",
+        "size_in_bytes": 5926
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/88b98cad3688915e50da.woff",
+        "path_type": "hardlink",
+        "sha256": "88b98cad3688915e50da55553ff6ad185e0dce134b47f176e91b100f8a9b175c",
+        "sha256_in_prefix": "88b98cad3688915e50da55553ff6ad185e0dce134b47f176e91b100f8a9b175c",
+        "size_in_bytes": 34464
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/8929.f522b600b8907f9241c6.js",
+        "path_type": "hardlink",
+        "sha256": "dd291225290b1c061cdf8c264c47209f7ea2c245e1c673aa14b88c08e92748eb",
+        "sha256_in_prefix": "dd291225290b1c061cdf8c264c47209f7ea2c245e1c673aa14b88c08e92748eb",
+        "size_in_bytes": 409921
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/8937.4892770eb5cc44a5f24d.js",
+        "path_type": "hardlink",
+        "sha256": "34fd94e20c9579defb805b3648ccd93c9ea312f68e7909a0e07fba2a8cf34af5",
+        "sha256_in_prefix": "34fd94e20c9579defb805b3648ccd93c9ea312f68e7909a0e07fba2a8cf34af5",
+        "size_in_bytes": 9634
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/8979.cafa00ee6b2e82b39a17.js",
+        "path_type": "hardlink",
+        "sha256": "2fe2e2f999ba7bce3f7a733d131fbdd38b4365170f443790222cbcf1a99804a9",
+        "sha256_in_prefix": "2fe2e2f999ba7bce3f7a733d131fbdd38b4365170f443790222cbcf1a99804a9",
+        "size_in_bytes": 9758
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/8983.56458cb92e3e2efe6d33.js",
+        "path_type": "hardlink",
+        "sha256": "2f1dbaa6e7bc81c6bcf50caef898bb989ac4d7420bb56659b8e0bf90f69289ba",
+        "sha256_in_prefix": "2f1dbaa6e7bc81c6bcf50caef898bb989ac4d7420bb56659b8e0bf90f69289ba",
+        "size_in_bytes": 2023
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/899.5a5d6e7bd36baebe76af.js",
+        "path_type": "hardlink",
+        "sha256": "86ad852fa4a9b48e3e3eb78cd56fd3d52b1828a5e2fb57462704f48d4e393199",
+        "sha256_in_prefix": "86ad852fa4a9b48e3e3eb78cd56fd3d52b1828a5e2fb57462704f48d4e393199",
+        "size_in_bytes": 12131
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/8ea8791754915a898a31.woff2",
+        "path_type": "hardlink",
+        "sha256": "8ea8791754915a898a3100e63e32978a6d1763be6df8e73a39d3a90d691cdeef",
+        "sha256_in_prefix": "8ea8791754915a898a3100e63e32978a6d1763be6df8e73a39d3a90d691cdeef",
+        "size_in_bytes": 76736
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/8ea8dbb1b02e6f730f55.woff",
+        "path_type": "hardlink",
+        "sha256": "8ea8dbb1b02e6f730f55b4cb5d413b785b9f5c39807d0a0fa7da206a0824a457",
+        "sha256_in_prefix": "8ea8dbb1b02e6f730f55b4cb5d413b785b9f5c39807d0a0fa7da206a0824a457",
+        "size_in_bytes": 19776
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/9022.16842ed509ced9c32e9c.js",
+        "path_type": "hardlink",
+        "sha256": "2a3d86554a7317f374d9dde80de23b181ee8fc1e6a4dfafa3bf5907a518662f9",
+        "sha256_in_prefix": "2a3d86554a7317f374d9dde80de23b181ee8fc1e6a4dfafa3bf5907a518662f9",
+        "size_in_bytes": 5597
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/9037.663c64b842834ea1989d.js",
+        "path_type": "hardlink",
+        "sha256": "0058f55b568ef6ebadbe481e53cd8b71cffe2e9feaff05126321c6bf6e257cc2",
+        "sha256_in_prefix": "0058f55b568ef6ebadbe481e53cd8b71cffe2e9feaff05126321c6bf6e257cc2",
+        "size_in_bytes": 7821
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/906.da3adda3c4b703a102d7.js",
+        "path_type": "hardlink",
+        "sha256": "7b2a5f976171460ac3b11c603bdfd7cce5e937e5e20a9ce2ba745e773f20d04b",
+        "sha256_in_prefix": "7b2a5f976171460ac3b11c603bdfd7cce5e937e5e20a9ce2ba745e773f20d04b",
+        "size_in_bytes": 12598
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/9060.d564b58af7791af334db.js",
+        "path_type": "hardlink",
+        "sha256": "d26ed04344c7ef1b130dd8e6cdceb955ddf701056cd516ef0dd26fd8f03360eb",
+        "sha256_in_prefix": "d26ed04344c7ef1b130dd8e6cdceb955ddf701056cd516ef0dd26fd8f03360eb",
+        "size_in_bytes": 2270
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/9068.53ce96460d0830da310f.js",
+        "path_type": "hardlink",
+        "sha256": "c8e71b0c12ac698295271bd7c1c95ac4dd33946c48d35f0d543c6f1f35711b80",
+        "sha256_in_prefix": "c8e71b0c12ac698295271bd7c1c95ac4dd33946c48d35f0d543c6f1f35711b80",
+        "size_in_bytes": 10065
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/9116.3fe5c69fba4a31452403.js",
+        "path_type": "hardlink",
+        "sha256": "9623149ca156ad142de79e128fcb7dccf299360fb7e12ffdacaf16bd6c05adb5",
+        "sha256_in_prefix": "9623149ca156ad142de79e128fcb7dccf299360fb7e12ffdacaf16bd6c05adb5",
+        "size_in_bytes": 1066
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/9233.916f96402862a0190f46.js",
+        "path_type": "hardlink",
+        "sha256": "7465e81fe01b6ebaf187afe2390d33531d8aacda8d9b6c1052e58b60d393adb0",
+        "sha256_in_prefix": "7465e81fe01b6ebaf187afe2390d33531d8aacda8d9b6c1052e58b60d393adb0",
+        "size_in_bytes": 3490
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/9234.ec504d9c9a30598a995c.js",
+        "path_type": "hardlink",
+        "sha256": "f1c7f995802416d7929fc46745356c3cb6ce8729b26de869120f91ea2d38475f",
+        "sha256_in_prefix": "f1c7f995802416d7929fc46745356c3cb6ce8729b26de869120f91ea2d38475f",
+        "size_in_bytes": 4368
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/9239.8802747dd58982052b99.js",
+        "path_type": "hardlink",
+        "sha256": "943ed4d63d2a6c967795e982065210dbfd212fd1877c0d269bf7e83f396699b4",
+        "sha256_in_prefix": "943ed4d63d2a6c967795e982065210dbfd212fd1877c0d269bf7e83f396699b4",
+        "size_in_bytes": 31516
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/9250.a4dfe77db702bf7a316c.js",
+        "path_type": "hardlink",
+        "sha256": "e3ccdeb67fabb4b73ab9c635d8b3f4212b7b219cd485478b377ae57eae15fa18",
+        "sha256_in_prefix": "e3ccdeb67fabb4b73ab9c635d8b3f4212b7b219cd485478b377ae57eae15fa18",
+        "size_in_bytes": 14318
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/9310.dce9f915c210d4c8802c.js",
+        "path_type": "hardlink",
+        "sha256": "2f0f82ea0354e38860e1b4abde9615fcfeff7493ca350b34679ab3187fd4bd02",
+        "sha256_in_prefix": "2f0f82ea0354e38860e1b4abde9615fcfeff7493ca350b34679ab3187fd4bd02",
+        "size_in_bytes": 1635293
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/9322.02659b877f7881740557.js",
+        "path_type": "hardlink",
+        "sha256": "da21491659070ff6e503ac38491f4a0a3f73ace856c459fa6c7bd74ac1f0ed58",
+        "sha256_in_prefix": "da21491659070ff6e503ac38491f4a0a3f73ace856c459fa6c7bd74ac1f0ed58",
+        "size_in_bytes": 743
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/9331.5850506ebb1d3f304481.js",
+        "path_type": "hardlink",
+        "sha256": "108ae04580df6e1a8d58e780bcc8e77ea3b1878218ec1e013ac8632ed5902c77",
+        "sha256_in_prefix": "108ae04580df6e1a8d58e780bcc8e77ea3b1878218ec1e013ac8632ed5902c77",
+        "size_in_bytes": 9544
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/9380.392ac30e0b6842ae2b78.js",
+        "path_type": "hardlink",
+        "sha256": "3295ea43d38dd0d75851a962859c6f6a94a0481fdff791b03648069784369b97",
+        "sha256_in_prefix": "3295ea43d38dd0d75851a962859c6f6a94a0481fdff791b03648069784369b97",
+        "size_in_bytes": 6920
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/9425.46a85c9a33b839e23d9f.js",
+        "path_type": "hardlink",
+        "sha256": "f6745a90390a0c06a67f861f593297a06d49e57514bc61ef30e08eb563427074",
+        "sha256_in_prefix": "f6745a90390a0c06a67f861f593297a06d49e57514bc61ef30e08eb563427074",
+        "size_in_bytes": 40132
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/9442.e301e4179b7c69c125d7.js",
+        "path_type": "hardlink",
+        "sha256": "ae6cad2f73137cbb30ca866d24d58336a4c2d9c118c2df7ec80b093f6285e5b1",
+        "sha256_in_prefix": "ae6cad2f73137cbb30ca866d24d58336a4c2d9c118c2df7ec80b093f6285e5b1",
+        "size_in_bytes": 49434
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/9531.0772cd1f4cfe0c65a5a7.js",
+        "path_type": "hardlink",
+        "sha256": "caf3cf90548e577b5673d15d840923e84bf66549e8c18edfc41b7165f0049fd0",
+        "sha256_in_prefix": "caf3cf90548e577b5673d15d840923e84bf66549e8c18edfc41b7165f0049fd0",
+        "size_in_bytes": 485
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/9558.255ac6fa674e07653e39.js",
+        "path_type": "hardlink",
+        "sha256": "4da557ba44b25f5a9f9f79a26d1f260a32ef377e0ba8c46e11abd4dd20edc04e",
+        "sha256_in_prefix": "4da557ba44b25f5a9f9f79a26d1f260a32ef377e0ba8c46e11abd4dd20edc04e",
+        "size_in_bytes": 5373
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/9604.f29b5b0d3160e238fdf7.js",
+        "path_type": "hardlink",
+        "sha256": "1f47559bb8195f2ff4371b2557ace173e10d4b9a492ef6382ad0aa656de371fd",
+        "sha256_in_prefix": "1f47559bb8195f2ff4371b2557ace173e10d4b9a492ef6382ad0aa656de371fd",
+        "size_in_bytes": 4487
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/9619.72d0af35a1e6e3c624d7.js",
+        "path_type": "hardlink",
+        "sha256": "9376528005914fad37826d47f105f8c0a3c6e29b573a90759983f90697d1353b",
+        "sha256_in_prefix": "9376528005914fad37826d47f105f8c0a3c6e29b573a90759983f90697d1353b",
+        "size_in_bytes": 212168
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/9674eb1bd55047179038.svg",
+        "path_type": "hardlink",
+        "sha256": "9674eb1bd5504717903837093a67668ea88f2ed006d91367d0d4b7aa1f9211fc",
+        "sha256_in_prefix": "9674eb1bd5504717903837093a67668ea88f2ed006d91367d0d4b7aa1f9211fc",
+        "size_in_bytes": 918991
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/9676.0476942dc748eb1854c5.js",
+        "path_type": "hardlink",
+        "sha256": "cfca63f2fda4136606c76514ccf6d5c4b2ec5ed6857c7e0ab954754eba475556",
+        "sha256_in_prefix": "cfca63f2fda4136606c76514ccf6d5c4b2ec5ed6857c7e0ab954754eba475556",
+        "size_in_bytes": 5321
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/9799.3d54e01276f72cee9ada.js",
+        "path_type": "hardlink",
+        "sha256": "33c278a7d1430d38eef38094606c757aefbd70eceb80323656374752f3741333",
+        "sha256_in_prefix": "33c278a7d1430d38eef38094606c757aefbd70eceb80323656374752f3741333",
+        "size_in_bytes": 170302
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/9834b82ad26e2a37583d.woff2",
+        "path_type": "hardlink",
+        "sha256": "9834b82ad26e2a37583d22676a12dd2eb0fe7c80356a2114d0db1aa8b3899537",
+        "sha256_in_prefix": "9834b82ad26e2a37583d22676a12dd2eb0fe7c80356a2114d0db1aa8b3899537",
+        "size_in_bytes": 78268
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/a009bea404f7a500ded4.woff",
+        "path_type": "hardlink",
+        "sha256": "a009bea404f7a500ded48f8b9ad9cf16e12504b3195dd9e25975289b8256b0f0",
+        "sha256_in_prefix": "a009bea404f7a500ded48f8b9ad9cf16e12504b3195dd9e25975289b8256b0f0",
+        "size_in_bytes": 19360
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/a3b9817780214caf01e8.svg",
+        "path_type": "hardlink",
+        "sha256": "a3b9817780214caf01e8aec20bcdc2305a1ff34a15fae81ecd0923df9cd5cd0a",
+        "sha256_in_prefix": "a3b9817780214caf01e8aec20bcdc2305a1ff34a15fae81ecd0923df9cd5cd0a",
+        "size_in_bytes": 747927
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/af04542b29eaac04550a.woff",
+        "path_type": "hardlink",
+        "sha256": "af04542b29eaac04550a140c5f1760a649783989426f2540855bf4157819367d",
+        "sha256_in_prefix": "af04542b29eaac04550a140c5f1760a649783989426f2540855bf4157819367d",
+        "size_in_bytes": 9908
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/af6397503fcefbd61397.ttf",
+        "path_type": "hardlink",
+        "sha256": "af6397503fcefbd613976c21ad5c1e37298c18bbe07d096db03ccd3af6e05ba8",
+        "sha256_in_prefix": "af6397503fcefbd613976c21ad5c1e37298c18bbe07d096db03ccd3af6e05ba8",
+        "size_in_bytes": 202744
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/af96f67d7accf5fd2a4a.woff",
+        "path_type": "hardlink",
+        "sha256": "af96f67d7accf5fd2a4a682d0b9f8b339f8ea6fe34c310c1694c8ba7f6ddc96f",
+        "sha256_in_prefix": "af96f67d7accf5fd2a4a682d0b9f8b339f8ea6fe34c310c1694c8ba7f6ddc96f",
+        "size_in_bytes": 11852
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/b418136e3b384baaadec.woff",
+        "path_type": "hardlink",
+        "sha256": "b418136e3b384baaadecb70bd3c48a8da9825210130b2897db808c44efc883cb",
+        "sha256_in_prefix": "b418136e3b384baaadecb70bd3c48a8da9825210130b2897db808c44efc883cb",
+        "size_in_bytes": 12660
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/be0a084962d8066884f7.svg",
+        "path_type": "hardlink",
+        "sha256": "be0a084962d8066884f7fe9bd27ec16e51f5a93b72a502c92c5a24dc87eb2ebc",
+        "sha256_in_prefix": "be0a084962d8066884f7fe9bd27ec16e51f5a93b72a502c92c5a24dc87eb2ebc",
+        "size_in_bytes": 144714
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/c49810b53ecc0d87d802.woff",
+        "path_type": "hardlink",
+        "sha256": "c49810b53ecc0d87d8028762c518924197dd9d3f905b08f99ea241301085b9cb",
+        "sha256_in_prefix": "c49810b53ecc0d87d8028762c518924197dd9d3f905b08f99ea241301085b9cb",
+        "size_in_bytes": 5792
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/c56da8d69f1a0208b8e0.woff",
+        "path_type": "hardlink",
+        "sha256": "c56da8d69f1a0208b8e0703656c3264b6dd748bd452524c82b0385b60f6a68c1",
+        "sha256_in_prefix": "c56da8d69f1a0208b8e0703656c3264b6dd748bd452524c82b0385b60f6a68c1",
+        "size_in_bytes": 17604
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/cb9e9e693192413cde2b.woff",
+        "path_type": "hardlink",
+        "sha256": "cb9e9e693192413cde2b1f21c1dc1d44b6fe7b27cc2b458e8b359d18f9ff8f4e",
+        "sha256_in_prefix": "cb9e9e693192413cde2b1f21c1dc1d44b6fe7b27cc2b458e8b359d18f9ff8f4e",
+        "size_in_bytes": 16276
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/cda59d6efffa685830fd.ttf",
+        "path_type": "hardlink",
+        "sha256": "cda59d6efffa685830fd95b55f64ae9cb51279cd34b2410b69f84c7ec30157d9",
+        "sha256_in_prefix": "cda59d6efffa685830fd95b55f64ae9cb51279cd34b2410b69f84c7ec30157d9",
+        "size_in_bytes": 133988
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/e4299464e7b012968eed.eot",
+        "path_type": "hardlink",
+        "sha256": "e4299464e7b012968eed63ac2db1c9509f56bca409ef9f71f2926a8c3c80b2a9",
+        "sha256_in_prefix": "e4299464e7b012968eed63ac2db1c9509f56bca409ef9f71f2926a8c3c80b2a9",
+        "size_in_bytes": 134294
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/e42a88444448ac3d6054.woff2",
+        "path_type": "hardlink",
+        "sha256": "e42a88444448ac3d60549cc7c1ff2c8a9cac721034c073d80a14a44e79730cca",
+        "sha256_in_prefix": "e42a88444448ac3d60549cc7c1ff2c8a9cac721034c073d80a14a44e79730cca",
+        "size_in_bytes": 13224
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/e8711bbb871afd8e9dea.ttf",
+        "path_type": "hardlink",
+        "sha256": "e8711bbb871afd8e9dea60e16d30f00c7e4837bbc9807065017475b849fa2313",
+        "sha256_in_prefix": "e8711bbb871afd8e9dea60e16d30f00c7e4837bbc9807065017475b849fa2313",
+        "size_in_bytes": 33736
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/f9217f66874b0c01cd8c.woff",
+        "path_type": "hardlink",
+        "sha256": "f9217f66874b0c01cd8c10b6a295dbc4f609acb6f5adc41c37da46641b57eb02",
+        "sha256_in_prefix": "f9217f66874b0c01cd8c10b6a295dbc4f609acb6f5adc41c37da46641b57eb02",
+        "size_in_bytes": 89988
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/fc6ddf5df402b263cfb1.woff",
+        "path_type": "hardlink",
+        "sha256": "fc6ddf5df402b263cfb158aed8e89972542c34b719cd87b1db30461985f7bd5b",
+        "sha256_in_prefix": "fc6ddf5df402b263cfb158aed8e89972542c34b719cd87b1db30461985f7bd5b",
+        "size_in_bytes": 14628
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/main.58cb79c84cf80ba7b6ed.js",
+        "path_type": "hardlink",
+        "sha256": "55bb44705a96863df64209a7b765c970e827b93ba6dc75cb22ad6d0df9daa258",
+        "sha256_in_prefix": "55bb44705a96863df64209a7b765c970e827b93ba6dc75cb22ad6d0df9daa258",
+        "size_in_bytes": 156234
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/notebook_core.5321b49dd3857d00ab82.js",
+        "path_type": "hardlink",
+        "sha256": "3bfd625bb7374903356956c32ed37aeaab26f52ea534e5ebc34aabd6bbd92da5",
+        "sha256_in_prefix": "3bfd625bb7374903356956c32ed37aeaab26f52ea534e5ebc34aabd6bbd92da5",
+        "size_in_bytes": 7164272
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/static/third-party-licenses.json",
+        "path_type": "hardlink",
+        "sha256": "4e4d76f9a97a0e798b1998ab7ba851a57f92c51da36639df940b220e4e1c5dde",
+        "sha256_in_prefix": "4e4d76f9a97a0e798b1998ab7ba851a57f92c51da36639df940b220e4e1c5dde",
+        "size_in_bytes": 468812
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/templates/consoles.html",
+        "path_type": "hardlink",
+        "sha256": "522df6cb31bd02ba28a44fda622168913244f014be62a8d4d374eea532f2cc17",
+        "sha256_in_prefix": "522df6cb31bd02ba28a44fda622168913244f014be62a8d4d374eea532f2cc17",
+        "size_in_bytes": 1386
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/templates/edit.html",
+        "path_type": "hardlink",
+        "sha256": "a0e4ffa4afb8b1554ab710ad05349a2e41866196de18039b5622a4db50e59c72",
+        "sha256_in_prefix": "a0e4ffa4afb8b1554ab710ad05349a2e41866196de18039b5622a4db50e59c72",
+        "size_in_bytes": 1285
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/templates/error.html",
+        "path_type": "hardlink",
+        "sha256": "151cd3734d86face053c33b6b3f82a71ccffb21d55b5e4b45e73277a1ad45947",
+        "sha256_in_prefix": "151cd3734d86face053c33b6b3f82a71ccffb21d55b5e4b45e73277a1ad45947",
+        "size_in_bytes": 1096
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/templates/notebooks.html",
+        "path_type": "hardlink",
+        "sha256": "506904c373bf7c288f6e295cf4d008959fc6c85ccb6248fefdfa46e9c56c4fd1",
+        "sha256_in_prefix": "506904c373bf7c288f6e295cf4d008959fc6c85ccb6248fefdfa46e9c56c4fd1",
+        "size_in_bytes": 1406
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/templates/terminals.html",
+        "path_type": "hardlink",
+        "sha256": "8a356becba601191d582f7ea3eb9ca201e1662c997e6b2e3a181f0767b486500",
+        "sha256_in_prefix": "8a356becba601191d582f7ea3eb9ca201e1662c997e6b2e3a181f0767b486500",
+        "size_in_bytes": 1380
+      },
+      {
+        "_path": "lib/python3.13/site-packages/notebook/templates/tree.html",
+        "path_type": "hardlink",
+        "sha256": "f65a8116426295b5aa325d91d1ffb10c551dd6fd4273a45fa219de5801168ed9",
+        "sha256_in_prefix": "f65a8116426295b5aa325d91d1ffb10c551dd6fd4273a45fa219de5801168ed9",
+        "size_in_bytes": 1329
+      },
+      {
+        "_path": "share/applications/jupyter-notebook.desktop",
+        "path_type": "hardlink",
+        "sha256": "d53df63b520447ce421aff9ae88c620dfad033c6f368b59b96d26ef93a05f2b7",
+        "sha256_in_prefix": "d53df63b520447ce421aff9ae88c620dfad033c6f368b59b96d26ef93a05f2b7",
+        "size_in_bytes": 242
+      },
+      {
+        "_path": "share/icons/hicolor/scalable/apps/notebook.svg",
+        "path_type": "hardlink",
+        "sha256": "11341851556c107ffe46121d18e571b454a19e58bfd312acd3afb4af3812e701",
+        "sha256_in_prefix": "11341851556c107ffe46121d18e571b454a19e58bfd312acd3afb4af3812e701",
+        "size_in_bytes": 14487
+      },
+      {
+        "_path": "share/jupyter/lab/schemas/@jupyter-notebook/application-extension/menus.json",
+        "path_type": "hardlink",
+        "sha256": "ba4640cdddbae937e86406f99155c01304a9306d6bf567d05a08a06d5968264e",
+        "sha256_in_prefix": "ba4640cdddbae937e86406f99155c01304a9306d6bf567d05a08a06d5968264e",
+        "size_in_bytes": 1902
+      },
+      {
+        "_path": "share/jupyter/lab/schemas/@jupyter-notebook/application-extension/package.json.orig",
+        "path_type": "hardlink",
+        "sha256": "7440488c6c035bb543f42596d575d2fe296f3682a82190e6ff1dac77dfc0d4f5",
+        "sha256_in_prefix": "7440488c6c035bb543f42596d575d2fe296f3682a82190e6ff1dac77dfc0d4f5",
+        "size_in_bytes": 1835
+      },
+      {
+        "_path": "share/jupyter/lab/schemas/@jupyter-notebook/application-extension/pages.json",
+        "path_type": "hardlink",
+        "sha256": "32b1993ed96d83ad9c9f099e37fa4e0e6de12cbac5816f2952c11bbb48962a24",
+        "sha256_in_prefix": "32b1993ed96d83ad9c9f099e37fa4e0e6de12cbac5816f2952c11bbb48962a24",
+        "size_in_bytes": 473
+      },
+      {
+        "_path": "share/jupyter/lab/schemas/@jupyter-notebook/application-extension/shell.json",
+        "path_type": "hardlink",
+        "sha256": "3ac106314e4a80236c7efb7dccd7311c68245cdc53b48df43d7398caa49210d0",
+        "sha256_in_prefix": "3ac106314e4a80236c7efb7dccd7311c68245cdc53b48df43d7398caa49210d0",
+        "size_in_bytes": 864
+      },
+      {
+        "_path": "share/jupyter/lab/schemas/@jupyter-notebook/application-extension/title.json",
+        "path_type": "hardlink",
+        "sha256": "3a17c69f3c806f47c55b47df4bf82dde0daed97f9a7a16ed65eaf5789348ca00",
+        "sha256_in_prefix": "3a17c69f3c806f47c55b47df4bf82dde0daed97f9a7a16ed65eaf5789348ca00",
+        "size_in_bytes": 223
+      },
+      {
+        "_path": "share/jupyter/lab/schemas/@jupyter-notebook/application-extension/top.json",
+        "path_type": "hardlink",
+        "sha256": "d1d7dedc8ab52cf0439167cf40864edc48089dc08714443f11a0eb43f68113dc",
+        "sha256_in_prefix": "d1d7dedc8ab52cf0439167cf40864edc48089dc08714443f11a0eb43f68113dc",
+        "size_in_bytes": 832
+      },
+      {
+        "_path": "share/jupyter/lab/schemas/@jupyter-notebook/application-extension/zen.json",
+        "path_type": "hardlink",
+        "sha256": "8afbe38fe2b3e932b54081fe6ad48655b2922be5fb0eee7f998da313e74fbe0c",
+        "sha256_in_prefix": "8afbe38fe2b3e932b54081fe6ad48655b2922be5fb0eee7f998da313e74fbe0c",
+        "size_in_bytes": 386
+      },
+      {
+        "_path": "share/jupyter/lab/schemas/@jupyter-notebook/documentsearch-extension/package.json.orig",
+        "path_type": "hardlink",
+        "sha256": "383cfa000129084f8daac34e8aa6a921da542a179d96ad0965b2638bf85ef6e6",
+        "sha256_in_prefix": "383cfa000129084f8daac34e8aa6a921da542a179d96ad0965b2638bf85ef6e6",
+        "size_in_bytes": 1367
+      },
+      {
+        "_path": "share/jupyter/lab/schemas/@jupyter-notebook/help-extension/open.json",
+        "path_type": "hardlink",
+        "sha256": "7152b7a837612ad239f3a4aab5bb0d59772a32a12970ad45a25e3134646df203",
+        "sha256_in_prefix": "7152b7a837612ad239f3a4aab5bb0d59772a32a12970ad45a25e3134646df203",
+        "size_in_bytes": 472
+      },
+      {
+        "_path": "share/jupyter/lab/schemas/@jupyter-notebook/help-extension/package.json.orig",
+        "path_type": "hardlink",
+        "sha256": "d667248bf9ad5fe9cd0f43169dfdb333dfd949af125b1564f56f972626aaa797",
+        "sha256_in_prefix": "d667248bf9ad5fe9cd0f43169dfdb333dfd949af125b1564f56f972626aaa797",
+        "size_in_bytes": 1440
+      },
+      {
+        "_path": "share/jupyter/lab/schemas/@jupyter-notebook/notebook-extension/checkpoints.json",
+        "path_type": "hardlink",
+        "sha256": "cc32afe063c00a929e221c75870f69bbab96e37e059d44ad6e09a550196c7632",
+        "sha256_in_prefix": "cc32afe063c00a929e221c75870f69bbab96e37e059d44ad6e09a550196c7632",
+        "size_in_bytes": 256
+      },
+      {
+        "_path": "share/jupyter/lab/schemas/@jupyter-notebook/notebook-extension/edit-notebook-metadata.json",
+        "path_type": "hardlink",
+        "sha256": "7b052f38d31b648b5388608b56308fc4fa631283cea5a5e56abd1d3e40f48fdf",
+        "sha256_in_prefix": "7b052f38d31b648b5388608b56308fc4fa631283cea5a5e56abd1d3e40f48fdf",
+        "size_in_bytes": 735
+      },
+      {
+        "_path": "share/jupyter/lab/schemas/@jupyter-notebook/notebook-extension/full-width-notebook.json",
+        "path_type": "hardlink",
+        "sha256": "5835d050bb6d942d479630b3b67aa7211ed7f7f4138eb47e0238e802bebe855c",
+        "sha256_in_prefix": "5835d050bb6d942d479630b3b67aa7211ed7f7f4138eb47e0238e802bebe855c",
+        "size_in_bytes": 634
+      },
+      {
+        "_path": "share/jupyter/lab/schemas/@jupyter-notebook/notebook-extension/kernel-logo.json",
+        "path_type": "hardlink",
+        "sha256": "dcbb083fca06b10f0d29bbea85bcfc3e64909b4f6c67d4c44109a1b447be8da3",
+        "sha256_in_prefix": "dcbb083fca06b10f0d29bbea85bcfc3e64909b4f6c67d4c44109a1b447be8da3",
+        "size_in_bytes": 237
+      },
+      {
+        "_path": "share/jupyter/lab/schemas/@jupyter-notebook/notebook-extension/package.json.orig",
+        "path_type": "hardlink",
+        "sha256": "e6cce10baf88a7ab23025e0b3311b909806a054ea40fc0c4f9321f18ac2ddacd",
+        "sha256_in_prefix": "e6cce10baf88a7ab23025e0b3311b909806a054ea40fc0c4f9321f18ac2ddacd",
+        "size_in_bytes": 1632
+      },
+      {
+        "_path": "share/jupyter/lab/schemas/@jupyter-notebook/notebook-extension/scroll-output.json",
+        "path_type": "hardlink",
+        "sha256": "818d1c2059c260749fc61a0853596850b0e77ef7f5ff07747076134dfc90eca4",
+        "sha256_in_prefix": "818d1c2059c260749fc61a0853596850b0e77ef7f5ff07747076134dfc90eca4",
+        "size_in_bytes": 517
+      },
+      {
+        "_path": "share/jupyter/lab/schemas/@jupyter-notebook/tree-extension/file-actions.json",
+        "path_type": "hardlink",
+        "sha256": "82da2806e76ac994d06dbf312012a3a4490ec9bc249efd7db05c221bc8b54221",
+        "sha256_in_prefix": "82da2806e76ac994d06dbf312012a3a4490ec9bc249efd7db05c221bc8b54221",
+        "size_in_bytes": 557
+      },
+      {
+        "_path": "share/jupyter/lab/schemas/@jupyter-notebook/tree-extension/package.json.orig",
+        "path_type": "hardlink",
+        "sha256": "de2e6197ff8da97aa40722baca875e5e3cff3bdfd0c1eeda71983dc90597a935",
+        "sha256_in_prefix": "de2e6197ff8da97aa40722baca875e5e3cff3bdfd0c1eeda71983dc90597a935",
+        "size_in_bytes": 1854
+      },
+      {
+        "_path": "share/jupyter/lab/schemas/@jupyter-notebook/tree-extension/widget.json",
+        "path_type": "hardlink",
+        "sha256": "10a696901efc957c70d3095a728b8c54f7aef231ffc8052cd22ebb875c4f2cba",
+        "sha256_in_prefix": "10a696901efc957c70d3095a728b8c54f7aef231ffc8052cd22ebb875c4f2cba",
+        "size_in_bytes": 2324
+      },
+      {
+        "_path": "share/jupyter/labextensions/@jupyter-notebook/lab-extension/package.json",
+        "path_type": "hardlink",
+        "sha256": "1f5b56c9f9f873331070aa1562128627e4078e9e1785b801fdbdd20ab5a84e20",
+        "sha256_in_prefix": "1f5b56c9f9f873331070aa1562128627e4078e9e1785b801fdbdd20ab5a84e20",
+        "size_in_bytes": 2892
+      },
+      {
+        "_path": "share/jupyter/labextensions/@jupyter-notebook/lab-extension/schemas/@jupyter-notebook/lab-extension/interface-switcher.json",
+        "path_type": "hardlink",
+        "sha256": "d5a92abc92b265a0f8e5ca06bff6271a747e353ef6713fe68871d3f09fe7c099",
+        "sha256_in_prefix": "d5a92abc92b265a0f8e5ca06bff6271a747e353ef6713fe68871d3f09fe7c099",
+        "size_in_bytes": 891
+      },
+      {
+        "_path": "share/jupyter/labextensions/@jupyter-notebook/lab-extension/schemas/@jupyter-notebook/lab-extension/launch-tree.json",
+        "path_type": "hardlink",
+        "sha256": "ce5c101994bc636fbec3e524171e0715043da4e5ffdffaae752d53b528dcc09e",
+        "sha256_in_prefix": "ce5c101994bc636fbec3e524171e0715043da4e5ffdffaae752d53b528dcc09e",
+        "size_in_bytes": 375
+      },
+      {
+        "_path": "share/jupyter/labextensions/@jupyter-notebook/lab-extension/schemas/@jupyter-notebook/lab-extension/package.json.orig",
+        "path_type": "hardlink",
+        "sha256": "669585e9f8cbc250e1fa935dcf1db4b288c9e8571defa5448b925a2fef17a677",
+        "sha256_in_prefix": "669585e9f8cbc250e1fa935dcf1db4b288c9e8571defa5448b925a2fef17a677",
+        "size_in_bytes": 2750
+      },
+      {
+        "_path": "share/jupyter/labextensions/@jupyter-notebook/lab-extension/static/557.2f882aef2c303890736d.js",
+        "path_type": "hardlink",
+        "sha256": "2f882aef2c303890736d2c9d587fb45b865892f6432034de1633672fe189a3fd",
+        "sha256_in_prefix": "2f882aef2c303890736d2c9d587fb45b865892f6432034de1633672fe189a3fd",
+        "size_in_bytes": 13038
+      },
+      {
+        "_path": "share/jupyter/labextensions/@jupyter-notebook/lab-extension/static/568.0143b064f4b09edb4d20.js",
+        "path_type": "hardlink",
+        "sha256": "0143b064f4b09edb4d203454a7fe0c0469640a406864bd9092f7cd58b3af7e0c",
+        "sha256_in_prefix": "0143b064f4b09edb4d203454a7fe0c0469640a406864bd9092f7cd58b3af7e0c",
+        "size_in_bytes": 2945
+      },
+      {
+        "_path": "share/jupyter/labextensions/@jupyter-notebook/lab-extension/static/928.7e52f03b261ea07bcb3d.js",
+        "path_type": "hardlink",
+        "sha256": "7e52f03b261ea07bcb3d781ab3a125966c95053f5b0f81127120fda04749c4d8",
+        "sha256_in_prefix": "7e52f03b261ea07bcb3d781ab3a125966c95053f5b0f81127120fda04749c4d8",
+        "size_in_bytes": 4514
+      },
+      {
+        "_path": "share/jupyter/labextensions/@jupyter-notebook/lab-extension/static/93.eae3497dd223d842d198.js",
+        "path_type": "hardlink",
+        "sha256": "eae3497dd223d842d1980d696386f4e6eb457facc9fbb019bb260e31184f2e1d",
+        "sha256_in_prefix": "eae3497dd223d842d1980d696386f4e6eb457facc9fbb019bb260e31184f2e1d",
+        "size_in_bytes": 4583
+      },
+      {
+        "_path": "share/jupyter/labextensions/@jupyter-notebook/lab-extension/static/remoteEntry.da0f2149411be83933cb.js",
+        "path_type": "hardlink",
+        "sha256": "da0f2149411be83933cb889b612583fc023558e2450306195c128a7e1ec009a6",
+        "sha256_in_prefix": "da0f2149411be83933cb889b612583fc023558e2450306195c128a7e1ec009a6",
+        "size_in_bytes": 8409
+      },
+      {
+        "_path": "share/jupyter/labextensions/@jupyter-notebook/lab-extension/static/style.js",
+        "path_type": "hardlink",
+        "sha256": "f30812f96b4a8302bea0c89a8d7bd7ef0b90725ceaa77a5825a3b3de040247b0",
+        "sha256_in_prefix": "f30812f96b4a8302bea0c89a8d7bd7ef0b90725ceaa77a5825a3b3de040247b0",
+        "size_in_bytes": 174
+      },
+      {
+        "_path": "share/jupyter/labextensions/@jupyter-notebook/lab-extension/static/third-party-licenses.json",
+        "path_type": "hardlink",
+        "sha256": "e9fed2a0044a2071ba2d41492a724f09e59a1287685105b33b71ac6049c76bbb",
+        "sha256_in_prefix": "e9fed2a0044a2071ba2d41492a724f09e59a1287685105b33b71ac6049c76bbb",
+        "size_in_bytes": 2748
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "3724779ecff71d088851986da5964972ab457606a0ce609c3598729f28d1ef0d",
+  "size": 6446634,
+  "subdir": "osx-arm64",
+  "timestamp": 1752061321000,
+  "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/notebook-7.4.4-py313hca03da5_0.conda",
+  "version": "7.4.4"
+}

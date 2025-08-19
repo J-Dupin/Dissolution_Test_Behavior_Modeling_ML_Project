@@ -1,0 +1,39 @@
+{
+  "build": "hca03da5_3",
+  "build_number": 3,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-arm64",
+  "constrains": [],
+  "depends": [],
+  "extracted_package_dir": "/opt/miniconda3/pkgs/pandoc-2.12-hca03da5_3",
+  "files": [
+    "bin/pandoc"
+  ],
+  "fn": "pandoc-2.12-hca03da5_3.conda",
+  "license": "GPL-2.0",
+  "link": {
+    "source": "/opt/miniconda3/pkgs/pandoc-2.12-hca03da5_3",
+    "type": 1
+  },
+  "md5": "e9056c94e078f88f317d03f9fa5ad859",
+  "name": "pandoc",
+  "package_tarball_full_path": "/opt/miniconda3/pkgs/pandoc-2.12-hca03da5_3.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/pandoc",
+        "path_type": "hardlink",
+        "sha256": "e3cff889380be368faa64abca5b00d905c3f21139907951669ac62fba42330d4",
+        "sha256_in_prefix": "e3cff889380be368faa64abca5b00d905c3f21139907951669ac62fba42330d4",
+        "size_in_bytes": 93879824
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "5f73de1258fbb6825d9a1b8d32cd7974eafebfb8b9e839863d6e2b4d74c6f9c2",
+  "size": 12688381,
+  "subdir": "osx-arm64",
+  "timestamp": 1677512240000,
+  "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/pandoc-2.12-hca03da5_3.conda",
+  "version": "2.12"
+}

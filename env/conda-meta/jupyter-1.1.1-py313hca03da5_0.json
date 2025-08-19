@@ -1,0 +1,105 @@
+{
+  "build": "py313hca03da5_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "ipykernel",
+    "ipywidgets",
+    "jupyter_console",
+    "jupyterlab",
+    "nbconvert",
+    "notebook",
+    "python >=3.13,<3.14.0a0",
+    "python_abi 3.13.* *_cp313",
+    "qtconsole"
+  ],
+  "extracted_package_dir": "/opt/miniconda3/pkgs/jupyter-1.1.1-py313hca03da5_0",
+  "files": [
+    "lib/python3.13/site-packages/jupyter-1.1.1.dist-info/INSTALLER",
+    "lib/python3.13/site-packages/jupyter-1.1.1.dist-info/LICENSE",
+    "lib/python3.13/site-packages/jupyter-1.1.1.dist-info/METADATA",
+    "lib/python3.13/site-packages/jupyter-1.1.1.dist-info/RECORD",
+    "lib/python3.13/site-packages/jupyter-1.1.1.dist-info/REQUESTED",
+    "lib/python3.13/site-packages/jupyter-1.1.1.dist-info/WHEEL",
+    "lib/python3.13/site-packages/jupyter-1.1.1.dist-info/direct_url.json",
+    "lib/python3.13/site-packages/jupyter-1.1.1.dist-info/top_level.txt"
+  ],
+  "fn": "jupyter-1.1.1-py313hca03da5_0.conda",
+  "license": "BSD-3-Clause",
+  "link": {
+    "source": "/opt/miniconda3/pkgs/jupyter-1.1.1-py313hca03da5_0",
+    "type": 1
+  },
+  "md5": "3726fd27f976325d0ed82ccdd80e0235",
+  "name": "jupyter",
+  "package_tarball_full_path": "/opt/miniconda3/pkgs/jupyter-1.1.1-py313hca03da5_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/python3.13/site-packages/jupyter-1.1.1.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "lib/python3.13/site-packages/jupyter-1.1.1.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "1b9f3955dcf9c235b10c168cca09b88c1f2adf992a0dc13120482d93037602ac",
+        "sha256_in_prefix": "1b9f3955dcf9c235b10c168cca09b88c1f2adf992a0dc13120482d93037602ac",
+        "size_in_bytes": 1527
+      },
+      {
+        "_path": "lib/python3.13/site-packages/jupyter-1.1.1.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "3a22e8920563758862a325340603f302b2fbbdad63aff2abc7d6e5a2e2832ce0",
+        "sha256_in_prefix": "3a22e8920563758862a325340603f302b2fbbdad63aff2abc7d6e5a2e2832ce0",
+        "size_in_bytes": 2153
+      },
+      {
+        "_path": "lib/python3.13/site-packages/jupyter-1.1.1.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "10706e879e3d4d0f417f70f254c9405f3964d0eeca458e92e9242d734d6b7973",
+        "sha256_in_prefix": "10706e879e3d4d0f417f70f254c9405f3964d0eeca458e92e9242d734d6b7973",
+        "size_in_bytes": 662
+      },
+      {
+        "_path": "lib/python3.13/site-packages/jupyter-1.1.1.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.13/site-packages/jupyter-1.1.1.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "f479b6381fa3d5070252af4982e86dedac8620864145374e5c3d6a83d70280f3",
+        "sha256_in_prefix": "f479b6381fa3d5070252af4982e86dedac8620864145374e5c3d6a83d70280f3",
+        "size_in_bytes": 109
+      },
+      {
+        "_path": "lib/python3.13/site-packages/jupyter-1.1.1.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "4105c7a5914f4bcfd12b6566251c32c5b24aa85dffa03b7603bdabf37c7a3110",
+        "sha256_in_prefix": "4105c7a5914f4bcfd12b6566251c32c5b24aa85dffa03b7603bdabf37c7a3110",
+        "size_in_bytes": 97
+      },
+      {
+        "_path": "lib/python3.13/site-packages/jupyter-1.1.1.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "sha256_in_prefix": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "jupyter",
+  "sha256": "75cf527813d1e8b4f8c079747533071cffdd04a074b14d2aec8298fc18b5a2eb",
+  "size": 8145,
+  "subdir": "osx-arm64",
+  "timestamp": 1742577924000,
+  "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/jupyter-1.1.1-py313hca03da5_0.conda",
+  "version": "1.1.1"
+}

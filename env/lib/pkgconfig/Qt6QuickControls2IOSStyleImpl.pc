@@ -1,0 +1,12 @@
+prefix=/Users/juliendupin/Desktop/PyScripts/dissolution_stability_ml_gmm_project/env
+exec_prefix=${prefix}
+bindir=${prefix}/lib/qt6/bin
+libexecdir=${prefix}/lib/qt6
+libdir=${prefix}/lib
+includedir=${prefix}/include/qt6
+
+Name: Qt6 QuickControls2IOSStyleImpl
+Description: Qt QuickControls2IOSStyleImpl module
+Version: 6.7.3
+Libs: -L${libdir} -lQt6QuickControls2IOSStyleImpl
+Cflags: -I${includedir}/QtQuickControls2IOSStyleImpl -I${includedir} -DQT_QUICKCONTROLS2IOSSTYLEIMPL_LIB

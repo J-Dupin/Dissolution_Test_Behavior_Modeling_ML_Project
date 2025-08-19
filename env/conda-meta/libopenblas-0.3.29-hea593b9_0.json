@@ -1,0 +1,78 @@
+{
+  "build": "hea593b9_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "libgfortran 5.*",
+    "libgfortran5 >=11.2.0"
+  ],
+  "extracted_package_dir": "/opt/miniconda3/pkgs/libopenblas-0.3.29-hea593b9_0",
+  "files": [
+    "lib/libblas.dylib",
+    "lib/libcblas.dylib",
+    "lib/liblapack.dylib",
+    "lib/libopenblas.0.dylib",
+    "lib/libopenblas.dylib",
+    "lib/libopenblasp-r0.3.29.dylib"
+  ],
+  "fn": "libopenblas-0.3.29-hea593b9_0.conda",
+  "license": "BSD-3-Clause",
+  "link": {
+    "source": "/opt/miniconda3/pkgs/libopenblas-0.3.29-hea593b9_0",
+    "type": 1
+  },
+  "md5": "5ad0ecf0ac48d1453e16ab8fe1b42925",
+  "name": "libopenblas",
+  "package_tarball_full_path": "/opt/miniconda3/pkgs/libopenblas-0.3.29-hea593b9_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/libblas.dylib",
+        "path_type": "softlink",
+        "sha256": "ef4e88f01546833cfcc5ba065ca941605633725d77973ff176304e9c7a89f834",
+        "size_in_bytes": 22485296
+      },
+      {
+        "_path": "lib/libcblas.dylib",
+        "path_type": "softlink",
+        "sha256": "ef4e88f01546833cfcc5ba065ca941605633725d77973ff176304e9c7a89f834",
+        "size_in_bytes": 22485296
+      },
+      {
+        "_path": "lib/liblapack.dylib",
+        "path_type": "softlink",
+        "sha256": "ef4e88f01546833cfcc5ba065ca941605633725d77973ff176304e9c7a89f834",
+        "size_in_bytes": 22485296
+      },
+      {
+        "_path": "lib/libopenblas.0.dylib",
+        "path_type": "softlink",
+        "sha256": "5f8564a115e5b7465ebd006dd3db5e1e7382b20f60e0393324ce09ede855537d",
+        "size_in_bytes": 22485312
+      },
+      {
+        "_path": "lib/libopenblas.dylib",
+        "path_type": "hardlink",
+        "sha256": "ef4e88f01546833cfcc5ba065ca941605633725d77973ff176304e9c7a89f834",
+        "sha256_in_prefix": "ef4e88f01546833cfcc5ba065ca941605633725d77973ff176304e9c7a89f834",
+        "size_in_bytes": 22485296
+      },
+      {
+        "_path": "lib/libopenblasp-r0.3.29.dylib",
+        "path_type": "hardlink",
+        "sha256": "5f8564a115e5b7465ebd006dd3db5e1e7382b20f60e0393324ce09ede855537d",
+        "sha256_in_prefix": "5f8564a115e5b7465ebd006dd3db5e1e7382b20f60e0393324ce09ede855537d",
+        "size_in_bytes": 22485312
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "a6d08375496f16532b8b61d20e9dd9f427f9ebd053ee2c04502baf77803aaa09",
+  "size": 10560799,
+  "subdir": "osx-arm64",
+  "timestamp": 1746645858000,
+  "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/libopenblas-0.3.29-hea593b9_0.conda",
+  "version": "0.3.29"
+}

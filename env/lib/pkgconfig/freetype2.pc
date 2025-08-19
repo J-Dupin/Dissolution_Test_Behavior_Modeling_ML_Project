@@ -1,0 +1,14 @@
+prefix=/Users/juliendupin/Desktop/PyScripts/dissolution_stability_ml_gmm_project/env
+exec_prefix=/Users/juliendupin/Desktop/PyScripts/dissolution_stability_ml_gmm_project/env
+libdir=/Users/juliendupin/Desktop/PyScripts/dissolution_stability_ml_gmm_project/env/lib
+includedir=/Users/juliendupin/Desktop/PyScripts/dissolution_stability_ml_gmm_project/env/include
+
+Name: FreeType 2
+URL: https://freetype.org
+Description: A free, high-quality, and portable font engine.
+Version: 26.2.20
+Requires: 
+Requires.private: zlib, libpng
+Libs: -L/Users/juliendupin/Desktop/PyScripts/dissolution_stability_ml_gmm_project/env/lib -lfreetype
+Libs.private: 
+Cflags: -I${includedir}/freetype2

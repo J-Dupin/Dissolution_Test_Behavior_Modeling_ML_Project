@@ -1,0 +1,7 @@
+
+Name: Graphite2
+Description: Font rendering engine for Complex Scripts
+Version: 3.0.1
+Libs: -L/Users/juliendupin/Desktop/PyScripts/dissolution_stability_ml_gmm_project/env/lib -lgraphite2
+Cflags: -I/Users/juliendupin/Desktop/PyScripts/dissolution_stability_ml_gmm_project/env/include
+
