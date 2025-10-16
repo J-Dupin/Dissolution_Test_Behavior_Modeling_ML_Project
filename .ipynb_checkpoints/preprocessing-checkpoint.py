@@ -500,11 +500,13 @@ def simulate_dissolution_curve(row, time_points=None):
         "Dissolved_pct": dissolved
     })
 
-# ----------------- Example usage -----------------
-# Assuming df_cleaned is your processed FDA DataFrame
-# row = df_cleaned.iloc[0]
-# df_curve = simulate_dissolution_curve(row)
-# print(df_curve.head())
+
+# Fallback for if some rows have missing or invalid time points
+def get_time_points(row):
+    time_points = row.get("SamplingTimes_Cleaned")
+    if time_points is None or not isinstance(time_points, (list, np.ndarray)):
+        return np.arange(0, 125, 5)
+    return np.array(time_points)
 
 
 
