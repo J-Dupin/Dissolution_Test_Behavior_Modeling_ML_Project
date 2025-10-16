@@ -371,6 +371,47 @@ def extract_medium_volumes(text):
 
 # 6. Function for Medium Volume Column
 
+def extract_sampling_times(text):
+    """
+    Extract and standardize sampling times from a messy text entry.
+    Returns:
+        A list of numeric sampling times (in minutes).
+        Returns [np.nan] if no valid times are found.
+    """
+    if text is None or (isinstance(text, float) and np.isnan(text)):
+        return [np.nan]
+    if not isinstance(text, str):
+        print(text, type(text))
+        return [np.nan]
+
+    clean_text = text.strip().lower()
+
+    # Ignore irrelevant text
+    if re.fullmatch(r"(develop a (dissolution|release) method|refer to (usp|fda's dissolution guidance)|n/?a|not applicable|none)", clean_text):
+        return [np.nan]
+
+    # Extract all numeric values (including decimals) followed by optional time units
+    matches = re.findall(r"(\d+(?:\.\d+)?)\s*(?:minute|hour|hr|h|min|m)?s?", clean_text)
+
+    # Convert to minutes
+    times = []
+    for m in matches:
+        try:
+            val = float(m)
+            # Handle hours (e.g., "2 hours" -> 120 minutes)
+            if re.search(r"(\d+(?:\.\d+)?)\s*(hour|hr|h)s?", clean_text, re.IGNORECASE):
+                val *= 60
+            # Only consider plausible sampling times (1–1440 minutes)
+            if 1 <= val <= 1440:
+                times.append(val)
+        except ValueError:
+            continue
+
+    # Remove duplicates while preserving order
+    seen = set()
+    unique_times = [t for t in times if not (t in seen or seen.add(t))]
+
+    return unique_times if unique_times else [np.nan]
 
 
 
@@ -378,6 +419,104 @@ def extract_medium_volumes(text):
 
 
 
+
+
+
+
+
+
+
+
+# 7. Function for simulate dissolution curve and returning profile as a list in a new column
+
+def simulate_dissolution_curve(row, time_points=None):
+    """
+    Simulate a dissolution profile for a single FDA test condition row.
+
+    Parameters
+    ----------
+    row : pd.Series
+        One row from your cleaned FDA dataset. Expected fields:
+        - DosageForm_Cleaned
+        - ReleaseType_Cleaned
+        - Apparatus_Cleaned
+        - Speed_RPM
+        - MediumVolume_mL
+        - MediumType_Cleaned
+        - Temperature_C
+
+    time_points : list or np.array, optional
+        Time points (minutes) to compute % dissolved. Defaults to 0-120 min every 5 min.
+
+    Returns
+    -------
+    pd.DataFrame
+        Columns: ['Time_min', 'Dissolved_pct']
+    """
+    # Use provided time_points if available, otherwise default
+    if time_points is None:
+        time_points = np.arange(0, 125, 5)  # default: 0, 5, 10, ..., 120
+    else:
+        time_points = np.array(time_points)  # ensure numpy array
+
+    # Extract inputs with fallback defaults
+    release_type = str(row.get("ReleaseType_Cleaned", "Immediate Release")).lower()
+    speed = float(row.get("SpeedRPM_Cleaned", 75) or 75)         # default RPM
+    volume = float(row.get("MediumVolume_Cleaned", 900) or 900)  # default mL
+    temp = float(row.get("Temperature_C", 37) or 37)             # default °C
+    
+    # --- Step 1: Choose kinetic constant based on release type ---
+    # These constants are arbitrary examples; you can calibrate later
+    if "immediate" in release_type:
+        k = 0.8   # fast dissolution
+    elif "extended" in release_type:
+        k = 0.2   # slow dissolution
+    elif "delayed" in release_type:
+        k = 0.5   # moderate dissolution
+    else:
+        k = 0.6   # default
+
+    # Optionally adjust k based on RPM (more agitation → faster dissolution)
+    k *= (1 + (speed - 50)/200)  # e.g., 50 RPM baseline
+
+    # Optionally adjust k based on volume (smaller volume → slower dissolution)
+    k *= (volume / 900) ** 0.1  # mild effect
+
+
+    # --- Step 2: Compute % dissolved at each time point ---
+    # Using simple first-order kinetics: C(t) = 100 * (1 - exp(-k * t))
+    dissolved = 100 * (1 - np.exp(-k * time_points / 60))  # divide by 60 to scale k to minutes
+
+    # Clip to 0–100%
+    dissolved = np.clip(dissolved, 0, 100)
+
+    # --- Step 3: Add small noise to simulate experimental variation ---
+    noise = np.random.normal(0, 2, size=len(dissolved))  # ±2% noise
+    dissolved = np.clip(dissolved + noise, 0, 100)
+
+    # --- Step 4: Return as DataFrame ---
+    return pd.DataFrame({
+        "Time_min": time_points,
+        "Dissolved_pct": dissolved
+    })
+
+# ----------------- Example usage -----------------
+# Assuming df_cleaned is your processed FDA DataFrame
+# row = df_cleaned.iloc[0]
+# df_curve = simulate_dissolution_curve(row)
+# print(df_curve.head())
+
+
+
+
+
+
+
+
+
+
+
+    
 
     
 
