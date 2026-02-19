@@ -67,7 +67,7 @@ def clean_dosage_form_data(value):
 
 # 2. Function for Cleaning Apparatus Column
 
-def clean_apparatus_column(df, col='USP Apparatus'):
+def clean_apparatus_column(df, col='USP Apparatus', cleaned_col_name='Apparatus_Cleaned):
     """
     Simplify the USP Apparatus column into clean standardized categories.
     """
@@ -129,7 +129,7 @@ def clean_apparatus_column(df, col='USP Apparatus'):
         # else:
         #     return np.nan  # Non-standard entry
 
-    df['Apparatus_Cleaned'] = df[col].apply(extract_apparatus)
+    df[cleaned_col_name] = df[col].apply(extract_apparatus)
     return df
 
 
