@@ -67,7 +67,7 @@ def clean_dosage_form_data(value):
 
 # 2. Function for Cleaning Apparatus Column
 
-def clean_apparatus_column(df, col='USP Apparatus', cleaned_col_name='Apparatus_Cleaned):
+def clean_apparatus_column(df, col='USP Apparatus', cleaned_col_name='Apparatus_Cleaned'):
     """
     Simplify the USP Apparatus column into clean standardized categories.
     """
@@ -226,19 +226,19 @@ def split_agitation_speeds_row(row, text_col='Speed (RPMs)', apparatus_col='Appa
     if any(x in text_lower for x in ["flow", "ml/min", "stroke", "orbit", "chew"]):
         return []
 
-    # 1️⃣ Extract all numbers with valid units
+    # 1 Extract all numbers with valid units
     matches = re.findall(r'(\d+(?:\.\d+)?)\s*(rpm|dpm|cpm|cycles|dips)', text_lower)
     valid_units = APPARATUS_UNITS.get(apparatus, [])
     filtered_numbers = [float(val) for val, unit in matches if unit in valid_units]
 
-    # 2️⃣ Fallback: if no matches, extract any plain numbers
+    # 2 Fallback: if no matches, extract any plain numbers
     if not filtered_numbers:
         plain_numbers = re.findall(r'\d+', text_lower)
         # Only use as fallback if apparatus expects a numeric speed
         if valid_units and plain_numbers:
             filtered_numbers = [float(n) for n in plain_numbers]
 
-    # 3️⃣ Duplicate row for each valid speed
+    # 3 Duplicate row for each valid speed
     new_rows = []
     for speed in filtered_numbers:
         new_row = row.copy()
@@ -246,6 +246,230 @@ def split_agitation_speeds_row(row, text_col='Speed (RPMs)', apparatus_col='Appa
         new_rows.append(new_row)
 
     return new_rows
+
+
+# ============================================================
+# 1 CONFIGURATION SECTION
+# ============================================================
+
+# Apparatus types that are rotational (i.e., expect RPM)
+ROTATIONAL_APPARATUS = {
+    "Paddle",
+    "Basket",
+    "Paddle over Disk"
+}
+
+# Apparatus types that are reciprocating (expect DPM/CPM/Cycles)
+RECIPROCATING_APPARATUS = {
+    "Cylinder",
+    "Reciprocating Cylinder",
+    "Reciprocating Holder"
+}
+
+# Words that indicate the entry is NOT agitation speed
+IGNORED_KEYWORDS = [
+    "flow",
+    "ml/min",
+    "stroke depth",
+    "chew",
+    "orbit"
+]
+
+# ============================================================
+# 2 UNIT NORMALIZATION REGEX
+# ============================================================
+
+# This regex captures:
+#  - 50 rpm
+#  - 50 r/min
+#  - 30 dpm
+#  - 30 cycles per min
+#  - 30 cycles/min
+#  - 30 dips/min
+#
+# The regex is verbose for readability.
+UNIT_REGEX = re.compile(r"""
+    (\d+(?:\.\d+)?)              # Capture number (integer or decimal)
+    \s*
+    (
+        rpm|
+        r\/?min|
+        dpm|
+        cpm|
+        dips?\/?min|
+        cycles?\s*(?:per|\/)?\s*min
+    )
+""", re.IGNORECASE | re.VERBOSE)
+
+# ============================================================
+# 3 AGITATION NUMBER EXTRACTION FUNCTION
+# ============================================================
+
+def extract_agitation_numbers(text, apparatus=None):
+    """
+    Extracts valid agitation speeds from raw text.
+
+    Rules:
+    1. If number has a recognized unit → accept it.
+    2. If no unit but exactly one number exists → assume RPM
+       ONLY for rotational apparatus (or missing apparatus).
+    3. Reject ambiguous multi-number entries without units.
+    """
+
+    # -------------------------
+    # Validate type
+    # -------------------------
+    if text is None or (isinstance(text, float) and np.isnan(text)):
+        return []
+
+    if not isinstance(text, str):
+        return []
+
+    text_lower = text.lower()
+
+    # -------------------------
+    # Ignore obvious non-agitation contexts
+    # -------------------------
+    if any(keyword in text_lower for keyword in IGNORED_KEYWORDS):
+        return []
+
+    # -------------------------
+    # 1 Numbers WITH units
+    # -------------------------
+    matches = UNIT_REGEX.findall(text_lower)
+
+    if matches:
+        # Always trust explicitly stated units
+        return [float(value) for value, _ in matches]
+
+    # -------------------------
+    # 2 Plain-number fallback (assume RPM)
+    # -------------------------
+    numbers = re.findall(r'\d+(?:\.\d+)?', text_lower)
+
+    if len(numbers) == 1:
+        # Only assume RPM for rotational apparatus
+        if apparatus in ROTATIONAL_APPARATUS or apparatus is None:
+            return [float(numbers[0])]
+
+    # Otherwise reject
+    return []
+
+
+# ============================================================
+# 4 SCRAP CLASSIFICATION FUNCTION
+# ============================================================
+
+def determine_scrap_reason(text):
+    """
+    Classifies why a row was rejected.
+    Useful for auditing and improving cleaning rules.
+    """
+
+    if text is None or (isinstance(text, float) and np.isnan(text)):
+        return "missing"
+
+    if not isinstance(text, str):
+        return "non_string"
+
+    text_lower = text.lower()
+
+    if any(x in text_lower for x in ["flow", "ml/min"]):
+        return "flow_rate_not_agitation"
+
+    if any(x in text_lower for x in ["chew", "stroke", "orbit"]):
+        return "motion_description"
+
+    if not re.search(r'\d', text_lower):
+        return "no_numbers"
+
+    if not UNIT_REGEX.search(text_lower):
+        return "numbers_without_units_or_ambiguous"
+
+    return "unrecognized_format"
+
+
+# ============================================================
+# 5 ROW EXPLOSION FUNCTION
+# ============================================================
+
+def split_agitation_speeds_row(row,
+                               text_col='Speed (RPMs)',
+                               apparatus_col='Apparatus_Cleaned'):
+    """
+    Processes one row and returns:
+
+    - List of valid expanded rows
+    - List of rejected rows (with scrap reason)
+    """
+
+    text = row.get(text_col)
+    apparatus = row.get(apparatus_col)
+
+    speeds = extract_agitation_numbers(text, apparatus)
+
+    # -------------------------
+    # VALID CASE
+    # -------------------------
+    if speeds:
+        valid_rows = []
+
+        for speed in speeds:
+            new_row = row.copy()
+
+            new_row["Agitation_Speed"] = speed
+
+            # Flag whether RPM was assumed
+            if isinstance(text, str) and not UNIT_REGEX.search(text):
+                new_row["Speed_Assumed_Unit"] = "rpm_assumed"
+            else:
+                new_row["Speed_Assumed_Unit"] = "explicit_unit"
+
+            valid_rows.append(new_row)
+
+        return valid_rows, []
+
+    # -------------------------
+    # SCRAPPED CASE
+    # -------------------------
+    scrap_row = row.copy()
+    scrap_row["Scrap_Reason"] = determine_scrap_reason(text)
+
+    return [], [scrap_row]
+
+
+# ============================================================
+# 6 APPLY TO ENTIRE DATAFRAME
+# ============================================================
+
+def clean_speed_column(df,
+                       text_col='Speed (RPMs)',
+                       apparatus_col='Apparatus_Cleaned'):
+    """
+    Main pipeline function.
+
+    Returns:
+        clean_df      → expanded valid rows
+        scrapped_df   → rejected rows with reasons
+    """
+
+    valid_rows = []
+    scrapped_rows = []
+
+    for _, row in df.iterrows():
+        good, bad = split_agitation_speeds_row(
+            row,
+            text_col=text_col,
+            apparatus_col=apparatus_col
+        )
+
+        valid_rows.extend(good)
+        scrapped_rows.extend(bad)
+
+    clean_df = pd.DataFrame(valid_rows)
+    scrapped_df = pd.DataFrame(scrapped_rows)
+
+    return clean_df, scrapped_df
 
 
 
