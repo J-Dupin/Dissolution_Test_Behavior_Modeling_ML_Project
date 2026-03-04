@@ -393,7 +393,7 @@ def determine_scrap_reason(text):
 # 5 ROW EXPLOSION FUNCTION
 # ============================================================
 
-def split_agitation_speeds_row(row,
+def split_agitation_speeds_row_with_scrapping(row,
                                text_col='Speed (RPMs)',
                                apparatus_col='Apparatus_Cleaned'):
     """
@@ -436,6 +436,58 @@ def split_agitation_speeds_row(row,
     scrap_row["Scrap_Reason"] = determine_scrap_reason(text)
 
     return [], [scrap_row]
+    
+
+def split_agitation_speeds_row(row,
+                               text_col='Speed (RPMs)',
+                               apparatus_col='Apparatus_Cleaned'):
+
+    text = row.get(text_col)
+    apparatus = row.get(apparatus_col)
+
+    speeds = extract_agitation_numbers(text, apparatus)
+
+    new_rows = []
+
+    # -------------------------------------------------
+    # 1 VALID OR ASSUMED SPEEDS
+    # -------------------------------------------------
+    if speeds:
+        for speed in speeds:
+            new_row = row.copy()
+            new_row["Agitation_Speed"] = speed
+
+            # Determine if unit was explicit
+            if isinstance(text, str) and UNIT_REGEX.search(text):
+                new_row["Speed_Status"] = "valid"
+            else:
+                new_row["Speed_Status"] = "assumed"
+
+            new_row["Scrap_Reason"] = None
+
+            new_rows.append(new_row)
+
+        return new_rows, []
+
+    # -------------------------------------------------
+    # 2 MISSING SPEED
+    # -------------------------------------------------
+    if text is None or (isinstance(text, float) and np.isnan(text)):
+        new_row = row.copy()
+        new_row["Agitation_Speed"] = np.nan
+        new_row["Speed_Status"] = "missing"
+        new_row["Scrap_Reason"] = None
+        return [new_row], []
+
+    # -------------------------------------------------
+    # 3 INVALID SPEED (keep row, flag it)
+    # -------------------------------------------------
+    new_row = row.copy()
+    new_row["Agitation_Speed"] = np.nan
+    new_row["Speed_Status"] = "invalid"
+    new_row["Scrap_Reason"] = determine_scrap_reason(text)
+
+    return [new_row], []
 
 
 # ============================================================
@@ -443,6 +495,7 @@ def split_agitation_speeds_row(row,
 # ============================================================
 
 def clean_speed_column(df,
+                       split_func,
                        text_col='Speed (RPMs)',
                        apparatus_col='Apparatus_Cleaned'):
     """
@@ -457,7 +510,7 @@ def clean_speed_column(df,
     scrapped_rows = []
 
     for _, row in df.iterrows():
-        good, bad = split_agitation_speeds_row(
+        good, bad = split_func(
             row,
             text_col=text_col,
             apparatus_col=apparatus_col
