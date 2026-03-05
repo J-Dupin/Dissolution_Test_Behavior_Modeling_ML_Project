@@ -248,6 +248,16 @@ def split_agitation_speeds_row(row, text_col='Speed (RPMs)', apparatus_col='Appa
     return new_rows
 
 
+
+
+
+
+
+
+
+
+
+
 # ============================================================
 # 1 CONFIGURATION SECTION
 # ============================================================
@@ -529,6 +539,11 @@ def clean_speed_column(df,
 
 
 
+
+
+
+
+
 # 4. Function for Medium Type Column
 
 def extract_medium_type(text):
@@ -589,6 +604,191 @@ def extract_medium_type(text):
     unique_medium_types = [mt for mt in medium_types if not (mt in seen or seen.add(mt))]
 
     return unique_medium_types
+
+
+
+
+
+
+
+
+INVALID_PATTERNS = [
+    r"refer to",
+    r"develop",
+    r"guidance",
+    r"characterize",
+    r"method"
+]
+
+PH_REGEX = r"ph\s*[=:]?\s*([0-9]+(?:\.[0-9]+)?)"
+# PH_REGEX = r"ph\s*([0-9.]+)"
+
+SURFACTANTS = ["sds", "sls", "tween", "polysorbate"]
+
+SURFACTANT_MAP = {
+    "sds": "sodium dodecyl sulfate",
+    "sls": "sodium lauryl sulfate",
+    "sodium dodecyl sulfate": "sodium dodecyl sulfate",
+    "sodium lauryl sulfate": "sodium lauryl sulfate",
+    "tween": "tween",
+    "polysorbate": "polysorbate",
+    "ctab": "ctab",
+    "cetyl": "ctab"
+}
+
+# Defining standard medium classes
+MEDIUM_CLASSES = [
+    "hcl",
+    "sgf",
+    "phosphate_buffer",
+    "acetate_buffer",
+    "citrate_buffer",
+    "water",
+    "surfactant_solution",
+    "other"
+]
+
+MULTISTAGE_PATTERNS = [
+    "stage",
+    "tier",
+    "pre-exposed",
+    "then",
+    "followed by"
+]
+
+
+# Defining function for removing non media entries
+def remove_non_media(text):
+    if pd.isna(text):
+        return None
+
+    text_lower = text.lower()
+
+    if any(p in text_lower for p in INVALID_PATTERNS):
+        return None
+
+    return text
+
+
+# Defining function for normalizing equivalent media
+def normalize_medium(text):
+    if pd.isna(text):
+        return None
+    text = text.lower()
+    if "hcl" in text:
+        return "hcl"
+    if "sgf" in text or "simulated gastric" in text:
+        return "sgf"
+    if "phosphate" in text:
+        return "phosphate_buffer"
+    if "acetate" in text:
+        return "acetate_buffer"
+    if "water" in text:
+        return "water"
+    return "other"
+
+
+
+
+
+
+
+# Defining holistic function for preprocessing medium types
+def classify_medium(text):
+    """
+    Holistic function for preprocessing medium types.
+    - Removes non media entries
+    - Normalizes equivalent media
+    - Extractes useful chemical features
+    - Identifies surfactants
+    - Classifies medium types into 8 generalized standard medium classes
+    """
+    if pd.isna(text):
+        return None
+    text = text.lower()
+    # remove instruction-type rows
+    if any(x in text for x in ["refer to", "develop", "guidance", "method"]):
+        return None
+    # main medium types
+    if "sgf" in text or "simulated gastric" in text:
+        return "sgf"
+    if "hcl" in text or "hydrochloric" in text:
+        return "hcl"
+    if "phosphate" in text:
+        return "phosphate_buffer"
+    if "acetate" in text:
+        return "acetate_buffer"
+    if "citrate" in text:
+        return "citrate_buffer"
+    if "water" in text or "deionized" in text:
+        return "water"
+    # surfactants
+    if any(x in text for x in ["sds", "sls", "tween", "polysorbate"]):
+        return "surfactant_solution"
+    return "other"
+
+
+# Defining function for extracting useful chemical features
+def extract_ph(text):
+    if pd.isna(text):
+        return None
+    match = re.search(PH_REGEX, text.lower())
+    if match:
+        return float(match.group(1))
+    return None
+
+
+# Defining function for detecting surfactant
+def detect_surfactant(text):
+    if pd.isna(text):
+        return 0
+    text = text.lower()
+    return int(any(s in text for s in SURFACTANTS))
+
+
+# Defining refined function for detecting surfactant
+def detect_surfactant_refined(text):
+    if pd.isna(text):
+        return pd.Series({
+            "surfactant_presence": "no surfactant present",
+            "surfactant_type": None
+        })
+    text = text.lower()
+    for key, value in SURFACTANT_MAP.items():
+        if key in text:
+            return pd.Series({
+                "surfactant_presence": "surfactant present",
+                "surfactant_type": value
+            })
+    return pd.Series({
+        "surfactant_presence": "no surfactant present",
+        "surfactant_type": None
+    })
+
+
+# Defining function for detecting surfactant
+def detect_multistage(text):
+    if pd.isna(text):
+        return 0
+    return int("stage" in text.lower())
+
+
+# Defining refined function for detecting surfactant
+def detect_multistage_refined(text):
+    if pd.isna(text):
+        return 0
+    text = text.lower()
+    return int(any(p in text for p in MULTISTAGE_PATTERNS))
+
+
+
+
+
+    
+
+
+
+
 
 
 
