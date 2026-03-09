@@ -661,12 +661,9 @@ MULTISTAGE_PATTERNS = [
 def remove_non_media(text):
     if pd.isna(text):
         return None
-
     text_lower = text.lower()
-
     if any(p in text_lower for p in INVALID_PATTERNS):
         return None
-
     return text
 
 
@@ -686,11 +683,6 @@ def normalize_medium(text):
     if "water" in text:
         return "water"
     return "other"
-
-
-
-
-
 
 
 # Defining holistic function for preprocessing medium types
@@ -846,6 +838,83 @@ def extract_medium_volumes(text):
 
 
 
+
+
+
+VOLUME_REGEX = r"([0-9]+(?:\.[0-9]+)?)\s*(?:ml|mL)?"
+# VOLUME_REGEX = r"([0-9]+(?:\.[0-9]+)?)\s*ml\b"
+
+VOLUME_MULTISTAGE_PATTERNS = [
+    "stage",
+    "phase",
+    "tier",
+    "acid",
+    "buffer"
+]
+
+
+# Defining function to extract volumes
+def extract_volumes(text):
+    if pd.isna(text):
+        return []
+    text = str(text).lower()
+    matches = re.findall(VOLUME_REGEX, text)
+    volumes = [float(v) for v in matches]
+    # remove unrealistic values
+    volumes = [v for v in volumes if 50 <= v <= 3000]
+    # volumes = [v for v in volumes if v <= 3000]
+    return volumes
+
+
+# Defining function to clean single-stage volume column
+def classify_volume(text):
+    if pd.isna(text):
+        return None
+    # do not assign volume if multistage
+    if detect_multistage_volume(text):
+        return None
+    volumes = extract_volumes(text)
+    if len(volumes) == 0:
+        return None
+    return volumes[0]
+
+
+# Defining function to detect multi-stage volumes
+def detect_multistage_volume(text):
+    if pd.isna(text):
+        return 0
+    text = text.lower()
+    return int(any(p in text for p in VOLUME_MULTISTAGE_PATTERNS))
+
+
+# Defining function to extract multi-stage volumes
+def extract_stage_volumes(text):
+    if pd.isna(text):
+        return pd.Series({
+            "acid_volume": None,
+            "buffer_volume": None
+        })
+    if not detect_multistage_volume(text):
+        return pd.Series({
+            "acid_volume": None,
+            "buffer_volume": None
+        })
+    volumes = extract_volumes(text)
+    acid = volumes[0] if len(volumes) >= 1 else None
+    buffer = volumes[1] if len(volumes) >= 2 else None
+    return pd.Series({
+        "acid_volume": acid,
+        "buffer_volume": buffer
+    })
+
+
+
+
+
+
+
+
+
 # 6. Function for Medium Volume Column
 
 def extract_sampling_times(text):
@@ -889,6 +958,245 @@ def extract_sampling_times(text):
     unique_times = [t for t in times if not (t in seen or seen.add(t))]
 
     return unique_times if unique_times else [np.nan]
+
+
+
+
+
+
+TIME_REGEX = r"(\d*\.?\d+)\s*(hours?|hrs?|minutes?|mins?)?"
+
+TIME_MULTISTAGE_PATTERNS = [
+    "stage",
+    "phase",
+    "acid",
+    "buffer"
+]
+
+STAGE_SPLIT_REGEX = r"(acid[^:]*:|buffer[^:]*:|phase\s*\d+[^:]*:)"
+
+
+# Defining function to clean general text
+def preprocess_sampling_text(text):
+    """Clean general sampling text."""
+    if pd.isna(text):
+        return None
+    text = str(text).lower()
+    # remove drug name prefixes like "morphine sulfate:"
+    text = re.sub(r"[a-z\s]+:\s*(acid|phase)", r"\1", text)
+    # remove "no sampling"
+    text = re.sub(r"phase\s*\d+\s*:\s*no sampling\.?", "", text)
+    # remove instructions like "until 80% released"
+    text = re.sub(r"until.*", "", text)
+    return text    
+
+
+# Defining function to detect multi-stage sampling methods
+def detect_multistage_sampling(text):
+    if pd.isna(text):
+        return 0
+    text = str(text).lower()
+    return int(any(p in text for p in TIME_MULTISTAGE_PATTERNS))
+    # return int(any(x in text for x in ["acid", "buffer", "phase"]))
+
+
+# Defining function to extract times (convert hours → minutes)
+def extract_times(text):
+    if pd.isna(text):
+        return []
+    text = str(text).lower()
+    matches = re.findall(TIME_REGEX, text)
+    times = []
+    for value, unit in matches:
+        value = float(value)
+        if unit and "hour" in unit:
+            value *= 60
+        times.append(value)
+    return sorted(set(times))
+
+
+# Defining function to clean single-stage sampling column
+def classify_sampling_times(text):
+    """Return times for single-stage sampling, None if multi-stage or empty."""
+    if pd.isna(text):
+        return None
+    text = preprocess_sampling_text(text)
+    if detect_multistage_sampling(text):
+        return None
+    times = extract_times(text)
+    # if len(times) == 0:
+    #     return None
+    # return times
+    return tuple(times) if times else None  # Convert to tuple
+# def classify_sampling_times(text):
+#     if pd.isna(text):
+#         return None
+#     text = preprocess_sampling_text(text)
+#     if detect_multistage_sampling(text):
+#         return None
+#     times = extract_times(text)
+#     return times if times else None
+
+
+# Defining function to extract multi-stage sampling times
+def extract_stage_sampling_times(text):
+    """Return acid and buffer times as tuples."""
+    if pd.isna(text) or not detect_multistage_sampling(text):
+        return pd.Series({"acid_times": None, "buffer_times": None})
+    # if pd.isna(text):
+    #     return pd.Series({
+    #         "acid_times": None,
+    #         "buffer_times": None
+    #     })
+    # if not detect_multistage_sampling(text):
+    #     return pd.Series({
+    #         "acid_times": None,
+    #         "buffer_times": None
+    #     })
+    text = str(text).lower()
+    acid_part = text.split("acid")[1] if "acid" in text else None
+    buffer_part = text.split("buffer")[1] if "buffer" in text else None
+    acid_times = tuple(extract_times(acid_part)) if acid_part else None
+    buffer_times = tuple(extract_times(buffer_part)) if buffer_part else None
+    # acid_times = extract_times(acid_part) if acid_part else None
+    # buffer_times = extract_times(buffer_part) if buffer_part else None
+    return pd.Series({"acid_times": acid_times, "buffer_times": buffer_times})
+
+
+# Defining function to apply to DataFrame to fully clean sampling times
+def clean_sampling_times(df, col="Recommended Sampling Times (minutes)"):
+    df = df.copy()
+    # Detect multi-stage
+    df["multi_stage_times"] = df[col].apply(detect_multistage_sampling)
+    # Extract single-stage times
+    df["SamplingTimes_Cleaned"] = df[col].apply(classify_sampling_times)
+    # Extract acid/buffer times as tuples
+    df[["acid_times", "buffer_times"]] = df[col].apply(extract_stage_sampling_times)
+    return df
+
+
+# --- Example Usage ---
+# newer_clean_df = clean_sampling_times(newer_clean_df)
+
+# Now you can safely do:
+# Count of single column
+# newer_clean_df["SamplingTimes_Cleaned"].value_counts(dropna=False)
+# Count of multi-index
+# newer_clean_df[["multi_stage_times", "acid_times", "buffer_times"]].value_counts(dropna=False)
+
+
+# Defining function to compute the number of sampling times
+def compute_num_sampling_points(row):
+    # Use 'SamplingTimes_Cleaned' if not empty
+    if isinstance(row["SamplingTimes_Cleaned"], (tuple, list)) and row["SamplingTimes_Cleaned"]:
+        return len(row["SamplingTimes_Cleaned"])
+    # Fallback to 'acid_times' and 'buffer_times'
+    total_points = 0
+    for col in ["acid_times", "buffer_times"]:
+        if isinstance(row[col], (tuple, list)) and row[col]:
+            total_points += len(row[col])
+    return total_points if total_points > 0 else None
+
+
+# Defining function to compute the maximum time across sampling times
+def compute_max_sampling_time(row):
+    times = []
+    # Add 'SamplingTimes_Cleaned' if available
+    if isinstance(row["SamplingTimes_Cleaned"], (tuple, list)) and row["SamplingTimes_Cleaned"]:
+        times.extend(row["SamplingTimes_Cleaned"])
+    # Add 'acid_times' and 'buffer_times'
+    for col in ["acid_times", "buffer_times"]:
+        if isinstance(row[col], (tuple, list)) and row[col]:
+            times.extend(row[col])
+    return max(times) if times else None
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+def preprocess_fda_dissolution(df):
+    """
+    Complete preprocessing pipeline for FDA dissolution dataset.
+    Returns a cleaned dataframe with engineered features.
+    """
+    df = df.copy()
+    # -------------------------
+    # MEDIUM FEATURES
+    # -------------------------
+    df["Medium_Type"] = df["Medium"].apply(classify_medium)
+    df["pH"] = df["Medium"].apply(extract_ph)
+    df["surfactant_presence"] = df["Medium"].apply(detect_surfactant)
+    df[["surfactant_presence_refined", "surfactant_type"]] = (df["Medium"].apply(detect_surfactant_refined))
+    df["multi_stage_medium"] = df["Medium"].apply(detect_multistage)
+    df["multi_stage_medium_refined"] = df["Medium"].apply(detect_multistage_refined)
+    # -------------------------
+    # VOLUME FEATURES
+    # -------------------------
+    df["Volume_mL_clean"] = df["Volume (mL)"].apply(classify_volume)
+    df["multi_stage_volume"] = df["Volume (mL)"].apply(detect_multistage_volume)
+    df[["acid_volume_mL", "buffer_volume_mL"]] = (df["Volume (mL)"].apply(extract_stage_volumes))
+    return df
+    # clean_df = preprocess_fda_dissolution(newer_clean_df)
+
+
+# def add_medium_features(df):
+#     df["Medium_Type"] = df["Medium"].apply(classify_medium)
+#     df["pH"] = df["Medium"].apply(extract_ph)
+#     return df
+
+
+# def add_volume_features(df):
+#     df["Volume_mL_clean"] = df["Volume (mL)"].apply(classify_volume)
+#     return df
+
+
+# def preprocess_fda_dissolution(df):
+#     df = df.copy()
+#     df = add_medium_features(df)
+#     df = add_volume_features(df)
+#     return df
+#     # clean_df = preprocess_fda_dissolution(newer_clean_df)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
